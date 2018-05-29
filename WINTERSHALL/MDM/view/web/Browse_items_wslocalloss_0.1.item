@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_ZOrKMWJzEeik2OEvQxx5eA" name="Browse_items_wslocalloss" description="[EN:Local Loss]" timestamp="1527514694935" digestValue="f10fc27624da591b51ac0fe5b6a6040d" transformerPK="">
+  <searchableBusinessElements>wslocalloss/llid</searchableBusinessElements>
+  <searchableBusinessElements>wslocalloss/locallosscatname</searchableBusinessElements>
+  <searchableBusinessElements>wslocalloss/globallossid</searchableBusinessElements>
+  <viewableBusinessElements>wslocalloss/llid</viewableBusinessElements>
+  <viewableBusinessElements>wslocalloss/locallosscatname</viewableBusinessElements>
+  <viewableBusinessElements>wslocalloss/globallossid</viewableBusinessElements>
+  <isTransformerActive xmi:id="_4PEgIGJzEeik2OEvQxx5eA"/>
+</mdmserverobject:WSViewE>

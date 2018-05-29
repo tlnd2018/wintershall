@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_TM2xsWJzEeik2OEvQxx5eA" name="Browse_items_wsgloballosssubcat" description="[EN:Global Loss Subcategory]" timestamp="1527514694923" digestValue="3b875dce3fb8606b379c3e271e339333" transformerPK="">
+  <searchableBusinessElements>wsgloballosssubcat/glsubid</searchableBusinessElements>
+  <searchableBusinessElements>wsgloballosssubcat/subcatname</searchableBusinessElements>
+  <searchableBusinessElements>wsgloballosssubcat/globallossid</searchableBusinessElements>
+  <viewableBusinessElements>wsgloballosssubcat/glsubid</viewableBusinessElements>
+  <viewableBusinessElements>wsgloballosssubcat/subcatname</viewableBusinessElements>
+  <viewableBusinessElements>wsgloballosssubcat/globallossid</viewableBusinessElements>
+  <isTransformerActive xmi:id="_2R7eAGJzEeik2OEvQxx5eA"/>
+</mdmserverobject:WSViewE>

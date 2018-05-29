@@ -1,0 +1,349 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:import namespace="http://www.w3.org/2001/XMLSchema"/>
+<xsd:element name="wswell">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="uwid" type="UUID">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Well ID</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="wellname" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">well name</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="areacode" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">wsaerea/uaid</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">wsaerea/areaname</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">area code</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="fieldcode" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">wsfield/ufid</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">wsfield/fieldname</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">field code</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="clustercode" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">wscluster/ucid</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">wscluster/clustername</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">cluster code</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="opcocode" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">wsopco/uoid</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">wsopco/opconame</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">opco code</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="wswell">
+<xsd:selector xpath="."/>
+<xsd:field xpath="uwid"/>
+</xsd:unique>
+</xsd:element>
+<xsd:simpleType name="UUID">
+<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
+<xsd:simpleType name="string50_T">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="50"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:element name="wsaerea">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="uaid" type="UUID">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Area ID</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="areaname" type="string50_T">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">area</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="wsaerea">
+<xsd:selector xpath="."/>
+<xsd:field xpath="uaid"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="wsfield">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="ufid" type="UUID">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Field ID</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="fieldname" type="string50_T">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">field name</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="mppchoke1" type="number10_2_T">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">mpp choke 1</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="mppchoke2" type="number10_2_T">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">mpp choke 2</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="mppchoke3" type="number10_2_T">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">mpp choke 3</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="mppchoke4" type="number10_2_T">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">mpp choke 4</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="mppsystem1" type="number10_2_T">
+<xsd:annotation>
+<xsd:appinfo source="X_Label_EN">mpp system 1</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="mppsystem2" type="number10_2_T">
+<xsd:annotation>
+<xsd:appinfo source="X_Label_EN">mpp system 2</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="wsfield">
+<xsd:selector xpath="."/>
+<xsd:field xpath="ufid"/>
+</xsd:unique>
+</xsd:element>
+<xsd:simpleType name="string30_T">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="30"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:element name="wscluster">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="ucid" type="UUID">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Cluster ID</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="clustername" type="string50_T">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">cluster name</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="wscluster">
+<xsd:selector xpath="."/>
+<xsd:field xpath="ucid"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="wsopco">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="uoid" type="UUID">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Opco ID</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="opconame" type="string30_T">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">opco name</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="wsopco">
+<xsd:selector xpath="."/>
+<xsd:field xpath="uoid"/>
+</xsd:unique>
+</xsd:element>
+<xsd:simpleType name="number10_2_T">
+<xsd:restriction base="xsd:decimal">
+<xsd:totalDigits value="10"/>
+<xsd:fractionDigits value="2"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:element name="wsgloballoss">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Global Loss ID</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="glid" type="UUID">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="goballosscatname" type="string50_T">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">category name</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="wsgloballoss">
+<xsd:selector xpath="."/>
+<xsd:field xpath="glid"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="wslocalloss">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="llid" type="UUID">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Local Loss ID</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="locallosscatname" type="string50_T">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">category</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="globallossid" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">wsgloballoss/glid</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Global Loss ID</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="wslocalloss">
+<xsd:selector xpath="."/>
+<xsd:field xpath="llid"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="wsgloballosssubcat">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="glsubid" type="UUID">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Global Loss SubCat ID</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="subcatname" type="string50_T">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">subcategrory name</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="globallossid" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">wsgloballoss/glid</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">wsgloballoss/goballosscatname</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Global Loss ID</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="wsgloballosssubcat">
+<xsd:selector xpath="."/>
+<xsd:field xpath="glsubid"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="wslosses">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="lossid" type="UUID">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Loss ID</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="belongsto" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">wslosses/lossid</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">wslosses/lossname</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">belongs to</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="lossname" type="string50_T">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">DS_General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">loss category name</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="wslosses">
+<xsd:selector xpath="."/>
+<xsd:field xpath="lossid"/>
+</xsd:unique>
+</xsd:element>
+</xsd:schema>

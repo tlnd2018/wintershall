@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_hJ3-0GJ2Eeik2OEvQxx5eA" name="wswell" description="[EN:wellsview]" timestamp="1527516261668" digestValue="f909862906dfad61483145d0e216645a" transformerPK="">
+  <searchableBusinessElements>wswell/uwid</searchableBusinessElements>
+  <searchableBusinessElements>wswell/wellname</searchableBusinessElements>
+  <searchableBusinessElements>wswell/areacode</searchableBusinessElements>
+  <searchableBusinessElements>wswell/fieldcode</searchableBusinessElements>
+  <searchableBusinessElements>wswell/clustercode</searchableBusinessElements>
+  <searchableBusinessElements>wswell/opcocode</searchableBusinessElements>
+  <searchableBusinessElements>wsaerea/areaname</searchableBusinessElements>
+  <searchableBusinessElements>wsfield/fieldname</searchableBusinessElements>
+  <searchableBusinessElements>wsfield/mppchoke1</searchableBusinessElements>
+  <searchableBusinessElements>wsfield/mppchoke2</searchableBusinessElements>
+  <searchableBusinessElements>wsfield/mppchoke3</searchableBusinessElements>
+  <searchableBusinessElements>wsfield/mppchoke4</searchableBusinessElements>
+  <searchableBusinessElements>wsfield/mppsystem1</searchableBusinessElements>
+  <searchableBusinessElements>wsfield/mppsystem2</searchableBusinessElements>
+  <searchableBusinessElements>wscluster/ucid</searchableBusinessElements>
+  <searchableBusinessElements>wscluster/clustername</searchableBusinessElements>
+  <searchableBusinessElements>wsopco/uoid</searchableBusinessElements>
+  <searchableBusinessElements>wsopco/opconame</searchableBusinessElements>
+  <viewableBusinessElements>wswell/wellname</viewableBusinessElements>
+  <viewableBusinessElements>wsaerea/areaname</viewableBusinessElements>
+  <viewableBusinessElements>wsfield/fieldname</viewableBusinessElements>
+  <viewableBusinessElements>wsfield/mppchoke1</viewableBusinessElements>
+  <viewableBusinessElements>wsfield/mppchoke2</viewableBusinessElements>
+  <viewableBusinessElements>wsfield/mppchoke3</viewableBusinessElements>
+  <viewableBusinessElements>wsfield/mppchoke4</viewableBusinessElements>
+  <viewableBusinessElements>wsfield/mppsystem1</viewableBusinessElements>
+  <viewableBusinessElements>wsfield/mppsystem2</viewableBusinessElements>
+  <viewableBusinessElements>wscluster/clustername</viewableBusinessElements>
+  <viewableBusinessElements>wsopco/opconame</viewableBusinessElements>
+  <whereConditions xmi:id="_nseTsGJ3Eeik2OEvQxx5eA" leftPath="wswell/areacode" rightValueOrPath="wsaerea/uaid">
+    <stringPredicate xmi:id="_nseTsWJ3Eeik2OEvQxx5eA" value="AND"/>
+    <operator xmi:id="_nseTsmJ3Eeik2OEvQxx5eA" value="JOIN"/>
+  </whereConditions>
+  <whereConditions xmi:id="_nseTs2J3Eeik2OEvQxx5eA" leftPath="wswell/fieldcode" rightValueOrPath="wsfield/ufid">
+    <stringPredicate xmi:id="_nseTtGJ3Eeik2OEvQxx5eA" value="AND"/>
+    <operator xmi:id="_nseTtWJ3Eeik2OEvQxx5eA" value="JOIN"/>
+  </whereConditions>
+  <whereConditions xmi:id="_nseTtmJ3Eeik2OEvQxx5eA" leftPath="wswell/clustercode" rightValueOrPath="wscluster/ucid">
+    <stringPredicate xmi:id="_nseTt2J3Eeik2OEvQxx5eA" value="AND"/>
+    <operator xmi:id="_nseTuGJ3Eeik2OEvQxx5eA" value="JOIN"/>
+  </whereConditions>
+  <whereConditions xmi:id="_nseTuWJ3Eeik2OEvQxx5eA" leftPath="wswell/opcocode" rightValueOrPath="wsopco/uoid">
+    <stringPredicate xmi:id="_nseTumJ3Eeik2OEvQxx5eA" value="NONE"/>
+    <operator xmi:id="_nseTu2J3Eeik2OEvQxx5eA" value="JOIN"/>
+  </whereConditions>
+  <isTransformerActive xmi:id="_nseTvGJ3Eeik2OEvQxx5eA"/>
+</mdmserverobject:WSViewE>

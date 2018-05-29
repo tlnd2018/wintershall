@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_be5gYWJzEeik2OEvQxx5eA" name="Browse_items_wsopco" description="[EN:OpCo]" timestamp="1527514694959" digestValue="b9a428668eda72b9221b07c2d64580b0" transformerPK="">
+  <searchableBusinessElements>wsopco/uoid</searchableBusinessElements>
+  <searchableBusinessElements>wsopco/opconame</searchableBusinessElements>
+  <viewableBusinessElements>wsopco/uoid</viewableBusinessElements>
+  <viewableBusinessElements>wsopco/opconame</viewableBusinessElements>
+  <isTransformerActive xmi:id="_7RdTEGJzEeik2OEvQxx5eA"/>
+</mdmserverobject:WSViewE>

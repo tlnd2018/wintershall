@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_Nww8cWJzEeik2OEvQxx5eA" name="Browse_items_wsfield" description="[EN:Field]" timestamp="1527514694898" digestValue="64c710f285c41bf79e4cf28a344cbd76" transformerPK="">
+  <searchableBusinessElements>wsfield/ufid</searchableBusinessElements>
+  <searchableBusinessElements>wsfield/fieldname</searchableBusinessElements>
+  <searchableBusinessElements>wsfield/mppchoke1</searchableBusinessElements>
+  <searchableBusinessElements>wsfield/mppchoke2</searchableBusinessElements>
+  <searchableBusinessElements>wsfield/mppchoke3</searchableBusinessElements>
+  <viewableBusinessElements>wsfield/ufid</viewableBusinessElements>
+  <viewableBusinessElements>wsfield/fieldname</viewableBusinessElements>
+  <viewableBusinessElements>wsfield/mppchoke1</viewableBusinessElements>
+  <viewableBusinessElements>wsfield/mppchoke2</viewableBusinessElements>
+  <viewableBusinessElements>wsfield/mppchoke3</viewableBusinessElements>
+  <isTransformerActive xmi:id="_x7UqIGJzEeik2OEvQxx5eA"/>
+</mdmserverobject:WSViewE>
