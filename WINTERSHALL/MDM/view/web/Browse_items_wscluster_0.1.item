@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_MbqKsGJzEeik2OEvQxx5eA" name="Browse_items_wscluster" description="[EN:Cluster]" timestamp="1527514694885" digestValue="c2d86802301c1caadc5d789239842782" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_MbqKsGJzEeik2OEvQxx5eA" name="Browse_items_wscluster" description="[EN:Cluster]" timestamp="1527598600678" digestValue="c2d86802301c1caadc5d789239842782" lastServerName="MDM_Server" transformerPK="">
   <searchableBusinessElements>wscluster/ucid</searchableBusinessElements>
   <searchableBusinessElements>wscluster/clustername</searchableBusinessElements>
   <viewableBusinessElements>wscluster/ucid</viewableBusinessElements>

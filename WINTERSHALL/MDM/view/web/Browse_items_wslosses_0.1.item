@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_aSOR4GJzEeik2OEvQxx5eA" name="Browse_items_wslosses" description="[EN:Losses]" timestamp="1527514694947" digestValue="c72b0623608012e6c89772a662706c7c" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_aSOR4GJzEeik2OEvQxx5eA" name="Browse_items_wslosses" description="[EN:Losses]" timestamp="1527598616339" digestValue="c72b0623608012e6c89772a662706c7c" lastServerName="MDM_Server" transformerPK="">
   <searchableBusinessElements>wslosses/lossid</searchableBusinessElements>
   <searchableBusinessElements>wslosses/belongsto</searchableBusinessElements>
   <searchableBusinessElements>wslosses/lossname</searchableBusinessElements>

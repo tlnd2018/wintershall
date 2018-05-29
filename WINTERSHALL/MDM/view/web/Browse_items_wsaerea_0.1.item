@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_LUH64GJzEeik2OEvQxx5eA" name="Browse_items_wsaerea" description="[EN:Area]" timestamp="1527514694872" digestValue="dd4083aa6f26e3499518faa52b226ac1" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_LUH64GJzEeik2OEvQxx5eA" name="Browse_items_wsaerea" description="[EN:Area]" timestamp="1527598597549" digestValue="dd4083aa6f26e3499518faa52b226ac1" lastServerName="MDM_Server" transformerPK="">
   <searchableBusinessElements>wsaerea/uaid</searchableBusinessElements>
   <searchableBusinessElements>wsaerea/areaname</searchableBusinessElements>
   <viewableBusinessElements>wsaerea/uaid</viewableBusinessElements>

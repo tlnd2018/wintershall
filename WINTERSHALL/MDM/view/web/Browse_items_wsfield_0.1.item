@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_Nww8cWJzEeik2OEvQxx5eA" name="Browse_items_wsfield" description="[EN:Field]" timestamp="1527514694898" digestValue="64c710f285c41bf79e4cf28a344cbd76" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_Nww8cWJzEeik2OEvQxx5eA" name="Browse_items_wsfield" description="[EN:Field]" timestamp="1527598603762" digestValue="64c710f285c41bf79e4cf28a344cbd76" lastServerName="MDM_Server" transformerPK="">
   <searchableBusinessElements>wsfield/ufid</searchableBusinessElements>
   <searchableBusinessElements>wsfield/fieldname</searchableBusinessElements>
   <searchableBusinessElements>wsfield/mppchoke1</searchableBusinessElements>

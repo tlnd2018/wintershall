@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_cvdwYGJzEeik2OEvQxx5eA" name="Browse_items_wswell" description="[EN:Well]" timestamp="1527514694971" digestValue="d4d1416f6aeebe503fe2b819bbe57062" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_cvdwYGJzEeik2OEvQxx5eA" name="Browse_items_wswell" description="[EN:Well]" timestamp="1527598623478" digestValue="d4d1416f6aeebe503fe2b819bbe57062" lastServerName="MDM_Server" transformerPK="">
   <searchableBusinessElements>wswell/uwid</searchableBusinessElements>
   <searchableBusinessElements>wswell/wellname</searchableBusinessElements>
   <searchableBusinessElements>wswell/areacode</searchableBusinessElements>
