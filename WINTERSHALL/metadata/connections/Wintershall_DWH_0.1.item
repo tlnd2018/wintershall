@@ -137,10 +137,10 @@
       </feature>
     </ownedElement>
     <ownedElement xsi:type="relational:TdTable" xmi:id="_BSV4kWNSEeiZyZVXvj0ZpQ" name="DIMLOSSCATEGORY" id="_BSV4kGNSEeiZyZVXvj0ZpQ" label="DIMLOSSCATEGORY" tableType="TABLE">
-      <feature xsi:type="relational:TdColumn" xmi:id="_BSV4kmNSEeiZyZVXvj0ZpQ" name="LOSSCATEGORYKEY" label="LOSSCATEGORYKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
-        <taggedValue xmi:id="_BSV4k2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
-        <initialValue xsi:type="relational:TdExpression" xmi:id="_BSV4lGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
-        <sqlDataType xmi:id="_BSV4lWNSEeiZyZVXvj0ZpQ" name="NUMBER" numericPrecisionRadix="10" javaDataType="3"/>
+      <feature xsi:type="relational:TdColumn" xmi:id="_nDZ1wGNtEeiZyZVXvj0ZpQ" name="LOSSCATKEY" label="LOSSCATKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
+        <taggedValue xmi:id="_nDZ1wWNtEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_nDZ1wmNtEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_nDZ1w2NtEeiZyZVXvj0ZpQ" name="NUMBER" numericPrecisionRadix="10" javaDataType="3"/>
       </feature>
       <feature xsi:type="relational:TdColumn" xmi:id="_BSV4lmNSEeiZyZVXvj0ZpQ" name="LOCAL_LOSS_CODE" label="LOCAL_LOSS_CODE" length="25" sourceType="VARCHAR2" talendType="id_String">
         <taggedValue xmi:id="_BSV4l2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
