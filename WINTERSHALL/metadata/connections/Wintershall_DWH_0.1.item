@@ -67,7 +67,7 @@
         <sqlDataType xmi:id="_AkEdeWNSEeiZyZVXvj0ZpQ" name="NUMBER" numericPrecisionRadix="10" javaDataType="3" nullable="columnNullable"/>
       </feature>
     </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_ArbCgWNSEeiZyZVXvj0ZpQ" name="DIMLWELL" id="_ArbCgGNSEeiZyZVXvj0ZpQ" label="DIMLWELL" tableType="TABLE">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_ArbCgWNSEeiZyZVXvj0ZpQ" name="DIMLWELL" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_ArbCgGNSEeiZyZVXvj0ZpQ" label="DIMLWELL" tableType="TABLE">
       <feature xsi:type="relational:TdColumn" xmi:id="_ArbCgmNSEeiZyZVXvj0ZpQ" name="WELLKEY" label="WELLKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
         <taggedValue xmi:id="_ArbCg2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_ArbChGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
