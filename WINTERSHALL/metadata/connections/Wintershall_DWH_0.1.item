@@ -67,48 +67,6 @@
         <sqlDataType xmi:id="_AkEdeWNSEeiZyZVXvj0ZpQ" name="NUMBER" numericPrecisionRadix="10" javaDataType="3" nullable="columnNullable"/>
       </feature>
     </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_ArbCgWNSEeiZyZVXvj0ZpQ" name="DIMLWELL" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_ArbCgGNSEeiZyZVXvj0ZpQ" label="DIMLWELL" tableType="TABLE">
-      <feature xsi:type="relational:TdColumn" xmi:id="_ArbCgmNSEeiZyZVXvj0ZpQ" name="WELLKEY" label="WELLKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
-        <taggedValue xmi:id="_ArbCg2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
-        <initialValue xsi:type="relational:TdExpression" xmi:id="_ArbChGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
-        <sqlDataType xmi:id="_ArbChWNSEeiZyZVXvj0ZpQ" name="NUMBER" numericPrecisionRadix="10" javaDataType="3"/>
-      </feature>
-      <feature xsi:type="relational:TdColumn" xmi:id="_ArbChmNSEeiZyZVXvj0ZpQ" name="UNIQUEWELLIDENTIFIER" label="UNIQUEWELLIDENTIFIER" length="50" sourceType="VARCHAR2" talendType="id_String">
-        <taggedValue xmi:id="_ArbCh2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
-        <initialValue xsi:type="relational:TdExpression" xmi:id="_ArbCiGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
-        <sqlDataType xmi:id="_ArbCiWNSEeiZyZVXvj0ZpQ" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
-      </feature>
-      <feature xsi:type="relational:TdColumn" xmi:id="_ArbCimNSEeiZyZVXvj0ZpQ" name="WELL_BK" label="WELL_BK" length="50" sourceType="VARCHAR2" talendType="id_String">
-        <taggedValue xmi:id="_ArbCi2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
-        <initialValue xsi:type="relational:TdExpression" xmi:id="_ArbCjGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
-        <sqlDataType xmi:id="_ArbCjWNSEeiZyZVXvj0ZpQ" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
-      </feature>
-      <feature xsi:type="relational:TdColumn" xmi:id="_ArbCjmNSEeiZyZVXvj0ZpQ" name="WELL_NAME" label="WELL_NAME" length="50" sourceType="VARCHAR2" talendType="id_String">
-        <taggedValue xmi:id="_ArbCj2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
-        <initialValue xsi:type="relational:TdExpression" xmi:id="_ArbCkGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
-        <sqlDataType xmi:id="_ArbCkWNSEeiZyZVXvj0ZpQ" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
-      </feature>
-      <feature xsi:type="relational:TdColumn" xmi:id="_ArbCkmNSEeiZyZVXvj0ZpQ" name="WELL_STARTDATE" label="WELL_STARTDATE" length="7" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
-        <taggedValue xmi:id="_ArbCk2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
-        <initialValue xsi:type="relational:TdExpression" xmi:id="_ArbClGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
-        <sqlDataType xmi:id="_ArbClWNSEeiZyZVXvj0ZpQ" name="DATE" numericPrecisionRadix="10" javaDataType="93" nullable="columnNullable"/>
-      </feature>
-      <feature xsi:type="relational:TdColumn" xmi:id="_ArbClmNSEeiZyZVXvj0ZpQ" name="WELL_ENDDATE" label="WELL_ENDDATE" length="7" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
-        <taggedValue xmi:id="_ArbCl2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
-        <initialValue xsi:type="relational:TdExpression" xmi:id="_ArbCmGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
-        <sqlDataType xmi:id="_ArbCmWNSEeiZyZVXvj0ZpQ" name="DATE" numericPrecisionRadix="10" javaDataType="93" nullable="columnNullable"/>
-      </feature>
-      <feature xsi:type="relational:TdColumn" xmi:id="_ArbCmmNSEeiZyZVXvj0ZpQ" name="WL_SURFACE_LATITUDE" label="WL_SURFACE_LATITUDE" length="50" sourceType="VARCHAR2" talendType="id_String">
-        <taggedValue xmi:id="_ArbCm2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
-        <initialValue xsi:type="relational:TdExpression" xmi:id="_ArbCnGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
-        <sqlDataType xmi:id="_ArbCnWNSEeiZyZVXvj0ZpQ" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
-      </feature>
-      <feature xsi:type="relational:TdColumn" xmi:id="_ArbCnmNSEeiZyZVXvj0ZpQ" name="WL_SURFACE_LONGITUDE" label="WL_SURFACE_LONGITUDE" length="50" sourceType="VARCHAR2" talendType="id_String">
-        <taggedValue xmi:id="_ArbCn2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
-        <initialValue xsi:type="relational:TdExpression" xmi:id="_ArbCoGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
-        <sqlDataType xmi:id="_ArbCoWNSEeiZyZVXvj0ZpQ" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
-      </feature>
-    </ownedElement>
     <ownedElement xsi:type="relational:TdTable" xmi:id="_BL8VoWNSEeiZyZVXvj0ZpQ" name="DIMLOSSEVENT" id="_BL8VoGNSEeiZyZVXvj0ZpQ" label="DIMLOSSEVENT" tableType="TABLE">
       <feature xsi:type="relational:TdColumn" xmi:id="_BL8VomNSEeiZyZVXvj0ZpQ" name="LOSSEVENTKEY" label="LOSSEVENTKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
         <taggedValue xmi:id="_BL8Vo2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
@@ -312,33 +270,6 @@
         <taggedValue xmi:id="_BooRs2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_BooRtGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
         <sqlDataType xmi:id="_BooRtWNSEeiZyZVXvj0ZpQ" name="DATE" numericPrecisionRadix="10" javaDataType="93" nullable="columnNullable"/>
-      </feature>
-    </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_BtHJAWNSEeiZyZVXvj0ZpQ" name="DIMLWELLTYPE" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_BtHJAGNSEeiZyZVXvj0ZpQ" label="DIMLWELLTYPE" tableType="TABLE">
-      <feature xsi:type="relational:TdColumn" xmi:id="_BtHJAmNSEeiZyZVXvj0ZpQ" name="WELLTYPEKEY" label="WELLTYPEKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
-        <taggedValue xmi:id="_BtHJA2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
-        <initialValue xsi:type="relational:TdExpression" xmi:id="_BtHJBGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
-        <sqlDataType xmi:id="_BtHJBWNSEeiZyZVXvj0ZpQ" name="NUMBER" numericPrecisionRadix="10" javaDataType="3"/>
-      </feature>
-      <feature xsi:type="relational:TdColumn" xmi:id="_BtHJBmNSEeiZyZVXvj0ZpQ" name="WELL_TYPE_CODE" label="WELL_TYPE_CODE" length="20" sourceType="VARCHAR2" talendType="id_String">
-        <taggedValue xmi:id="_BtHJB2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
-        <initialValue xsi:type="relational:TdExpression" xmi:id="_BtHJCGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
-        <sqlDataType xmi:id="_BtHJCWNSEeiZyZVXvj0ZpQ" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
-      </feature>
-      <feature xsi:type="relational:TdColumn" xmi:id="_BtHJCmNSEeiZyZVXvj0ZpQ" name="WELL_TYPE_NAME" label="WELL_TYPE_NAME" length="50" sourceType="VARCHAR2" talendType="id_String">
-        <taggedValue xmi:id="_BtHJC2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
-        <initialValue xsi:type="relational:TdExpression" xmi:id="_BtHJDGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
-        <sqlDataType xmi:id="_BtHJDWNSEeiZyZVXvj0ZpQ" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
-      </feature>
-      <feature xsi:type="relational:TdColumn" xmi:id="_BtHJDmNSEeiZyZVXvj0ZpQ" name="STARTDATE" label="STARTDATE" length="7" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
-        <taggedValue xmi:id="_BtHJD2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
-        <initialValue xsi:type="relational:TdExpression" xmi:id="_BtHJEGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
-        <sqlDataType xmi:id="_BtHJEWNSEeiZyZVXvj0ZpQ" name="DATE" numericPrecisionRadix="10" javaDataType="93" nullable="columnNullable"/>
-      </feature>
-      <feature xsi:type="relational:TdColumn" xmi:id="_BtHJEmNSEeiZyZVXvj0ZpQ" name="ENDDATE" label="ENDDATE" length="7" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
-        <taggedValue xmi:id="_BtHJE2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
-        <initialValue xsi:type="relational:TdExpression" xmi:id="_BtHJFGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
-        <sqlDataType xmi:id="_BtHJFWNSEeiZyZVXvj0ZpQ" name="DATE" numericPrecisionRadix="10" javaDataType="93" nullable="columnNullable"/>
       </feature>
     </ownedElement>
     <ownedElement xsi:type="relational:TdTable" xmi:id="_fnKtsGNtEeiZyZVXvj0ZpQ" name="DIMWELL" id="_fnJfkGNtEeiZyZVXvj0ZpQ" label="DIMWELL" tableType="TABLE">
