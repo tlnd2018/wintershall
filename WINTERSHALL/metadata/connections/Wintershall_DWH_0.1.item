@@ -314,7 +314,7 @@
         <sqlDataType xmi:id="_BooRtWNSEeiZyZVXvj0ZpQ" name="DATE" numericPrecisionRadix="10" javaDataType="93" nullable="columnNullable"/>
       </feature>
     </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_BtHJAWNSEeiZyZVXvj0ZpQ" name="DIMLWELLTYPE" id="_BtHJAGNSEeiZyZVXvj0ZpQ" label="DIMLWELLTYPE" tableType="TABLE">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BtHJAWNSEeiZyZVXvj0ZpQ" name="DIMLWELLTYPE" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_BtHJAGNSEeiZyZVXvj0ZpQ" label="DIMLWELLTYPE" tableType="TABLE">
       <feature xsi:type="relational:TdColumn" xmi:id="_BtHJAmNSEeiZyZVXvj0ZpQ" name="WELLTYPEKEY" label="WELLTYPEKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
         <taggedValue xmi:id="_BtHJA2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_BtHJBGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
