@@ -191,7 +191,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIterateToFlow_1" show="false"/>
     <elementParameter field="TABLE" name="MAPPING">
       <elementValue elementRef="SCHEMA_COLUMN" value="FileName"/>
-      <elementValue elementRef="VALUE" value="globalMap.get(&quot;CURRENT_FILE&quot;)"/>
+      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;CURRENT_FILE&quot;)"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tIterateToFlow_1">
