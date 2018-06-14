@@ -19,7 +19,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Q-k4z3AHEeitjbhIJxWGEA" label="DESCRIPTION" length="43" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Q-k40HAHEeitjbhIJxWGEA" label="RECORD_STATUS" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Q-k40XAHEeitjbhIJxWGEA" label="CREATED_BY" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Q-k40nAHEeitjbhIJxWGEA" label="CREATED_DATE" length="27" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Q-k40nAHEeitjbhIJxWGEA" label="CREATED_DATE" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Q-k403AHEeitjbhIJxWGEA" label="LAST_UPDATED_BY" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Q-k41HAHEeitjbhIJxWGEA" label="LAST_UPDATED_DATE" length="27" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Q-k41XAHEeitjbhIJxWGEA" label="REV_NO" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
