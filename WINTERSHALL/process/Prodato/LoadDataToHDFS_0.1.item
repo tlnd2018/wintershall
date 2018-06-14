@@ -168,7 +168,7 @@
     <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;C:/Users/Held/Desktop/Wintershall_flatfiles_14062018&quot;"/>
     <elementParameter field="DIRECTORY_HADOOP" name="REMOTEDIR" value="&quot;/user/hadoop/wintershall&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="OVERWRITE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="OVERWRITE" value="true"/>
     <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
     <elementParameter field="TABLE" name="FILES">
       <elementValue elementRef="FILEMASK" value="&quot;*&quot;"/>
