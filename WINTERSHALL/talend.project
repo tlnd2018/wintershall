@@ -146,7 +146,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_-MP3QG-7EeitjbhIJxWGEA">
       <baseItem xmi:id="_-MP3QW-7EeitjbhIJxWGEA" id="_NTFI8G-7EeitjbhIJxWGEA" version="0.1" type="job"/>
-      <relatedItems xmi:id="_-MP3Qm-7EeitjbhIJxWGEA" id="_Vxf4oGM3EeiBzI1jcbkg2A" version="Latest" type="property"/>
       <relatedItems xmi:id="_-MP3Q2-7EeitjbhIJxWGEA" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-MP3RG-7EeitjbhIJxWGEA" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-MP3RW-7EeitjbhIJxWGEA" id="TalendString" version="Latest" type="routine"/>
