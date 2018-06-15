@@ -17,6 +17,12 @@
       <root xmi:id="_oFajInCkEeictIH84sqbsQ" XMLPath="/wslosses/lossname" RelatedColumn="lossname" Attribute="main" Order="4" Type="id_String"/>
       <loop xmi:id="_oFajI3CkEeictIH84sqbsQ" XMLPath="/wslosses/lossid" RelatedColumn="lossid" Attribute="main" Order="2" Type="id_String"/>
     </schemas>
+    <schemas xmi:id="_pHENYHCkEeictIH84sqbsQ" label="wsgloballosssubcatOut" LoopLimit="50" conceptType="OUTPUT">
+      <root xmi:id="_rSx3AHCkEeictIH84sqbsQ" XMLPath="/wsgloballosssubcat" RelatedColumn="" Attribute="main" Order="1" Type="id_String"/>
+      <root xmi:id="_rSx3AXCkEeictIH84sqbsQ" XMLPath="/wsgloballosssubcat/subcatname" RelatedColumn="subcatname" Attribute="main" Order="3" Type="id_String"/>
+      <root xmi:id="_rSx3AnCkEeictIH84sqbsQ" XMLPath="/wsgloballosssubcat/globallossid" RelatedColumn="globallossid" Attribute="main" Order="4" Type="id_String"/>
+      <loop xmi:id="_rSx3A3CkEeictIH84sqbsQ" XMLPath="/wsgloballosssubcat/glsubid" RelatedColumn="glsubid" Attribute="main" Order="2" Type="id_String"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_cUItcHCkEeictIH84sqbsQ" name="wintershall" dataManager="_n9HI4GQFEeikp-EoIBCmkw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cUItcXCkEeictIH84sqbsQ" id="_bQkXoHCkEeictIH84sqbsQ" label="wsaereaOut">
@@ -31,6 +37,11 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oWV7EXCkEeictIH84sqbsQ" label="lossid" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oWV7EnCkEeictIH84sqbsQ" label="belongsto" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oWV7E3CkEeictIH84sqbsQ" label="lossname" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_rs61UHCkEeictIH84sqbsQ" id="_rStlkHCkEeictIH84sqbsQ" label="wsgloballosssubcatOut">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rs61UXCkEeictIH84sqbsQ" label="glsubid" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rs61UnCkEeictIH84sqbsQ" label="subcatname" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rs61U3CkEeictIH84sqbsQ" label="globallossid" talendType="id_String"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
