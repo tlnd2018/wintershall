@@ -49,6 +49,11 @@
       <root xmi:id="_TPeZl3ClEeictIH84sqbsQ" XMLPath="/wsfield/mppsystem2" RelatedColumn="mppsystem2" Attribute="main" Order="9" Type="id_BigDecimal"/>
       <loop xmi:id="_TPeZmHClEeictIH84sqbsQ" XMLPath="/wsfield/ufid" RelatedColumn="ufid" Attribute="main" Order="2" Type="id_String"/>
     </schemas>
+    <schemas xmi:id="_UR440HClEeictIH84sqbsQ" label="wsclusterOut" LoopLimit="50" conceptType="OUTPUT">
+      <root xmi:id="_WWE-IHClEeictIH84sqbsQ" XMLPath="/wscluster" RelatedColumn="" Attribute="main" Order="1" Type="id_String"/>
+      <root xmi:id="_WWE-IXClEeictIH84sqbsQ" XMLPath="/wscluster/clustername" RelatedColumn="clustername" Attribute="main" Order="3" Type="id_String"/>
+      <loop xmi:id="_WWE-InClEeictIH84sqbsQ" XMLPath="/wscluster/ucid" RelatedColumn="ucid" Attribute="main" Order="2" Type="id_String"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_cUItcHCkEeictIH84sqbsQ" name="wintershall" dataManager="_n9HI4GQFEeikp-EoIBCmkw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cUItcXCkEeictIH84sqbsQ" id="_bQkXoHCkEeictIH84sqbsQ" label="wsaereaOut">
@@ -91,6 +96,10 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TdzJdnClEeictIH84sqbsQ" label="mppchoke4" talendType="id_BigDecimal"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TdzJd3ClEeictIH84sqbsQ" label="mppsystem1" talendType="id_BigDecimal"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TdzJeHClEeictIH84sqbsQ" label="mppsystem2" talendType="id_BigDecimal"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Wg-mkHClEeictIH84sqbsQ" id="_WWBTwHClEeictIH84sqbsQ" label="wsclusterOut">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Wg-mkXClEeictIH84sqbsQ" label="ucid" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Wg-mknClEeictIH84sqbsQ" label="clustername" talendType="id_String"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
