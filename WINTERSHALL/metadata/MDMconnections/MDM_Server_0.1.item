@@ -38,6 +38,17 @@
       <root xmi:id="_QHhKJXClEeictIH84sqbsQ" XMLPath="/wswell/opcocode" RelatedColumn="opcocode" Attribute="main" Order="7" Type="id_String"/>
       <loop xmi:id="_QHhKJnClEeictIH84sqbsQ" XMLPath="/wswell/uwid" RelatedColumn="uwid" Attribute="main" Order="2" Type="id_String"/>
     </schemas>
+    <schemas xmi:id="_RV_vcHClEeictIH84sqbsQ" label="wsfieldOut" LoopLimit="50" conceptType="OUTPUT">
+      <root xmi:id="_TPeZkHClEeictIH84sqbsQ" XMLPath="/wsfield" RelatedColumn="" Attribute="main" Order="1" Type="id_String"/>
+      <root xmi:id="_TPeZkXClEeictIH84sqbsQ" XMLPath="/wsfield/fieldname" RelatedColumn="fieldname" Attribute="main" Order="3" Type="id_String"/>
+      <root xmi:id="_TPeZknClEeictIH84sqbsQ" XMLPath="/wsfield/mppchoke1" RelatedColumn="mppchoke1" Attribute="main" Order="4" Type="id_BigDecimal"/>
+      <root xmi:id="_TPeZk3ClEeictIH84sqbsQ" XMLPath="/wsfield/mppchoke2" RelatedColumn="mppchoke2" Attribute="main" Order="5" Type="id_BigDecimal"/>
+      <root xmi:id="_TPeZlHClEeictIH84sqbsQ" XMLPath="/wsfield/mppchoke3" RelatedColumn="mppchoke3" Attribute="main" Order="6" Type="id_BigDecimal"/>
+      <root xmi:id="_TPeZlXClEeictIH84sqbsQ" XMLPath="/wsfield/mppchoke4" RelatedColumn="mppchoke4" Attribute="main" Order="7" Type="id_BigDecimal"/>
+      <root xmi:id="_TPeZlnClEeictIH84sqbsQ" XMLPath="/wsfield/mppsystem1" RelatedColumn="mppsystem1" Attribute="main" Order="8" Type="id_BigDecimal"/>
+      <root xmi:id="_TPeZl3ClEeictIH84sqbsQ" XMLPath="/wsfield/mppsystem2" RelatedColumn="mppsystem2" Attribute="main" Order="9" Type="id_BigDecimal"/>
+      <loop xmi:id="_TPeZmHClEeictIH84sqbsQ" XMLPath="/wsfield/ufid" RelatedColumn="ufid" Attribute="main" Order="2" Type="id_String"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_cUItcHCkEeictIH84sqbsQ" name="wintershall" dataManager="_n9HI4GQFEeikp-EoIBCmkw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cUItcXCkEeictIH84sqbsQ" id="_bQkXoHCkEeictIH84sqbsQ" label="wsaereaOut">
@@ -70,6 +81,16 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QansVHClEeictIH84sqbsQ" label="fieldcode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QansVXClEeictIH84sqbsQ" label="clustercode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QansVnClEeictIH84sqbsQ" label="opcocode" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_TdzJcHClEeictIH84sqbsQ" id="_TPZhEHClEeictIH84sqbsQ" label="wsfieldOut">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TdzJcXClEeictIH84sqbsQ" label="ufid" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TdzJcnClEeictIH84sqbsQ" label="fieldname" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TdzJc3ClEeictIH84sqbsQ" label="mppchoke1" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TdzJdHClEeictIH84sqbsQ" label="mppchoke2" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TdzJdXClEeictIH84sqbsQ" label="mppchoke3" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TdzJdnClEeictIH84sqbsQ" label="mppchoke4" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TdzJd3ClEeictIH84sqbsQ" label="mppsystem1" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TdzJeHClEeictIH84sqbsQ" label="mppsystem2" talendType="id_BigDecimal"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
