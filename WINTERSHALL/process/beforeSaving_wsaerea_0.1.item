@@ -238,7 +238,7 @@
     <elementParameter field="TABLE" name="OPERATIONS">
       <elementValue elementRef="XPATH" value="&quot;uaid&quot;"/>
       <elementValue elementRef="FUNCTION" value="NOT_EQUALS"/>
-      <elementValue elementRef="VALUE" value="tSetGlobalV((String)globalMap.get(&quot;area_uaid&quot;))"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;area_uaid&quot;))"/>
       <elementValue elementRef="PREDICATE" value="NONE"/>
     </elementParameter>
     <elementParameter field="TEXT" name="SKIP" value="0"/>
