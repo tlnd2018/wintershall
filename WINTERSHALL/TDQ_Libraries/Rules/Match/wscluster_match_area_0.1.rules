@@ -12,6 +12,6 @@
     </matchKeys>
   </matchRules>
   <survivorshipKeys xmi:id="_3PvLYHSNEei7XcXr-OiXow" name="Areaname" allowManualResolution="true">
-    <function xmi:id="_3PvLYXSNEei7XcXr-OiXow" algorithmType="Concatenate" algorithmParameters=","/>
+    <function xmi:id="_3PvLYXSNEei7XcXr-OiXow" algorithmType="MostRecent" algorithmParameters=""/>
   </survivorshipKeys>
 </dataquality.rules:MatchRuleDefinition>
