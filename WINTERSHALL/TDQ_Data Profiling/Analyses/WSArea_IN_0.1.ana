@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_PT0E4HSNEei7XcXr-OiXow" name="WSArea_IN" creationDate="2018-06-20T15:24:19.095+0200">
+  <taggedValue xmi:id="_PT0E4XSNEei7XcXr-OiXow" tag="PREVIEW_ROW_NUMBER" value="10000"/>
+  <taggedValue xmi:id="_PT0E4nSNEei7XcXr-OiXow" tag="Status" value="development"/>
+  <taggedValue xmi:id="_PT0E43SNEei7XcXr-OiXow" tag="Author" value="johannes.held@prodato.de"/>
+  <taggedValue xmi:id="_PT0E5HSNEei7XcXr-OiXow" tag="Purpose" value="Find duplicates of AREA"/>
+  <taggedValue xmi:id="_PT0E5XSNEei7XcXr-OiXow" tag="Description"/>
+  <taggedValue xmi:id="_PT0E5nSNEei7XcXr-OiXow" tag="Version" value="0.1"/>
+  <context xmi:id="_PT0E53SNEei7XcXr-OiXow"/>
+  <results xmi:id="_PT0E6HSNEei7XcXr-OiXow">
+    <resultMetadata xmi:id="_PT0E6XSNEei7XcXr-OiXow"/>
+    <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_PT0E6nSNEei7XcXr-OiXow"/>
+    <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_PT0E63SNEei7XcXr-OiXow">
+      <builtInMatchRuleDefinition xmi:id="_PT0E7HSNEei7XcXr-OiXow"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_PT0E7XSNEei7XcXr-OiXow" analysisType="Match Analysis"/>
+</dataquality.analysis:Analysis>
