@@ -1,13 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_2urw8HSGEei7XcXr-OiXow" name="Test" creationDate="2018-06-20T14:38:37.272+0200">
-  <taggedValue xmi:id="_2urw8XSGEei7XcXr-OiXow" tag="Status" value="development"/>
-  <taggedValue xmi:id="_2urw8nSGEei7XcXr-OiXow" tag="Author" value="johannes.held@prodato.de"/>
-  <taggedValue xmi:id="_2urw83SGEei7XcXr-OiXow" tag="Purpose"/>
-  <taggedValue xmi:id="_2urw9HSGEei7XcXr-OiXow" tag="Description"/>
-  <taggedValue xmi:id="_2urw9XSGEei7XcXr-OiXow" tag="Version" value="0.1"/>
-  <context xmi:id="_2urw9nSGEei7XcXr-OiXow"/>
-  <results xmi:id="_2urw93SGEei7XcXr-OiXow">
-    <resultMetadata xmi:id="_2urw-HSGEei7XcXr-OiXow"/>
-  </results>
-  <parameters xmi:id="_2urw-XSGEei7XcXr-OiXow" analysisType="Multiple Column Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_2urw8HSGEei7XcXr-OiXow" name="Test" creationDate="2018-06-20T14:38:37.272+0200" defaultContext="Default">
+    <clientDependency href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#_-a_VUHSGEei7XcXr-OiXow"/>
+    <taggedValue xmi:id="_2urw8XSGEei7XcXr-OiXow" tag="Status" value="development"/>
+    <taggedValue xmi:id="_2urw8nSGEei7XcXr-OiXow" tag="Author" value="johannes.held@prodato.de"/>
+    <taggedValue xmi:id="_2urw83SGEei7XcXr-OiXow" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_2urw9HSGEei7XcXr-OiXow" tag="Description" value=""/>
+    <taggedValue xmi:id="_2urw9XSGEei7XcXr-OiXow" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_-a8SAHSGEei7XcXr-OiXow" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_-a8SAXSGEei7XcXr-OiXow" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_-a85EHSGEei7XcXr-OiXow" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_-bIfQHSGEei7XcXr-OiXow" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_2urw9nSGEei7XcXr-OiXow">
+      <connection href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex8HR1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex83R1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex9HR1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex9XR1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex9nR1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex93R1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex-HR1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex-XR1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex-nR1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex-3R1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex_HR1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex_XR1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex_nR1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex_3R1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__NeyAHR1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__NeyAXR1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__NeyAnR1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__NeyA3R1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__NeyBHR1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__NeyBXR1Eei7XcXr-OiXow"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__NeyBnR1Eei7XcXr-OiXow"/>
+    </context>
+    <results xmi:id="_2urw93SGEei7XcXr-OiXow">
+      <resultMetadata xmi:id="_2urw-HSGEei7XcXr-OiXow"/>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_PomQ0HSHEei7XcXr-OiXow">
+        <parameters xmi:id="_PomQ0XSHEei7XcXr-OiXow"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex-3R1Eei7XcXr-OiXow"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MinLengthIndicator" xmi:id="_Pom34HSHEei7XcXr-OiXow">
+        <parameters xmi:id="_Pom34XSHEei7XcXr-OiXow">
+          <textParameter xmi:id="_Pom34nSHEei7XcXr-OiXow" useBlank="false"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex_3R1Eei7XcXr-OiXow"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_0.1.definition#_ccHq1BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:AvgLengthWithBlankNullIndicator" xmi:id="_Pom343SHEei7XcXr-OiXow">
+        <parameters xmi:id="_Pom35HSHEei7XcXr-OiXow">
+          <textParameter xmi:id="_Pom35XSHEei7XcXr-OiXow" useNulls="true"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex_3R1Eei7XcXr-OiXow"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_and_Null_0.1.definition#__TbUIJSOEd-TE5ti6XNR2Q"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SoundexFreqIndicator" xmi:id="_Pom35nSHEei7XcXr-OiXow">
+        <parameters xmi:id="_Pom353SHEei7XcXr-OiXow"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_0.1.item#__Nex_3R1Eei7XcXr-OiXow"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Frequency_Table_0.1.definition#_VGep4Pa7Ed24-N3PsP_o-w"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_2urw-XSGEei7XcXr-OiXow" dataFilter="_-bKUcHSGEei7XcXr-OiXow" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
+    <contextType xmi:id="_-a7q8HSGEei7XcXr-OiXow" confirmationNeeded="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_-bKUcHSGEei7XcXr-OiXow" name="Test">
+    <ranges xmi:id="_-bK7gHSGEei7XcXr-OiXow">
+      <expressions xmi:id="_-bLikHSGEei7XcXr-OiXow">
+        <expression xsi:type="relational:TdExpression" xmi:id="_-bLikXSGEei7XcXr-OiXow" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
