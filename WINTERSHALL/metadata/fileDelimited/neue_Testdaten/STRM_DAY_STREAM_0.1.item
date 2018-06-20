@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_ynapUHR1Eei7XcXr-OiXow" name="STRM_DAY_STREAM" dataPackage="_ynapUXR1Eei7XcXr-OiXow" Server="Localhost 127.0.0.1" FilePath="C:/Users/Held/Desktop/wintershall_test/STRM_DAY_STREAM" Encoding="windows-1252" FieldSeparatorValue="&quot;|&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" RemoveEmptyRow="true" EscapeType="CSV" TextEnclosure="&quot;'&quot;" CsvOption="true" FieldSeparatorType="Custom ANSI"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_ynapUXR1Eei7XcXr-OiXow" name="default" dataManager="_ynapUHR1Eei7XcXr-OiXow">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ynapUnR1Eei7XcXr-OiXow" id="_my0Z4HR1Eei7XcXr-OiXow" label="STRM_DAY_STREAM">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapU3R1Eei7XcXr-OiXow" label="OBJECT_ID" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapVHR1Eei7XcXr-OiXow" label="DAYTIME" length="27" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapVXR1Eei7XcXr-OiXow" label="ON_STREAM_HRS" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapVnR1Eei7XcXr-OiXow" label="GRS_MASS" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapV3R1Eei7XcXr-OiXow" label="GRS_VOL" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapWHR1Eei7XcXr-OiXow" label="GRS_VOL_M3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapWXR1Eei7XcXr-OiXow" label="NET_MASS" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapWnR1Eei7XcXr-OiXow" label="NET_VOL" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapW3R1Eei7XcXr-OiXow" label="NET_VOL_M3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapXHR1Eei7XcXr-OiXow" label="WATER_MASS" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapXXR1Eei7XcXr-OiXow" label="WATER_VOL" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapXnR1Eei7XcXr-OiXow" label="WATER_VOL_M3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapX3R1Eei7XcXr-OiXow" label="AVG_TEMP" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapYHR1Eei7XcXr-OiXow" label="AVG_PRESS" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapYXR1Eei7XcXr-OiXow" label="MIN_PRESS" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapYnR1Eei7XcXr-OiXow" label="AVG_PL_PRESS" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapY3R1Eei7XcXr-OiXow" label="DENSITY" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapZHR1Eei7XcXr-OiXow" label="DENSITY_KGM3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapZXR1Eei7XcXr-OiXow" label="AVG_DIFF_PRESS" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapZnR1Eei7XcXr-OiXow" label="RUN_SIZE" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapZ3R1Eei7XcXr-OiXow" label="ENERGY" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapaHR1Eei7XcXr-OiXow" label="ENERGY_2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapaXR1Eei7XcXr-OiXow" label="ENERGY_CONTENT" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapanR1Eei7XcXr-OiXow" label="API" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapa3R1Eei7XcXr-OiXow" label="CORR_API" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapbHR1Eei7XcXr-OiXow" label="BS_W" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapbXR1Eei7XcXr-OiXow" label="BS_W_WT" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapbnR1Eei7XcXr-OiXow" label="WATER_WT" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapb3R1Eei7XcXr-OiXow" label="H2S" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapcHR1Eei7XcXr-OiXow" label="H2S_2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapcXR1Eei7XcXr-OiXow" label="CO2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapcnR1Eei7XcXr-OiXow" label="SALT" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapc3R1Eei7XcXr-OiXow" label="SALT_MASS" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapdHR1Eei7XcXr-OiXow" label="RVP" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapdXR1Eei7XcXr-OiXow" label="TVP" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapdnR1Eei7XcXr-OiXow" label="WDP" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapd3R1Eei7XcXr-OiXow" label="GCV" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapeHR1Eei7XcXr-OiXow" label="TOTALIZER" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapeXR1Eei7XcXr-OiXow" label="SP_GRAV" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapenR1Eei7XcXr-OiXow" label="BOTTOM_STRIP_TEMP" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynape3R1Eei7XcXr-OiXow" label="K_FACTOR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapfHR1Eei7XcXr-OiXow" label="ORIFICE_SIZE" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapfXR1Eei7XcXr-OiXow" label="AVG_RATE_HR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapfnR1Eei7XcXr-OiXow" label="STEAM_QUALITY" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapf3R1Eei7XcXr-OiXow" label="POWER_CONSUMPTION" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapgHR1Eei7XcXr-OiXow" label="EGM_IND" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapgXR1Eei7XcXr-OiXow" label="TOTALIZER_RESET_IND" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapgnR1Eei7XcXr-OiXow" label="MEAS_GRS_MASS" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapg3R1Eei7XcXr-OiXow" label="METER_PROVED_IND" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynaphHR1Eei7XcXr-OiXow" label="SALT_WT" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynaphXR1Eei7XcXr-OiXow" label="THEOR_GRS_MASS" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynaphnR1Eei7XcXr-OiXow" label="METER_FACTOR_OVERRIDE" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynaph3R1Eei7XcXr-OiXow" label="PRESS_FACTOR_OVERRIDE" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapiHR1Eei7XcXr-OiXow" label="SHRINKAGE_FACTOR_OVERRIDE" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapiXR1Eei7XcXr-OiXow" label="OIL_SG" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapinR1Eei7XcXr-OiXow" label="SUSPENDED_SOLIDS" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapi3R1Eei7XcXr-OiXow" label="TEMPERATURE" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapjHR1Eei7XcXr-OiXow" label="TOTALIZER_MASS" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapjXR1Eei7XcXr-OiXow" label="TOTALIZER_MASS_OVERRIDE" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapjnR1Eei7XcXr-OiXow" label="TOTALIZER_VOL_OVERRIDE" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapj3R1Eei7XcXr-OiXow" label="TOTALIZER_ENERGY" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapkHR1Eei7XcXr-OiXow" label="TOTALIZER_ENERGY_OVERRIDE" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapkXR1Eei7XcXr-OiXow" label="NO_RELEASE_TODAY" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapknR1Eei7XcXr-OiXow" label="SOURCE" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapk3R1Eei7XcXr-OiXow" label="COMMENTS" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynaplHR1Eei7XcXr-OiXow" label="VALUE_1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynaplXR1Eei7XcXr-OiXow" label="VALUE_2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynaplnR1Eei7XcXr-OiXow" label="VALUE_3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapl3R1Eei7XcXr-OiXow" label="VALUE_4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapmHR1Eei7XcXr-OiXow" label="VALUE_5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapmXR1Eei7XcXr-OiXow" label="VALUE_6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapmnR1Eei7XcXr-OiXow" label="VALUE_7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapm3R1Eei7XcXr-OiXow" label="VALUE_8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapnHR1Eei7XcXr-OiXow" label="VALUE_9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapnXR1Eei7XcXr-OiXow" label="VALUE_10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapnnR1Eei7XcXr-OiXow" label="VALUE_11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapn3R1Eei7XcXr-OiXow" label="VALUE_12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapoHR1Eei7XcXr-OiXow" label="VALUE_13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapoXR1Eei7XcXr-OiXow" label="VALUE_14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynaponR1Eei7XcXr-OiXow" label="VALUE_15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapo3R1Eei7XcXr-OiXow" label="VALUE_16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynappHR1Eei7XcXr-OiXow" label="VALUE_17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynappXR1Eei7XcXr-OiXow" label="VALUE_18" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynappnR1Eei7XcXr-OiXow" label="VALUE_19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapp3R1Eei7XcXr-OiXow" label="VALUE_20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapqHR1Eei7XcXr-OiXow" label="VALUE_21" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapqXR1Eei7XcXr-OiXow" label="VALUE_22" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapqnR1Eei7XcXr-OiXow" label="VALUE_23" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapq3R1Eei7XcXr-OiXow" label="VALUE_24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynaprHR1Eei7XcXr-OiXow" label="VALUE_25" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynaprXR1Eei7XcXr-OiXow" label="VALUE_26" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynaprnR1Eei7XcXr-OiXow" label="VALUE_27" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapr3R1Eei7XcXr-OiXow" label="VALUE_28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapsHR1Eei7XcXr-OiXow" label="VALUE_29" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapsXR1Eei7XcXr-OiXow" label="VALUE_30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapsnR1Eei7XcXr-OiXow" label="TEXT_1" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynaps3R1Eei7XcXr-OiXow" label="TEXT_2" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynaptHR1Eei7XcXr-OiXow" label="TEXT_3" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynaptXR1Eei7XcXr-OiXow" label="TEXT_4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynaptnR1Eei7XcXr-OiXow" label="RECORD_STATUS" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapt3R1Eei7XcXr-OiXow" label="CREATED_BY" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapuHR1Eei7XcXr-OiXow" label="CREATED_DATE" length="27" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapuXR1Eei7XcXr-OiXow" label="LAST_UPDATED_BY" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapunR1Eei7XcXr-OiXow" label="LAST_UPDATED_DATE" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapu3R1Eei7XcXr-OiXow" label="REV_NO" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapvHR1Eei7XcXr-OiXow" label="REV_TEXT" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapvXR1Eei7XcXr-OiXow" label="APPROVAL_BY" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapvnR1Eei7XcXr-OiXow" label="APPROVAL_DATE" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapv3R1Eei7XcXr-OiXow" label="APPROVAL_STATE" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapwHR1Eei7XcXr-OiXow" label="REC_ID" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ynapwXR1Eei7XcXr-OiXow" label="DILUENT_CUT" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
