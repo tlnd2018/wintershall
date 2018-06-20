@@ -1,18 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_XpEuYHSHEei7XcXr-OiXow" name="MatchTest" creationDate="2018-06-20T14:42:18.192+0200">
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_XpEuYHSHEei7XcXr-OiXow" name="MatchTest" creationDate="2018-06-20T14:42:18.192+0200" defaultContext="Default">
+  <clientDependency href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_YI5d8nSHEei7XcXr-OiXow"/>
   <taggedValue xmi:id="_XpEuYXSHEei7XcXr-OiXow" tag="PREVIEW_ROW_NUMBER" value="10000"/>
   <taggedValue xmi:id="_XpEuYnSHEei7XcXr-OiXow" tag="Status" value="development"/>
   <taggedValue xmi:id="_XpEuY3SHEei7XcXr-OiXow" tag="Author" value="johannes.held@prodato.de"/>
-  <taggedValue xmi:id="_XpEuZHSHEei7XcXr-OiXow" tag="Purpose"/>
-  <taggedValue xmi:id="_XpEuZXSHEei7XcXr-OiXow" tag="Description"/>
+  <taggedValue xmi:id="_XpEuZHSHEei7XcXr-OiXow" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_XpEuZXSHEei7XcXr-OiXow" tag="Description" value=""/>
   <taggedValue xmi:id="_XpEuZnSHEei7XcXr-OiXow" tag="Version" value="0.1"/>
-  <context xmi:id="_XpEuZ3SHEei7XcXr-OiXow"/>
+  <taggedValue xmi:id="_YA7NsHSHEei7XcXr-OiXow" tag="TEMP_DATA_DIR" value=""/>
+  <taggedValue xmi:id="_YA7NsXSHEei7XcXr-OiXow" tag="MAX_BUFFER_SIZE" value="200000"/>
+  <taggedValue xmi:id="_YA7NsnSHEei7XcXr-OiXow" tag="STORE_ON_DISK" value="false"/>
+  <taggedValue xmi:id="_YI5d8XSHEei7XcXr-OiXow" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+  <context xmi:id="_XpEuZ3SHEei7XcXr-OiXow">
+    <connection href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9EXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9FHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9FXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9FnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9F3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9GHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9GXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9GnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9G3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9HHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9HXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9HnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9H3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9IHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9IXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9InR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9I3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9JHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9JXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9JnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9J3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9KHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9KXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9KnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9K3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9LHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9LXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9LnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9L3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9MHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9MXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9MnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9M3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9NHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9NXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9NnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9N3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9OHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9OXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9OnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9O3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9PHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9PXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9PnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9P3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9QHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9QXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9QnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9Q3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9RHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9RXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9RnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9R3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9SHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9SXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9SnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9S3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9THR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9TXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9TnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9T3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9UHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9UXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9UnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9U3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9VHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9VXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9VnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9V3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9WHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9WXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9WnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9W3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9XHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9XXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNB9XnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkIHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkIXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkInR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkI3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkJHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkJXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkJnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkJ3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkKHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkKXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkKnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkK3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkLHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkLXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkLnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkL3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkMHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkMXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkMnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WELL_MASTER_0.1.item#_pNCkM3R2Eei7XcXr-OiXow"/>
+  </context>
   <results xmi:id="_XpEuaHSHEei7XcXr-OiXow">
     <resultMetadata xmi:id="_XpEuaXSHEei7XcXr-OiXow"/>
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_XpEuanSHEei7XcXr-OiXow"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_XpEua3SHEei7XcXr-OiXow">
-      <builtInMatchRuleDefinition xmi:id="_XpEubHSHEei7XcXr-OiXow"/>
+      <builtInMatchRuleDefinition xmi:id="_XpEubHSHEei7XcXr-OiXow">
+        <matchRules xmi:id="_X8Yr8HSHEei7XcXr-OiXow" name="Match Rule 1"/>
+      </builtInMatchRuleDefinition>
     </indicators>
   </results>
   <parameters xmi:id="_XpEubXSHEei7XcXr-OiXow" analysisType="Match Analysis"/>
+  <contextType xmi:id="_YI5d8HSHEei7XcXr-OiXow" confirmationNeeded="false" name="Default"/>
 </dataquality.analysis:Analysis>
