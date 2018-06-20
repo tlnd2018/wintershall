@@ -58,6 +58,10 @@
       <conceptTargets xmi:id="_7h94wHSREei7XcXr-OiXow" targetName="uaid" RelativeLoopExpression="uaid"/>
       <conceptTargets xmi:id="_7h94wXSREei7XcXr-OiXow" targetName="areaname" RelativeLoopExpression="areaname"/>
     </schemas>
+    <schemas xmi:id="_F9KsUHSSEei7XcXr-OiXow" label="wsaereaIn" LoopExpression="/wsaerea" LoopLimit="50">
+      <conceptTargets xmi:id="_JaH7YHSSEei7XcXr-OiXow" targetName="uaid" RelativeLoopExpression="uaid"/>
+      <conceptTargets xmi:id="_JaH7YXSSEei7XcXr-OiXow" targetName="areaname" RelativeLoopExpression="areaname"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_cUItcHCkEeictIH84sqbsQ" name="wintershall" dataManager="_n9HI4GQFEeikp-EoIBCmkw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cUItcXCkEeictIH84sqbsQ" id="_bQkXoHCkEeictIH84sqbsQ" label="wsaereaOut">
@@ -108,6 +112,10 @@
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_9Mx0wHSREei7XcXr-OiXow" id="_9MxNsHSREei7XcXr-OiXow" label="wsaereaReceive">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9Mx0wXSREei7XcXr-OiXow" label="uaid" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9Mx0wnSREei7XcXr-OiXow" label="areaname" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_KESSsHSSEei7XcXr-OiXow" id="_KERroHSSEei7XcXr-OiXow" label="wsaereaIn">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KESSsXSSEei7XcXr-OiXow" label="uaid" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KESSsnSSEei7XcXr-OiXow" label="areaname" talendType="id_String"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
