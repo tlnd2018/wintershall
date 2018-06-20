@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_2urw8HSGEei7XcXr-OiXow" name="Test" creationDate="2018-06-20T14:38:37.272+0200">
+  <taggedValue xmi:id="_2urw8XSGEei7XcXr-OiXow" tag="Status" value="development"/>
+  <taggedValue xmi:id="_2urw8nSGEei7XcXr-OiXow" tag="Author" value="johannes.held@prodato.de"/>
+  <taggedValue xmi:id="_2urw83SGEei7XcXr-OiXow" tag="Purpose"/>
+  <taggedValue xmi:id="_2urw9HSGEei7XcXr-OiXow" tag="Description"/>
+  <taggedValue xmi:id="_2urw9XSGEei7XcXr-OiXow" tag="Version" value="0.1"/>
+  <context xmi:id="_2urw9nSGEei7XcXr-OiXow"/>
+  <results xmi:id="_2urw93SGEei7XcXr-OiXow">
+    <resultMetadata xmi:id="_2urw-HSGEei7XcXr-OiXow"/>
+  </results>
+  <parameters xmi:id="_2urw-XSGEei7XcXr-OiXow" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
