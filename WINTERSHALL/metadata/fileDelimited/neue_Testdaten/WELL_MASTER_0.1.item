@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_pNB9EXR2Eei7XcXr-OiXow" name="WELL_MASTER" dataPackage="_pNB9EnR2Eei7XcXr-OiXow" Server="Localhost 127.0.0.1" FilePath="C:/Users/Held/Desktop/wintershall_test/WELL_MASTER.csv" Encoding="windows-1252" FieldSeparatorValue="&quot;|&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" RemoveEmptyRow="true" EscapeType="CSV" TextEnclosure="&quot;'&quot;" CsvOption="true" FieldSeparatorType="Custom ANSI"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_pNB9EnR2Eei7XcXr-OiXow" name="default" dataManager="_pNB9EXR2Eei7XcXr-OiXow">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_pNB9E3R2Eei7XcXr-OiXow" id="___p1wHR1Eei7XcXr-OiXow" label="WELL_MASTER">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9FHR2Eei7XcXr-OiXow" label="WELL_ID" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9FXR2Eei7XcXr-OiXow" label="WELL_UWI" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9FnR2Eei7XcXr-OiXow" label="WELL_UWI_TYPE" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9F3R2Eei7XcXr-OiXow" label="AUTHORIZATION_NO" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9GHR2Eei7XcXr-OiXow" label="BOREHOLE_NO" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9GXR2Eei7XcXr-OiXow" label="BOREHOLE_TYPE" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9GnR2Eei7XcXr-OiXow" label="BH_LATITUDE" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9G3R2Eei7XcXr-OiXow" label="BH_LONGITUDE" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9HHR2Eei7XcXr-OiXow" label="BH_X_COORDINATE" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9HXR2Eei7XcXr-OiXow" label="BH_Y_COORDINATE" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9HnR2Eei7XcXr-OiXow" label="COMP_DATA_RELEASE_DTE" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9H3R2Eei7XcXr-OiXow" label="CURRENCY" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9IHR2Eei7XcXr-OiXow" label="CURRENT_CLASS" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9IXR2Eei7XcXr-OiXow" label="CURRENT_STATUS" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9InR2Eei7XcXr-OiXow" label="CURRENT_STATUS_DATE" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9I3R2Eei7XcXr-OiXow" label="CURRENT_WELL_LEASE_NAME" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9JHR2Eei7XcXr-OiXow" label="CURRENT_WELL_LEASE_NO" length="33" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9JXR2Eei7XcXr-OiXow" label="DATA_ACQ_COMPANY" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9JnR2Eei7XcXr-OiXow" label="DATA_ACQUISITION_TYPE" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9J3R2Eei7XcXr-OiXow" label="DATA_SOURCE" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9KHR2Eei7XcXr-OiXow" label="DEPTH_DATUM" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9KXR2Eei7XcXr-OiXow" label="DEPTH_DATUM_OUOM" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9KnR2Eei7XcXr-OiXow" label="DEPTH_DATUM_TYPE" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9K3R2Eei7XcXr-OiXow" label="DRILLING_OPERATOR" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9LHR2Eei7XcXr-OiXow" label="FARM_OUT" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9LXR2Eei7XcXr-OiXow" label="FIELD_ID" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9LnR2Eei7XcXr-OiXow" label="FIELD" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9L3R2Eei7XcXr-OiXow" label="FINAL_TD" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9MHR2Eei7XcXr-OiXow" label="FINAL_TD_OUOM" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9MXR2Eei7XcXr-OiXow" label="INITIAL_CLASS" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9MnR2Eei7XcXr-OiXow" label="INITIAL_STATUS" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9M3R2Eei7XcXr-OiXow" label="INTERNAL_DRILLING_COST" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9NHR2Eei7XcXr-OiXow" label="KICK_OFF_DEPTH" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9NXR2Eei7XcXr-OiXow" label="KICK_OFF_DEPTH_OUOM" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9NnR2Eei7XcXr-OiXow" label="ORIG_BH_X_LON" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9N3R2Eei7XcXr-OiXow" label="ORIG_BH_Y_LAT" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9OHR2Eei7XcXr-OiXow" label="ORIG_BH_CRS_ID" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9OXR2Eei7XcXr-OiXow" label="PARENT_WELLPATH_ID" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9OnR2Eei7XcXr-OiXow" label="PARENT_WELLPATH_UWI" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9O3R2Eei7XcXr-OiXow" label="PERMIT_NO" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9PHR2Eei7XcXr-OiXow" label="PERMIT_DTE" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9PXR2Eei7XcXr-OiXow" label="PLOT_NAME" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9PnR2Eei7XcXr-OiXow" label="PLUGBACK_DEPTH" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9P3R2Eei7XcXr-OiXow" label="PLUGBACK_DEPTH_OUOM" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9QHR2Eei7XcXr-OiXow" label="RESTRICTED_DATA_IND" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9QXR2Eei7XcXr-OiXow" label="SECURITY_ON_OFF_FLG" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9QnR2Eei7XcXr-OiXow" label="TOTAL_DRILLING_COST" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9Q3R2Eei7XcXr-OiXow" label="WELL_LOCATION_ID" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9RHR2Eei7XcXr-OiXow" label="WELL_NAME_FREE" length="18" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9RXR2Eei7XcXr-OiXow" label="WELL_SYMBOL_CODE" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9RnR2Eei7XcXr-OiXow" label="WL_BASIN_ID" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9R3R2Eei7XcXr-OiXow" label="WL_COUNTY" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9SHR2Eei7XcXr-OiXow" label="WL_COUNTRY" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9SXR2Eei7XcXr-OiXow" label="WL_CURRENT_OPERATOR" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9SnR2Eei7XcXr-OiXow" label="WL_GOVERN_AREA" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9S3R2Eei7XcXr-OiXow" label="WL_LEASE_ID" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9THR2Eei7XcXr-OiXow" label="WL_ON_OFF_SHORE" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9TXR2Eei7XcXr-OiXow" label="WL_ORIG_X_LON" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9TnR2Eei7XcXr-OiXow" label="WL_ORIG_Y_LAT" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9T3R2Eei7XcXr-OiXow" label="WL_ORIG_CRS_ID" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9UHR2Eei7XcXr-OiXow" label="WL_PLATFORM_CODE" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9UXR2Eei7XcXr-OiXow" label="WL_PLATFORM_SLOT_NO" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9UnR2Eei7XcXr-OiXow" label="WL_STATE" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9U3R2Eei7XcXr-OiXow" label="WL_SURFACE_LATITUDE" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9VHR2Eei7XcXr-OiXow" label="WL_SURFACE_LONGITUDE" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9VXR2Eei7XcXr-OiXow" label="WL_SURFACE_X_COORDINATE" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9VnR2Eei7XcXr-OiXow" label="WL_SURFACE_Y_COORDINATE" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9V3R2Eei7XcXr-OiXow" label="WL_SURVEY_LOC_TYPE" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9WHR2Eei7XcXr-OiXow" label="WL_WELL_GEOM_TYPE" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9WXR2Eei7XcXr-OiXow" label="WL_WELL_LOCATION_NAME" length="18" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9WnR2Eei7XcXr-OiXow" label="WL_WELL_LOCATION_UWI" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9W3R2Eei7XcXr-OiXow" label="WL_WELL_NET_INT" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9XHR2Eei7XcXr-OiXow" label="WL_WELL_NET_INT_OUOM" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9XXR2Eei7XcXr-OiXow" label="REMARK" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNB9XnR2Eei7XcXr-OiXow" label="CREATE_DATE" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkIHR2Eei7XcXr-OiXow" label="CREATE_USER_ID" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkIXR2Eei7XcXr-OiXow" label="UPDATE_USER_ID" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkInR2Eei7XcXr-OiXow" label="UPDATE_DATE" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkI3R2Eei7XcXr-OiXow" label="GGX_OLD_ID" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkJHR2Eei7XcXr-OiXow" label="FM_AT_TD" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkJXR2Eei7XcXr-OiXow" label="GGX_PERCENT_ALLOCATION" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkJnR2Eei7XcXr-OiXow" label="GGX_LOCATION" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkJ3R2Eei7XcXr-OiXow" label="WELL_GEOM_DESC" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkKHR2Eei7XcXr-OiXow" label="USER_DEF1" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkKXR2Eei7XcXr-OiXow" label="USER_DEF2" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkKnR2Eei7XcXr-OiXow" label="ALTERNATE_UWI" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkK3R2Eei7XcXr-OiXow" label="SPUD_DATE" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkLHR2Eei7XcXr-OiXow" label="GROUND_ELEV" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkLXR2Eei7XcXr-OiXow" label="WATER_DEPTH" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkLnR2Eei7XcXr-OiXow" label="WATER_DEPTH_DATUM" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkL3R2Eei7XcXr-OiXow" label="GROUND_ELEV_OUOM" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkMHR2Eei7XcXr-OiXow" label="WATER_DEPTH_OUOM" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkMXR2Eei7XcXr-OiXow" label="COMPLETION_DATE" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkMnR2Eei7XcXr-OiXow" label="TRAJECTORY_SHAPE" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pNCkM3R2Eei7XcXr-OiXow" label="ROW_LOCK_IND" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
