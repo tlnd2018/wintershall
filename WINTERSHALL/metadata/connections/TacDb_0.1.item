@@ -16,7 +16,7 @@
     <parameters xmi:id="_DgP-wHRiEeiGFvKoMoqlhg" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Schema xmi:id="_9Bl1EGNREeiZyZVXvj0ZpQ" name="WINTERSHALL" dataManager="_CuqJwHRiEeiGFvKoMoqlhg">
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_AkEdUWNSEeiZyZVXvj0ZpQ" name="DIMDATE" id="_AkEdUGNSEeiZyZVXvj0ZpQ" label="DIMDATE" tableType="TABLE">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_AkEdUWNSEeiZyZVXvj0ZpQ" name="DIMDATE" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_AkEdUGNSEeiZyZVXvj0ZpQ" label="DIMDATE" tableType="TABLE">
       <feature xsi:type="relational:TdColumn" xmi:id="_AkEdUmNSEeiZyZVXvj0ZpQ" name="DATEKEY" label="DATEKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
         <taggedValue xmi:id="_AkEdU2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_AkEdVGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
@@ -68,7 +68,7 @@
         <sqlDataType xmi:id="_AkEdeWNSEeiZyZVXvj0ZpQ" name="NUMBER" numericPrecisionRadix="10" javaDataType="3" nullable="columnNullable"/>
       </feature>
     </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_BL8VoWNSEeiZyZVXvj0ZpQ" name="DIMLOSSEVENT" id="_BL8VoGNSEeiZyZVXvj0ZpQ" label="DIMLOSSEVENT" tableType="TABLE">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BL8VoWNSEeiZyZVXvj0ZpQ" name="DIMLOSSEVENT" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_BL8VoGNSEeiZyZVXvj0ZpQ" label="DIMLOSSEVENT" tableType="TABLE">
       <feature xsi:type="relational:TdColumn" xmi:id="_BL8VomNSEeiZyZVXvj0ZpQ" name="LOSSEVENTKEY" label="LOSSEVENTKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
         <taggedValue xmi:id="_BL8Vo2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_BL8VpGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
@@ -95,7 +95,7 @@
         <sqlDataType xmi:id="_BL8VtWNSEeiZyZVXvj0ZpQ" name="DATE" numericPrecisionRadix="10" javaDataType="93" nullable="columnNullable"/>
       </feature>
     </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_BSV4kWNSEeiZyZVXvj0ZpQ" name="DIMLOSSCATEGORY" id="_BSV4kGNSEeiZyZVXvj0ZpQ" label="DIMLOSSCATEGORY" tableType="TABLE">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BSV4kWNSEeiZyZVXvj0ZpQ" name="DIMLOSSCATEGORY" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_BSV4kGNSEeiZyZVXvj0ZpQ" label="DIMLOSSCATEGORY" tableType="TABLE">
       <feature xsi:type="relational:TdColumn" xmi:id="_nDZ1wGNtEeiZyZVXvj0ZpQ" name="LOSSCATKEY" label="LOSSCATKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
         <taggedValue xmi:id="_nDZ1wWNtEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_nDZ1wmNtEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
@@ -132,7 +132,7 @@
         <sqlDataType xmi:id="_BSV4rWNSEeiZyZVXvj0ZpQ" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
       </feature>
     </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_BacEoGNSEeiZyZVXvj0ZpQ" name="DIMFIELD" id="_BaSToGNSEeiZyZVXvj0ZpQ" label="DIMFIELD" tableType="TABLE">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BacEoGNSEeiZyZVXvj0ZpQ" name="DIMFIELD" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_BaSToGNSEeiZyZVXvj0ZpQ" label="DIMFIELD" tableType="TABLE">
       <feature xsi:type="relational:TdColumn" xmi:id="_BacEoWNSEeiZyZVXvj0ZpQ" name="FIELDKEY" label="FIELDKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
         <taggedValue xmi:id="_BacEomNSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_BacEo2NSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
@@ -184,7 +184,7 @@
         <sqlDataType xmi:id="_BacEyGNSEeiZyZVXvj0ZpQ" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
       </feature>
     </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_BooRoWNSEeiZyZVXvj0ZpQ" name="DIMTANK" id="_BooRoGNSEeiZyZVXvj0ZpQ" label="DIMTANK" tableType="TABLE">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BooRoWNSEeiZyZVXvj0ZpQ" name="DIMTANK" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_BooRoGNSEeiZyZVXvj0ZpQ" label="DIMTANK" tableType="TABLE">
       <feature xsi:type="relational:TdColumn" xmi:id="_BooRomNSEeiZyZVXvj0ZpQ" name="TANKKEY" label="TANKKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
         <taggedValue xmi:id="_BooRo2NSEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_BooRpGNSEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
@@ -211,7 +211,7 @@
         <sqlDataType xmi:id="_BooRtWNSEeiZyZVXvj0ZpQ" name="DATE" numericPrecisionRadix="10" javaDataType="93" nullable="columnNullable"/>
       </feature>
     </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_fnKtsGNtEeiZyZVXvj0ZpQ" name="DIMWELL" id="_fnJfkGNtEeiZyZVXvj0ZpQ" label="DIMWELL" tableType="TABLE">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_fnKtsGNtEeiZyZVXvj0ZpQ" name="DIMWELL" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_fnJfkGNtEeiZyZVXvj0ZpQ" label="DIMWELL" tableType="TABLE">
       <feature xsi:type="relational:TdColumn" xmi:id="_fnKtsWNtEeiZyZVXvj0ZpQ" name="WELLKEY" label="WELLKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
         <taggedValue xmi:id="_fnKtsmNtEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_fnKts2NtEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
@@ -253,7 +253,7 @@
         <sqlDataType xmi:id="_fnKt0GNtEeiZyZVXvj0ZpQ" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
       </feature>
     </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_fx9ocGNtEeiZyZVXvj0ZpQ" name="FACTWELL" id="_fx7MMGNtEeiZyZVXvj0ZpQ" label="FACTWELL" tableType="TABLE">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_fx9ocGNtEeiZyZVXvj0ZpQ" name="FACTWELL" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_fx7MMGNtEeiZyZVXvj0ZpQ" label="FACTWELL" tableType="TABLE">
       <feature xsi:type="relational:TdColumn" xmi:id="_fx9ocWNtEeiZyZVXvj0ZpQ" name="WELLKEY" label="WELLKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal">
         <taggedValue xmi:id="_fx9ocmNtEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_fx9oc2NtEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
@@ -315,7 +315,7 @@
         <sqlDataType xmi:id="_fx9ooGNtEeiZyZVXvj0ZpQ" name="NUMBER" numericPrecisionRadix="10" javaDataType="3" nullable="columnNullable"/>
       </feature>
     </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_f4HTwGNtEeiZyZVXvj0ZpQ" name="FACTTANK" id="_f4GFoGNtEeiZyZVXvj0ZpQ" label="FACTTANK" tableType="TABLE">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_f4HTwGNtEeiZyZVXvj0ZpQ" name="FACTTANK" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_f4GFoGNtEeiZyZVXvj0ZpQ" label="FACTTANK" tableType="TABLE">
       <feature xsi:type="relational:TdColumn" xmi:id="_f4HTwWNtEeiZyZVXvj0ZpQ" name="TANKKEY" label="TANKKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal">
         <taggedValue xmi:id="_f4HTwmNtEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_f4HTw2NtEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
@@ -347,7 +347,7 @@
         <sqlDataType xmi:id="_f4HT2GNtEeiZyZVXvj0ZpQ" name="NUMBER" numericPrecisionRadix="10" javaDataType="3" nullable="columnNullable"/>
       </feature>
     </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_f-XswGNtEeiZyZVXvj0ZpQ" name="FACTFIELD" id="_f-V3kGNtEeiZyZVXvj0ZpQ" label="FACTFIELD" tableType="TABLE">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_f-XswGNtEeiZyZVXvj0ZpQ" name="FACTFIELD" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_f-V3kGNtEeiZyZVXvj0ZpQ" label="FACTFIELD" tableType="TABLE">
       <feature xsi:type="relational:TdColumn" xmi:id="_f-XswWNtEeiZyZVXvj0ZpQ" name="FIELDKEY" label="FIELDKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal">
         <taggedValue xmi:id="_f-XswmNtEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_f-Xsw2NtEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
@@ -384,7 +384,7 @@
         <sqlDataType xmi:id="_f-Xs3GNtEeiZyZVXvj0ZpQ" name="NUMBER" numericPrecisionRadix="10" javaDataType="3" nullable="columnNullable"/>
       </feature>
     </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_gDs4sWNtEeiZyZVXvj0ZpQ" name="DIMWELLTYPE" id="_gDs4sGNtEeiZyZVXvj0ZpQ" label="DIMWELLTYPE" tableType="TABLE">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_gDs4sWNtEeiZyZVXvj0ZpQ" name="DIMWELLTYPE" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_gDs4sGNtEeiZyZVXvj0ZpQ" label="DIMWELLTYPE" tableType="TABLE">
       <feature xsi:type="relational:TdColumn" xmi:id="_gDs4smNtEeiZyZVXvj0ZpQ" name="WELLTYPEKEY" label="WELLTYPEKEY" length="10" sourceType="NUMBER" talendType="id_BigDecimal" key="true" nullable="false">
         <taggedValue xmi:id="_gDs4s2NtEeiZyZVXvj0ZpQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_gDs4tGNtEeiZyZVXvj0ZpQ" language="COLUMN_DEF"/>
