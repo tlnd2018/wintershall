@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_CuqJwHRiEeiGFvKoMoqlhg" name="TacDb" id="_yEkG0GNREeiZyZVXvj0ZpQ" label="TacDb" dataPackage="_9Bl1EGNREeiZyZVXvj0ZpQ" DatabaseType="Oracle with SID" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@ec2-35-156-225-164.eu-central-1.compute.amazonaws.com:1521:orcl" dbVersionString="ORACLE_12" Port="1521" Username="wintershall" Password="8HAhX2OI8wkV+vDxsj9BYg==" ServerName="ec2-35-156-225-164.eu-central-1.compute.amazonaws.com" DatasourceName="" FileFieldName="" SID="orcl" SqlSynthax="SQL Syntax" DbmsId="oracle_id" ProductId="ORACLE" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="WINTERSHALL">
+  <TalendMetadata:DatabaseConnection xmi:id="_CuqJwHRiEeiGFvKoMoqlhg" name="TacDb" id="_Ct3fkHRiEeiGFvKoMoqlhg" label="TacDb" dataPackage="_9Bl1EGNREeiZyZVXvj0ZpQ" DatabaseType="Oracle with SID" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@ec2-35-156-225-164.eu-central-1.compute.amazonaws.com:1521:orcl" dbVersionString="ORACLE_12" Port="1521" Username="tac651" Password="rYVG8wPESRw=" ServerName="ec2-35-156-225-164.eu-central-1.compute.amazonaws.com" DatasourceName="" FileFieldName="" SID="orcl" SqlSynthax="SQL Syntax" DbmsId="oracle_id" ProductId="ORACLE" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="WINTERSHALL">
     <taggedValue xmi:id="_86vmMWNREeiZyZVXvj0ZpQ" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_87DIMGNREeiZyZVXvj0ZpQ" tag="package filter" value=""/>
     <taggedValue xmi:id="_87DIMWNREeiZyZVXvj0ZpQ" tag="Status" value=""/>
@@ -12,7 +12,8 @@
     <taggedValue xmi:id="_89xFAGNREeiZyZVXvj0ZpQ" tag="DB ProductName" value="Oracle"/>
     <taggedValue xmi:id="_89xFAWNREeiZyZVXvj0ZpQ" tag="DB ProductVersion" value="Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production"/>
     <taggedValue xmi:id="_89xFAmNREeiZyZVXvj0ZpQ" tag="DB IdentifierQuoteString" value="&quot;"/>
-    <parameters xmi:id="_86vmMmNREeiZyZVXvj0ZpQ" key="CONN_PARA_KEY_USERNAME" value="wintershall"/>
+    <parameters xmi:id="_86vmMmNREeiZyZVXvj0ZpQ" key="CONN_PARA_KEY_USERNAME" value="tac651"/>
+    <parameters xmi:id="_DgP-wHRiEeiGFvKoMoqlhg" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Schema xmi:id="_9Bl1EGNREeiZyZVXvj0ZpQ" name="WINTERSHALL" dataManager="_CuqJwHRiEeiGFvKoMoqlhg">
     <ownedElement xsi:type="relational:TdTable" xmi:id="_AkEdUWNSEeiZyZVXvj0ZpQ" name="DIMDATE" id="_AkEdUGNSEeiZyZVXvj0ZpQ" label="DIMDATE" tableType="TABLE">
