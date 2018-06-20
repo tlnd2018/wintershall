@@ -187,6 +187,9 @@
       <relatedItems xmi:id="_ZDJL9XCmEeictIH84sqbsQ" id="_n9CQYGQFEeikp-EoIBCmkw - wslocallossOut" version="Latest" type="schema"/>
       <relatedItems xmi:id="_BVK8kHSJEei7XcXr-OiXow" id="_eQp5oHR3Eei7XcXr-OiXow" version="Latest" type="property"/>
       <relatedItems xmi:id="_BVK8kXSJEei7XcXr-OiXow" id="_eQp5oHR3Eei7XcXr-OiXow - WIDE_CLUSTER" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_aSqbQHSREei7XcXr-OiXow" id="_n9CQYGQFEeikp-EoIBCmkw - wsfieldOut" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_aSqbQXSREei7XcXr-OiXow" id="_n9CQYGQFEeikp-EoIBCmkw - wsclusterOut" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_aSqbQnSREei7XcXr-OiXow" id="_n9CQYGQFEeikp-EoIBCmkw - wsgloballosssubcatOut" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_1eN-sHRyEei7XcXr-OiXow">
       <baseItem xmi:id="_1eN-sXRyEei7XcXr-OiXow" id="_sbXeIHRyEei7XcXr-OiXow" version="0.1" type="job"/>
