@@ -23,7 +23,11 @@
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_PT0E6nSNEei7XcXr-OiXow"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_PT0E63SNEei7XcXr-OiXow">
       <builtInMatchRuleDefinition xmi:id="_PT0E7HSNEei7XcXr-OiXow">
-        <matchRules xmi:id="_PjuJIHSNEei7XcXr-OiXow" name="Match Rule 1"/>
+        <matchRules xmi:id="_PjuJIHSNEei7XcXr-OiXow" name="Match Rule 1">
+          <matchKeys xmi:id="_TNrSYHSNEei7XcXr-OiXow" name="Areaname" column="Area" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+            <algorithm xmi:id="_TNrSYXSNEei7XcXr-OiXow" algorithmType="EXACT" algorithmParameters=""/>
+          </matchKeys>
+        </matchRules>
       </builtInMatchRuleDefinition>
     </indicators>
   </results>
