@@ -582,4 +582,5 @@
   <TalendProperties:User xmi:id="_XVeegWPUEei6Wf0XTjFIMQ" login="matthias.faerber@prodato.de" firstName="Matthias" lastName="Farber" type="MDM" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_viUJ8WfaEei9w83uccXJUA" login="johannes.held@prodato.de" firstName="Johannes" lastName="Held" type="MDM" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_viUJ8mfaEei9w83uccXJUA" login="michael.daum@prodato.de" firstName="Michael" lastName="Daum" type="MDM" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_hNAZAXRWEeiH-ZJEo3gygQ" login="jclarysse@talend.com" firstName="Julien" lastName="Clarysse" type="MDM" additionnalData="{}"/>
 </xmi:XMI>
