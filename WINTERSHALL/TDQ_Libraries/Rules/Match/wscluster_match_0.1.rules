@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:MatchRuleDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_ijzH0HSNEei7XcXr-OiXow" name="wscluster_match">
+  <taggedValue xmi:id="_ijzH0XSNEei7XcXr-OiXow" tag="Status" value="development"/>
+  <taggedValue xmi:id="_ijzH0nSNEei7XcXr-OiXow" tag="Author" value="johannes.held@prodato.de"/>
+  <taggedValue xmi:id="_ijzH03SNEei7XcXr-OiXow" tag="Purpose"/>
+  <taggedValue xmi:id="_ijzH1HSNEei7XcXr-OiXow" tag="Description"/>
+  <taggedValue xmi:id="_ijzH1XSNEei7XcXr-OiXow" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_ijzH1nSNEei7XcXr-OiXow" tag="Validation_Status" value="true"/>
+  <matchRules xmi:id="_ijzH13SNEei7XcXr-OiXow" name="Match Rule 1">
+    <matchKeys xmi:id="_ijzH2HSNEei7XcXr-OiXow" name="Areaname" column="Area" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+      <algorithm xmi:id="_ijzH2XSNEei7XcXr-OiXow" algorithmType="EXACT" algorithmParameters=""/>
+    </matchKeys>
+  </matchRules>
+</dataquality.rules:MatchRuleDefinition>
