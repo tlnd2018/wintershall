@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_IKtWMXR3Eei7XcXr-OiXow" name="WIDE_AE_Loss_Category_Mapping" dataPackage="_IKtWMnR3Eei7XcXr-OiXow" Server="Localhost 127.0.0.1" FilePath="C:/Users/Held/Desktop/wintershall_test/WIDE_AE_Loss_Category_Mapping.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;|&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" RemoveEmptyRow="true" EscapeType="CSV" TextEnclosure="&quot;'&quot;" CsvOption="true" FieldSeparatorType="Custom ANSI"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_IKtWMnR3Eei7XcXr-OiXow" name="default" dataManager="_IKtWMXR3Eei7XcXr-OiXow">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_IKtWM3R3Eei7XcXr-OiXow" id="_4YuEIHR2Eei7XcXr-OiXow" label="WIDE_AE_Loss_Category_Mapping">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWNHR3Eei7XcXr-OiXow" label="MAIN_Categories_LEVEL_0" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWNXR3Eei7XcXr-OiXow" label="CHOKE_CATEGORIES_LEVEL_1" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWNnR3Eei7XcXr-OiXow" label="SUBCATEGORIES_LEVEL_2" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWN3R3Eei7XcXr-OiXow" label="STANDARD_CATEGORIES_LEVEL_3" length="36" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWOHR3Eei7XcXr-OiXow" label="STANDARD_CATEGORIES_LEVEL_4" length="34" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWOXR3Eei7XcXr-OiXow" label="Spalte1915" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWOnR3Eei7XcXr-OiXow" label="Spalte1916" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWO3R3Eei7XcXr-OiXow" label="Ursache_CODE_1" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWPHR3Eei7XcXr-OiXow" label="Ursache_ALT_CODE1" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWPXR3Eei7XcXr-OiXow" label="Ursache_ALT_CODE2" length="42" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWPnR3Eei7XcXr-OiXow" label="Ursache_CODE2" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWP3R3Eei7XcXr-OiXow" label="Ursache_ALT_CODE_2" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWQHR3Eei7XcXr-OiXow" label="Ursache_ALT_CODE_3" length="41" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWQXR3Eei7XcXr-OiXow" label="Ursache_CODE3" length="21" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWQnR3Eei7XcXr-OiXow" label="Ursache_ALT_CODE3" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWQ3R3Eei7XcXr-OiXow" label="Spalte2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWRHR3Eei7XcXr-OiXow" label="SDOPS__geplant__Bohrungsbehandlung" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWRXR3Eei7XcXr-OiXow" label="SDOPS__geplant__Externe_Ursache" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWRnR3Eei7XcXr-OiXow" label="SDOPS__geplant__Produktionsoptimierung" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWR3R3Eei7XcXr-OiXow" label="SDOPS__geplant__Reinigung" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWSHR3Eei7XcXr-OiXow" label="SDTECH__geplant__Inspektion" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWSXR3Eei7XcXr-OiXow" label="SDTECH__geplant__Instandsetzung" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWSnR3Eei7XcXr-OiXow" label="SDTAR__geplant__Stillstand" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWS3R3Eei7XcXr-OiXow" label="SDPROJ__geplant__Modifizierung__MOC_" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWTHR3Eei7XcXr-OiXow" label="SDPROJ__geplant__Projekt" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWTXR3Eei7XcXr-OiXow" label="Spalte1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWTnR3Eei7XcXr-OiXow" label="ULOPS__ungeplant__Anwenderfehler" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWT3R3Eei7XcXr-OiXow" label="ULOPS__ungeplant__Bohrungsbehandlung" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWUHR3Eei7XcXr-OiXow" label="ULOPS__ungeplant__Externe_Ursache" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWUXR3Eei7XcXr-OiXow" label="ULOPS__ungeplant__Reinigung" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWUnR3Eei7XcXr-OiXow" label="ULTECH__ungeplant__Inspektion" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWU3R3Eei7XcXr-OiXow" label="ULTECH__ungeplant__Instandsetzung" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IKtWVHR3Eei7XcXr-OiXow" label="Spalte1913" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
