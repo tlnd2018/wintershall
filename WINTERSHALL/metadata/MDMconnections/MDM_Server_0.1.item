@@ -54,6 +54,10 @@
       <root xmi:id="_WWE-IXClEeictIH84sqbsQ" XMLPath="/wscluster/clustername" RelatedColumn="clustername" Attribute="main" Order="3" Type="id_String"/>
       <loop xmi:id="_WWE-InClEeictIH84sqbsQ" XMLPath="/wscluster/ucid" RelatedColumn="ucid" Attribute="main" Order="2" Type="id_String"/>
     </schemas>
+    <schemas xmi:id="_4F3lUHSREei7XcXr-OiXow" label="wsaereaReceive" LoopExpression="/wsaerea" LoopLimit="50" conceptType="RECEIVE" xPathPrefix="NONE_ITEM">
+      <conceptTargets xmi:id="_7h94wHSREei7XcXr-OiXow" targetName="uaid" RelativeLoopExpression="uaid"/>
+      <conceptTargets xmi:id="_7h94wXSREei7XcXr-OiXow" targetName="areaname" RelativeLoopExpression="areaname"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_cUItcHCkEeictIH84sqbsQ" name="wintershall" dataManager="_n9HI4GQFEeikp-EoIBCmkw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cUItcXCkEeictIH84sqbsQ" id="_bQkXoHCkEeictIH84sqbsQ" label="wsaereaOut">
@@ -100,6 +104,10 @@
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Wg-mkHClEeictIH84sqbsQ" id="_WWBTwHClEeictIH84sqbsQ" label="wsclusterOut">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Wg-mkXClEeictIH84sqbsQ" label="ucid" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Wg-mknClEeictIH84sqbsQ" label="clustername" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_9Mx0wHSREei7XcXr-OiXow" id="_9MxNsHSREei7XcXr-OiXow" label="wsaereaReceive">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9Mx0wXSREei7XcXr-OiXow" label="uaid" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_9Mx0wnSREei7XcXr-OiXow" label="areaname" talendType="id_String"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
