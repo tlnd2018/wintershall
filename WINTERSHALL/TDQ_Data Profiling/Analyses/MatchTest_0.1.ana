@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_XpEuYHSHEei7XcXr-OiXow" name="MatchTest" creationDate="2018-06-20T14:42:18.192+0200">
+  <taggedValue xmi:id="_XpEuYXSHEei7XcXr-OiXow" tag="PREVIEW_ROW_NUMBER" value="10000"/>
+  <taggedValue xmi:id="_XpEuYnSHEei7XcXr-OiXow" tag="Status" value="development"/>
+  <taggedValue xmi:id="_XpEuY3SHEei7XcXr-OiXow" tag="Author" value="johannes.held@prodato.de"/>
+  <taggedValue xmi:id="_XpEuZHSHEei7XcXr-OiXow" tag="Purpose"/>
+  <taggedValue xmi:id="_XpEuZXSHEei7XcXr-OiXow" tag="Description"/>
+  <taggedValue xmi:id="_XpEuZnSHEei7XcXr-OiXow" tag="Version" value="0.1"/>
+  <context xmi:id="_XpEuZ3SHEei7XcXr-OiXow"/>
+  <results xmi:id="_XpEuaHSHEei7XcXr-OiXow">
+    <resultMetadata xmi:id="_XpEuaXSHEei7XcXr-OiXow"/>
+    <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_XpEuanSHEei7XcXr-OiXow"/>
+    <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_XpEua3SHEei7XcXr-OiXow">
+      <builtInMatchRuleDefinition xmi:id="_XpEubHSHEei7XcXr-OiXow"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_XpEubXSHEei7XcXr-OiXow" analysisType="Match Analysis"/>
+</dataquality.analysis:Analysis>
