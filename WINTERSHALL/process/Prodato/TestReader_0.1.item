@@ -502,10 +502,10 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="EQPM_EVENT" name="tFileInputDelimited_1">
       <column comment="" key="false" length="32" name="OBJECT_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="27" name="DAYTIME" nullable="true" pattern="&quot;yyyy.MM.dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="27" name="DAYTIME" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="EQPM_TYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="COMMENTS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="27" name="EVENT_DAY" nullable="true" pattern="&quot;yyyy.MM.dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="27" name="EVENT_DAY" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="VALUE_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="VALUE_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="VALUE_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -578,22 +578,22 @@
       <column comment="" key="false" length="0" name="TEXT_20" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="RECORD_STATUS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="CREATED_BY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="27" name="CREATED_DATE" nullable="true" pattern="&quot;yyyy.MM.dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="27" name="CREATED_DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LAST_UPDATED_BY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LAST_UPDATED_DATE" nullable="true" pattern="&quot;yyyy.MM.dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LAST_UPDATED_DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="REV_NO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="REV_TEXT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="APPROVAL_BY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="APPROVAL_DATE" nullable="true" pattern="&quot;yyyy.MM.dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="APPROVAL_DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="APPROVAL_STATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="REC_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="EQPM_EVENT" name="REJECT">
       <column comment="" key="false" length="32" name="OBJECT_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="27" name="DAYTIME" nullable="true" pattern="&quot;yyyy.MM.dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="27" name="DAYTIME" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="EQPM_TYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="COMMENTS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="27" name="EVENT_DAY" nullable="true" pattern="&quot;yyyy.MM.dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="27" name="EVENT_DAY" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="VALUE_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="VALUE_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="VALUE_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -666,13 +666,13 @@
       <column comment="" key="false" length="0" name="TEXT_20" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="RECORD_STATUS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="CREATED_BY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="27" name="CREATED_DATE" nullable="true" pattern="&quot;yyyy.MM.dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="27" name="CREATED_DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LAST_UPDATED_BY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LAST_UPDATED_DATE" nullable="true" pattern="&quot;yyyy.MM.dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LAST_UPDATED_DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="REV_NO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="REV_TEXT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="APPROVAL_BY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="APPROVAL_DATE" nullable="true" pattern="&quot;yyyy.MM.dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="APPROVAL_DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="APPROVAL_STATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="REC_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
