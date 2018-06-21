@@ -72,6 +72,10 @@
       <conceptTargets xmi:id="_TEpe5nVhEei_gJSamz6bcQ" targetName="mppsystem1" RelativeLoopExpression="mppsystem1"/>
       <conceptTargets xmi:id="_TEpe53VhEei_gJSamz6bcQ" targetName="mppsystem2" RelativeLoopExpression="mppsystem2"/>
     </schemas>
+    <schemas xmi:id="_URrSsHVhEei_gJSamz6bcQ" label="wsclusterReceive" LoopExpression="/wscluster" LoopLimit="50" conceptType="RECEIVE" xPathPrefix="NONE_ITEM">
+      <conceptTargets xmi:id="_XVEyQHVhEei_gJSamz6bcQ" targetName="ucid" RelativeLoopExpression="ucid"/>
+      <conceptTargets xmi:id="_XVEyQXVhEei_gJSamz6bcQ" targetName="clustername" RelativeLoopExpression="clustername"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_cUItcHCkEeictIH84sqbsQ" name="wintershall" dataManager="_n9HI4GQFEeikp-EoIBCmkw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cUItcXCkEeictIH84sqbsQ" id="_bQkXoHCkEeictIH84sqbsQ" label="wsaereaOut">
@@ -136,6 +140,10 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TcPfhnVhEei_gJSamz6bcQ" label="mppchoke4" talendType="id_BigDecimal"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TcPfh3VhEei_gJSamz6bcQ" label="mppsystem1" talendType="id_BigDecimal"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TcPfiHVhEei_gJSamz6bcQ" label="mppsystem2" talendType="id_BigDecimal"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Xgwd0XVhEei_gJSamz6bcQ" id="_Xgwd0HVhEei_gJSamz6bcQ" label="wsclusterReceive">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Xgwd0nVhEei_gJSamz6bcQ" label="ucid" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Xgwd03VhEei_gJSamz6bcQ" label="clustername" talendType="id_String"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
