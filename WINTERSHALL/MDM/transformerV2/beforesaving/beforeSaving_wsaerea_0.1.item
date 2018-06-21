@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSTransformerV2E xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_rMJg4HSREei7XcXr-OiXow" name="beforeSaving_wsaerea" description="Check area name">
+<mdmserverobject:WSTransformerV2E xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_rMJg4HSREei7XcXr-OiXow" name="beforeSaving_wsaerea" description="Check area name" timestamp="1529591749679" digestValue="11ff6a5d99f728a6a3bf923d9f34ad16" lastServerName="MDM_Server">
   <processSteps xmi:id="_1IjfoHSREei7XcXr-OiXow" pluginJNDI="amalto/local/transformer/plugin/callJob" description="Call Job" parameters="&lt;configuration>&lt;url>ltj://beforeSaving_wsaerea/0.1&lt;/url>&lt;contextParam>&lt;name>xmlInput&lt;/name>&lt;value>{_DEFAULT_}&lt;/value>&lt;/contextParam>&lt;/configuration>">
     <inputMappings xmi:id="_1IjfoXSREei7XcXr-OiXow" pipelineVariable="_DEFAULT_" pluginVariable="text"/>
     <outputMappings xmi:id="_1IjfonSREei7XcXr-OiXow" pipelineVariable="output_report" pluginVariable="result"/>
