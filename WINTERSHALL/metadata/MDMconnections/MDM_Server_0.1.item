@@ -62,6 +62,16 @@
       <conceptTargets xmi:id="_JaH7YHSSEei7XcXr-OiXow" targetName="uaid" RelativeLoopExpression="uaid"/>
       <conceptTargets xmi:id="_JaH7YXSSEei7XcXr-OiXow" targetName="areaname" RelativeLoopExpression="areaname"/>
     </schemas>
+    <schemas xmi:id="_OMePAHVhEei_gJSamz6bcQ" label="wsfieldReceive" LoopExpression="/wsfield" LoopLimit="50" conceptType="RECEIVE" xPathPrefix="NONE_ITEM">
+      <conceptTargets xmi:id="_TEpe4HVhEei_gJSamz6bcQ" targetName="ufid" RelativeLoopExpression="ufid"/>
+      <conceptTargets xmi:id="_TEpe4XVhEei_gJSamz6bcQ" targetName="fieldname" RelativeLoopExpression="fieldname"/>
+      <conceptTargets xmi:id="_TEpe4nVhEei_gJSamz6bcQ" targetName="mppchoke1" RelativeLoopExpression="mppchoke1"/>
+      <conceptTargets xmi:id="_TEpe43VhEei_gJSamz6bcQ" targetName="mppchoke2" RelativeLoopExpression="mppchoke2"/>
+      <conceptTargets xmi:id="_TEpe5HVhEei_gJSamz6bcQ" targetName="mppchoke3" RelativeLoopExpression="mppchoke3"/>
+      <conceptTargets xmi:id="_TEpe5XVhEei_gJSamz6bcQ" targetName="mppchoke4" RelativeLoopExpression="mppchoke4"/>
+      <conceptTargets xmi:id="_TEpe5nVhEei_gJSamz6bcQ" targetName="mppsystem1" RelativeLoopExpression="mppsystem1"/>
+      <conceptTargets xmi:id="_TEpe53VhEei_gJSamz6bcQ" targetName="mppsystem2" RelativeLoopExpression="mppsystem2"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_cUItcHCkEeictIH84sqbsQ" name="wintershall" dataManager="_n9HI4GQFEeikp-EoIBCmkw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cUItcXCkEeictIH84sqbsQ" id="_bQkXoHCkEeictIH84sqbsQ" label="wsaereaOut">
@@ -116,6 +126,16 @@
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_KESSsHSSEei7XcXr-OiXow" id="_KERroHSSEei7XcXr-OiXow" label="wsaereaIn">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KESSsXSSEei7XcXr-OiXow" label="uaid" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KESSsnSSEei7XcXr-OiXow" label="areaname" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_TcPfgHVhEei_gJSamz6bcQ" id="_TbAJYHVhEei_gJSamz6bcQ" label="wsfieldReceive">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TcPfgXVhEei_gJSamz6bcQ" label="ufid" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TcPfgnVhEei_gJSamz6bcQ" label="fieldname" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TcPfg3VhEei_gJSamz6bcQ" label="mppchoke1" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TcPfhHVhEei_gJSamz6bcQ" label="mppchoke2" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TcPfhXVhEei_gJSamz6bcQ" label="mppchoke3" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TcPfhnVhEei_gJSamz6bcQ" label="mppchoke4" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TcPfh3VhEei_gJSamz6bcQ" label="mppsystem1" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TcPfiHVhEei_gJSamz6bcQ" label="mppsystem2" talendType="id_BigDecimal"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
