@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -111,41 +111,482 @@
     <routinesParameter id="_q12vIGMqEeiBzI1jcbkg2A" name="TalendStringUtil"/>
     <routinesParameter id="_q10S4GMqEeiBzI1jcbkg2A" name="TalendString"/>
   </parameters>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
-    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
-    <elementParameter field="TABLE" name="VALUES">
-      <elementValue elementRef="SCHEMA_COLUMN" value="output"/>
-      <elementValue elementRef="VALUE" value="&quot;&lt;report>&lt;message type=\&quot;info\&quot;>[EN:Record was saved successfully]&lt;/message>&lt;/report>&quot;"/>
+  <node componentName="tMDMTriggerInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMTriggerInput_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMDMTriggerInput_1">
+      <column defaultValue="" key="false" length="0" name="MDM_Message" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="extraxt id"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="id" name="id">
+      <column comment="" key="false" length="-1" name="uid" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row4" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="MDM_Message" expression="" type="id_Document" xpath="row4/MDM_Message">
+          <children name="exchange" type="id_String" xpath="row4.MDM_Message:/exchange" loop="true" main="true">
+            <children name="report" type="id_String" xpath="row4.MDM_Message:/exchange/report">
+              <children name="Update" type="id_String" xpath="row4.MDM_Message:/exchange/report/Update">
+                <children name="UserName" type="id_String" xpath="row4.MDM_Message:/exchange/report/Update/UserName" optional="true"/>
+                <children name="Source" type="id_String" xpath="row4.MDM_Message:/exchange/report/Update/Source"/>
+                <children name="TimeInMillis" type="id_String" xpath="row4.MDM_Message:/exchange/report/Update/TimeInMillis"/>
+                <children name="OperationType" type="id_String" xpath="row4.MDM_Message:/exchange/report/Update/OperationType"/>
+                <children name="RevisionID" type="id_String" xpath="row4.MDM_Message:/exchange/report/Update/RevisionID" optional="true"/>
+                <children name="DataCluster" type="id_String" xpath="row4.MDM_Message:/exchange/report/Update/DataCluster" optional="true"/>
+                <children name="DataModel" type="id_String" xpath="row4.MDM_Message:/exchange/report/Update/DataModel" optional="true"/>
+                <children name="Concept" type="id_String" xpath="row4.MDM_Message:/exchange/report/Update/Concept"/>
+                <children name="Key" type="id_String" xpath="row4.MDM_Message:/exchange/report/Update/Key"/>
+                <children name="Item" type="id_String" xpath="row4.MDM_Message:/exchange/report/Update/Item" optional="true">
+                  <children name="path" type="id_String" xpath="row4.MDM_Message:/exchange/report/Update/Item/path" optional="true"/>
+                  <children name="oldValue" type="id_String" xpath="row4.MDM_Message:/exchange/report/Update/Item/oldValue" optional="true"/>
+                  <children name="newValue" type="id_String" xpath="row4.MDM_Message:/exchange/report/Update/Item/newValue" optional="true"/>
+                </children>
+              </children>
+            </children>
+            <children name="item" type="id_String" xpath="row4.MDM_Message:/exchange/item">
+              <children name="wsfield" type="id_String" xpath="row4.MDM_Message:/exchange/item/wsfield">
+                <children name="ufid" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.0" xpath="row4.MDM_Message:/exchange/item/wsfield/ufid"/>
+                <children name="fieldname" type="id_String" xpath="row4.MDM_Message:/exchange/item/wsfield/fieldname" optional="true"/>
+                <children name="mppchoke1" type="id_BigDecimal" xpath="row4.MDM_Message:/exchange/item/wsfield/mppchoke1" optional="true"/>
+                <children name="mppchoke2" type="id_BigDecimal" xpath="row4.MDM_Message:/exchange/item/wsfield/mppchoke2" optional="true"/>
+                <children name="mppchoke3" type="id_BigDecimal" xpath="row4.MDM_Message:/exchange/item/wsfield/mppchoke3" optional="true"/>
+                <children name="mppchoke4" type="id_BigDecimal" xpath="row4.MDM_Message:/exchange/item/wsfield/mppchoke4" optional="true"/>
+                <children name="mppsystem1" type="id_BigDecimal" xpath="row4.MDM_Message:/exchange/item/wsfield/mppsystem1" optional="true"/>
+                <children name="mppsystem2" type="id_BigDecimal" xpath="row4.MDM_Message:/exchange/item/wsfield/mppsystem2" optional="true"/>
+              </children>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees name="id">
+        <nodes name="uid" expression=" [row4.MDM_Message:/exchange/item/wsfield/ufid]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="id/uid"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0"/>
+    </nodeData>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;id&quot;"/>
+      <elementValue elementRef="VALUE" value="id.uid"/>
     </elementParameter>
-    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
-    <elementParameter field="TABLE" name="INTABLE" show="false"/>
-    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="save id"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFixedFlowInput_1">
-      <column comment="" defaultValue="" key="false" length="255" name="output" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" label="id" name="tSetGlobalVar_1">
+      <column comment="" key="false" length="-1" name="uid" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tBufferOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBufferOutput_1" show="false"/>
+  <node componentName="tMDMTriggerInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMTriggerInput_2" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tBufferOutput_1">
-      <column comment="" defaultValue="" key="false" length="255" name="output" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" name="tMDMTriggerInput_2">
+      <column defaultValue="" key="false" length="0" name="MDM_Message" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tBufferOutput_1">
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="OutputTrigger" name="OutputTrigger">
+      <column comment="" key="false" length="-1" name="new_fieldname" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="MDM_Message" expression="" type="id_Document" xpath="row1/MDM_Message">
+          <children name="exchange" type="id_String" xpath="row1.MDM_Message:/exchange" loop="true" main="true">
+            <children name="report" type="id_String" xpath="row1.MDM_Message:/exchange/report">
+              <children name="Update" type="id_String" xpath="row1.MDM_Message:/exchange/report/Update">
+                <children name="UserName" type="id_String" xpath="row1.MDM_Message:/exchange/report/Update/UserName" optional="true"/>
+                <children name="Source" type="id_String" xpath="row1.MDM_Message:/exchange/report/Update/Source"/>
+                <children name="TimeInMillis" type="id_String" xpath="row1.MDM_Message:/exchange/report/Update/TimeInMillis"/>
+                <children name="OperationType" type="id_String" xpath="row1.MDM_Message:/exchange/report/Update/OperationType"/>
+                <children name="RevisionID" type="id_String" xpath="row1.MDM_Message:/exchange/report/Update/RevisionID" optional="true"/>
+                <children name="DataCluster" type="id_String" xpath="row1.MDM_Message:/exchange/report/Update/DataCluster" optional="true"/>
+                <children name="DataModel" type="id_String" xpath="row1.MDM_Message:/exchange/report/Update/DataModel" optional="true"/>
+                <children name="Concept" type="id_String" xpath="row1.MDM_Message:/exchange/report/Update/Concept"/>
+                <children name="Key" type="id_String" xpath="row1.MDM_Message:/exchange/report/Update/Key"/>
+                <children name="Item" type="id_String" xpath="row1.MDM_Message:/exchange/report/Update/Item" optional="true">
+                  <children name="path" type="id_String" xpath="row1.MDM_Message:/exchange/report/Update/Item/path" optional="true"/>
+                  <children name="oldValue" type="id_String" xpath="row1.MDM_Message:/exchange/report/Update/Item/oldValue" optional="true"/>
+                  <children name="newValue" type="id_String" xpath="row1.MDM_Message:/exchange/report/Update/Item/newValue" optional="true"/>
+                </children>
+              </children>
+            </children>
+            <children name="item" type="id_String" xpath="row1.MDM_Message:/exchange/item">
+              <children name="wsfield" type="id_String" xpath="row1.MDM_Message:/exchange/item/wsfield">
+                <children name="ufid" type="id_String" xpath="row1.MDM_Message:/exchange/item/wsfield/ufid"/>
+                <children name="fieldname" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.0" xpath="row1.MDM_Message:/exchange/item/wsfield/fieldname" optional="true"/>
+                <children name="mppchoke1" type="id_BigDecimal" xpath="row1.MDM_Message:/exchange/item/wsfield/mppchoke1" optional="true"/>
+                <children name="mppchoke2" type="id_BigDecimal" xpath="row1.MDM_Message:/exchange/item/wsfield/mppchoke2" optional="true"/>
+                <children name="mppchoke3" type="id_BigDecimal" xpath="row1.MDM_Message:/exchange/item/wsfield/mppchoke3" optional="true"/>
+                <children name="mppchoke4" type="id_BigDecimal" xpath="row1.MDM_Message:/exchange/item/wsfield/mppchoke4" optional="true"/>
+                <children name="mppsystem1" type="id_BigDecimal" xpath="row1.MDM_Message:/exchange/item/wsfield/mppsystem1" optional="true"/>
+                <children name="mppsystem2" type="id_BigDecimal" xpath="row1.MDM_Message:/exchange/item/wsfield/mppsystem2" optional="true"/>
+              </children>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees name="OutputTrigger">
+        <nodes name="new_fieldname" expression=" [row1.MDM_Message:/exchange/item/wsfield/fieldname]" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.0" xpath="OutputTrigger/new_fieldname"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.1" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0"/>
+    </nodeData>
+  </node>
+  <node componentName="tRecordMatching" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRecordMatching_1" show="false"/>
+    <elementParameter field="CHECK" name="REPLACED_BY_LOOKUPCOL" value="false"/>
+    <elementParameter field="TABLE" name="REPLACED_COLS" show="false"/>
+    <elementParameter field="MATCH_RULE_IMEX_CONTROLLER" name="MATCH_RULE_IMEX" value="false"/>
+    <elementParameter field="TABLE" name="JOIN_KEY">
+      <elementValue elementRef="INPUT_COLUMN" value="new_fieldname"/>
+      <elementValue elementRef="LOOKUP_COLUMN" value="fieldname"/>
+      <elementValue elementRef="MATCHING_TYPE" value="Exact"/>
+      <elementValue elementRef="CUSTOM_MATCHER" value="&quot;&quot;"/>
+      <elementValue elementRef="TOKENIZATION_TYPE" value="No"/>
+      <elementValue elementRef="CONFIDENCE_WEIGHT" value="1"/>
+      <elementValue elementRef="HANDLE_NULL" value="nullMatchNull"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="BLOCKING_DEFINITION"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT_STAT" value="ALL_MATCHES"/>
+    <elementParameter field="CLOSED_LIST" name="MATCHING_ALGORITHM" value="Simple VSR Matcher"/>
+    <elementParameter field="TEXT" name="MINIMUM" value="0.85"/>
+    <elementParameter field="TEXT" name="MAXIMUM" value="1.00"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="200000" show="false"/>
+    <elementParameter field="DIRECTORY" name="TMP_DIRECTORY" value="&quot;C:/Users/Held/talend_workspace_651&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="wsaereaIn" name="tRecordMatching_1">
+      <column comment="" key="false" length="-1" name="new_fieldname" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ufid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="fieldname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke3" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke4" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="MATCHING_WEIGHT" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="MATCHES" label="wsaereaIn" name="MATCHES">
+      <column comment="" key="false" length="-1" name="new_fieldname" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ufid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="fieldname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke3" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke4" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="MATCHING_WEIGHT" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="POSSIBLE_MATCHES" label="wsaereaIn" name="POSSIBLE_MATCHES">
+      <column comment="" key="false" length="-1" name="new_fieldname" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ufid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="fieldname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke3" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke4" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="MATCHING_WEIGHT" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="NON_MATCHES" label="wsaereaIn" name="NON_MATCHES">
+      <column comment="" key="false" length="-1" name="new_fieldname" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ufid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="fieldname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke3" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke4" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="MATCHING_WEIGHT" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_edoT4HViEei_gJSamz6bcQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="error">
+      <column comment="" key="false" length="-1" name="MDM_Message" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="error">
+        <mapperTableEntries name="MDM_Message" expression="MDM.createReturnMessage(String.format(&quot;Duplicate found: %s is a duplicate of %s (%s) with a score of %.5s %%&quot;,matches.new_fieldname, matches.fieldname, matches.ufid&#xD;&#xA;, matches.MATCHING_WEIGHT * 100.0f),&quot;error&quot;) " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="matches" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="new_fieldname" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ufid" type="id_String" nullable="true"/>
+        <mapperTableEntries name="fieldname" type="id_String" nullable="true"/>
+        <mapperTableEntries name="mppchoke1" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="mppchoke2" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="mppchoke3" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="mppchoke4" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="mppsystem1" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="mppsystem2" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MATCHING_DISTANCES" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MATCHING_WEIGHT" type="id_Double" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tConvertType_1" show="false"/>
+    <elementParameter field="CHECK" name="AUTOCAST" value="true"/>
+    <elementParameter field="TABLE" name="MANUALTABLE" show="false">
+      <elementValue elementRef="INPUT_COLUMN" value="MDM_Message"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="MDM_Message"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tConvertType_1">
+      <column defaultValue="" key="false" length="0" name="MDM_Message" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMDMTriggerOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMTriggerOutput_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMDMTriggerOutput_1">
+      <column defaultValue="" key="false" length="0" name="MDM_Message" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_edoT4HViEei_gJSamz6bcQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="triggerOK">
+      <column comment="" key="false" length="-1" name="MDM_Message" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="triggerOK">
+        <mapperTableEntries name="MDM_Message" expression="MDM.createReturnMessage(&quot;Record: &quot; + no_matches.new_fieldname + &quot; saved successfully&quot; , &quot;info&quot;) " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="no_matches" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="new_fieldname" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ufid" type="id_String" nullable="true"/>
+        <mapperTableEntries name="fieldname" type="id_String" nullable="true"/>
+        <mapperTableEntries name="mppchoke1" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="mppchoke2" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="mppchoke3" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="mppchoke4" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="mppsystem1" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="mppsystem2" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MATCHING_DISTANCES" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MATCHING_WEIGHT" type="id_Double" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tConvertType_2" show="false"/>
+    <elementParameter field="CHECK" name="AUTOCAST" value="true"/>
+    <elementParameter field="TABLE" name="MANUALTABLE" show="false"/>
+    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tConvertType_2">
+      <column defaultValue="" key="false" length="0" name="MDM_Message" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMDMTriggerOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMTriggerOutput_2" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMDMTriggerOutput_2">
+      <column defaultValue="" key="false" length="0" name="MDM_Message" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMDMInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wsfieldIn" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="ufid" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SERVERVERSION" value="s60"/>
+    <elementParameter field="LABEL" name="NOTE2" value="suggest to use 6.0 url" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="MDMURL" value="&quot;http://ec2-35-156-225-164.eu-central-1.compute.amazonaws.com:8180/talendmdm/services/soap&quot;"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;administrator&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="fmyLBcXusWxdAhEGcREikA=="/>
+    <elementParameter field="TEXT" name="CONCEPT" value="&quot;wsfield&quot;"/>
+    <elementParameter field="TEXT" name="DATACLUSTER" value="&quot;wintershall&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="CONTAINER_TYPE" value="MASTER"/>
+    <elementParameter field="CHECK" name="USE_ITEMS" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="Add all the key values below for the item" show="false"/>
+    <elementParameter field="TABLE" name="IDS" show="false"/>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="XPATH" value="&quot;ufid&quot;"/>
+      <elementValue elementRef="FUNCTION" value="NOT_EQUALS"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;id&quot;))"/>
+      <elementValue elementRef="PREDICATE" value="NONE"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="SKIP" value="0"/>
+    <elementParameter field="TEXT" name="MAXVALUE" value="0"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="FETCHSIZE" value="50"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY_BASE" value="&quot;/result&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/wsfield&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ufid"/>
+      <elementValue elementRef="QUERY" value="&quot;ufid&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fieldname"/>
+      <elementValue elementRef="QUERY" value="&quot;fieldname&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mppchoke1"/>
+      <elementValue elementRef="QUERY" value="&quot;mppchoke1&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mppchoke2"/>
+      <elementValue elementRef="QUERY" value="&quot;mppchoke2&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mppchoke3"/>
+      <elementValue elementRef="QUERY" value="&quot;mppchoke3&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mppchoke4"/>
+      <elementValue elementRef="QUERY" value="&quot;mppchoke4&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mppsystem1"/>
+      <elementValue elementRef="QUERY" value="&quot;mppsystem1&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mppsystem2"/>
+      <elementValue elementRef="QUERY" value="&quot;mppsystem2&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="wsfieldIn"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="wsfieldIn" name="tMDMInput_2">
+      <column comment="" key="false" length="0" name="ufid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="fieldname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke3" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke4" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="wsfieldIn" name="REJECT">
+      <column comment="" key="false" length="0" name="ufid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="fieldname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke3" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke4" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorXMLField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tMDMTriggerInput_1" offsetLabelX="0" offsetLabelY="0" source="tMDMTriggerInput_1" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMDMTriggerInput_1" offsetLabelX="0" offsetLabelY="0" source="tMDMTriggerInput_1" target="tMDMTriggerInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="id" lineStyle="0" metaname="id" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tSetGlobalVar_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="id" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMDMTriggerInput_2" offsetLabelX="0" offsetLabelY="0" source="tMDMTriggerInput_2" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <note opaque="true" posX="128" posY="32" sizeHeight="100" sizeWidth="600" text="This template job has been generated by johannes.held@prodato.de at 18/06/21 16:50.&#xA;&#xA;It can be invoked by a MDM beforeSaving/beforeDeleting Process.">
-    <elementParameter field="TEXT" name="NOTE_FONT" value="Dotum"/>
-  </note>
+  <connection connectorName="FLOW" label="OutputTrigger" lineStyle="0" metaname="OutputTrigger" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tRecordMatching_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OutputTrigger" show="false"/>
+  </connection>
+  <connection connectorName="MATCHES" label="matches" lineStyle="0" metaname="tRecordMatching_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tRecordMatching_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="matches" show="false"/>
+  </connection>
+  <connection connectorName="NON_MATCHES" label="no_matches" lineStyle="0" metaname="tRecordMatching_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tRecordMatching_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="no_matches" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="error" lineStyle="0" metaname="error" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tConvertType_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="error" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tMDMTriggerOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="MDM_Message"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="triggerOK" lineStyle="0" metaname="triggerOK" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tConvertType_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="triggerOK" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tConvertType_2" offsetLabelX="0" offsetLabelY="0" source="tConvertType_2" target="tMDMTriggerOutput_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="MDM_Message"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="existing" lineStyle="8" metaname="tMDMInput_2" offsetLabelX="0" offsetLabelY="0" source="tMDMInput_2" target="tRecordMatching_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="existing" show="false"/>
+  </connection>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMTriggerInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMTriggerInput_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
