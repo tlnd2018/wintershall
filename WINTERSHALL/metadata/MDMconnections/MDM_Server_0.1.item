@@ -95,6 +95,10 @@
       <root xmi:id="_Is-gYnYlEeiQLK7VzadfUg" XMLPath="/wsgloballoss/goballosscatname" RelatedColumn="goballosscatname" Attribute="main" Order="3" Type="id_String"/>
       <loop xmi:id="_Is-gY3YlEeiQLK7VzadfUg" XMLPath="/wsgloballoss/glid" RelatedColumn="glid" Attribute="main" Order="2" Type="id_String"/>
     </schemas>
+    <schemas xmi:id="_J7tkYHYlEeiQLK7VzadfUg" label="wsgloballossIn" LoopExpression="/wsgloballoss" LoopLimit="50">
+      <conceptTargets xmi:id="_NPaw0HYlEeiQLK7VzadfUg" targetName="glid" RelativeLoopExpression="glid"/>
+      <conceptTargets xmi:id="_NPaw0XYlEeiQLK7VzadfUg" targetName="goballosscatname" RelativeLoopExpression="goballosscatname"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_cUItcHCkEeictIH84sqbsQ" name="wintershall" dataManager="_n9HI4GQFEeikp-EoIBCmkw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cUItcXCkEeictIH84sqbsQ" id="_bQkXoHCkEeictIH84sqbsQ" label="wsaereaOut">
@@ -181,6 +185,10 @@
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_JDm3sHYlEeiQLK7VzadfUg" id="_Is-gYHYlEeiQLK7VzadfUg" label="wsgloballossOut">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JDm3sXYlEeiQLK7VzadfUg" label="glid" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JDm3snYlEeiQLK7VzadfUg" label="goballosscatname" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Nm2ZYXYlEeiQLK7VzadfUg" id="_Nm2ZYHYlEeiQLK7VzadfUg" label="wsgloballossIn">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Nm2ZYnYlEeiQLK7VzadfUg" label="glid" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Nm2ZY3YlEeiQLK7VzadfUg" label="goballosscatname" talendType="id_String"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
