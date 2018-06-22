@@ -90,6 +90,11 @@
       <conceptTargets xmi:id="_eIUD0HVlEei_gJSamz6bcQ" targetName="ucid" RelativeLoopExpression="ucid"/>
       <conceptTargets xmi:id="_eIUD0XVlEei_gJSamz6bcQ" targetName="clustername" RelativeLoopExpression="clustername"/>
     </schemas>
+    <schemas xmi:id="_pHsUsHYkEeiQLK7VzadfUg" label="wsgloballossOut" LoopLimit="50" conceptType="OUTPUT">
+      <root xmi:id="_Is-gYXYlEeiQLK7VzadfUg" XMLPath="/wsgloballoss" RelatedColumn="" Attribute="main" Order="1" Type="id_String"/>
+      <root xmi:id="_Is-gYnYlEeiQLK7VzadfUg" XMLPath="/wsgloballoss/goballosscatname" RelatedColumn="goballosscatname" Attribute="main" Order="3" Type="id_String"/>
+      <loop xmi:id="_Is-gY3YlEeiQLK7VzadfUg" XMLPath="/wsgloballoss/glid" RelatedColumn="glid" Attribute="main" Order="2" Type="id_String"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_cUItcHCkEeictIH84sqbsQ" name="wintershall" dataManager="_n9HI4GQFEeikp-EoIBCmkw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cUItcXCkEeictIH84sqbsQ" id="_bQkXoHCkEeictIH84sqbsQ" label="wsaereaOut">
@@ -172,6 +177,10 @@
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_eUoBgXVlEei_gJSamz6bcQ" id="_eUoBgHVlEei_gJSamz6bcQ" label="wsclusterIn">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eUoBgnVlEei_gJSamz6bcQ" label="ucid" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eUoBg3VlEei_gJSamz6bcQ" label="clustername" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_JDm3sHYlEeiQLK7VzadfUg" id="_Is-gYHYlEeiQLK7VzadfUg" label="wsgloballossOut">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JDm3sXYlEeiQLK7VzadfUg" label="glid" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JDm3snYlEeiQLK7VzadfUg" label="goballosscatname" talendType="id_String"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
