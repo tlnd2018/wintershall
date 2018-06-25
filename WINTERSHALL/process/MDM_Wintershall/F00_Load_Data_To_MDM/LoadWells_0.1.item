@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="OnRemoteMachine" jobType="Standard">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="OnRemoteMachine" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="file_WIDE_CLUSTER" prompt="file_WIDE_CLUSTER?" promptNeeded="true" type="id_String" value="&quot;C:/Users/Held/Desktop/wintershall_test/WIDE_CLUSTER.csv&quot;"/>
     <contextParameter comment="" name="file_WellHierarchy" prompt="file_WellHierarchy?" promptNeeded="false" type="id_String" value="&quot;C:/Users/Held/Desktop/wintershall_test/WellsHierachy&quot;"/>
@@ -276,64 +276,237 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="448">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_uPU_sHhPEeixqb5dJ1HrWg-tMap_1-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+  <node componentName="tGenKey" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tGenKey_1" show="false"/>
+    <elementParameter field="MATCH_RULE_IMEX_CONTROLLER" name="MATCH_RULE_IMEX" value="false"/>
+    <elementParameter field="TABLE" name="ALGO">
+      <elementValue elementRef="PRECOLUMN" value="AREA_NAME"/>
+      <elementValue elementRef="PRE_ALGO" value="NON_ALGO"/>
+      <elementValue elementRef="PRE_VALUE" value=""/>
+      <elementValue elementRef="KEY_ALGO" value="first_Char_EW"/>
+      <elementValue elementRef="KEY_VALUE" value=""/>
+      <elementValue elementRef="POST_ALGO" value="NON_ALGO"/>
+      <elementValue elementRef="POST_VALUE" value=""/>
+      <elementValue elementRef="PRECOLUMN" value="FIELD_NAME"/>
+      <elementValue elementRef="PRE_ALGO" value="NON_ALGO"/>
+      <elementValue elementRef="PRE_VALUE" value=""/>
+      <elementValue elementRef="KEY_ALGO" value="first_N_Char"/>
+      <elementValue elementRef="KEY_VALUE" value="2"/>
+      <elementValue elementRef="POST_ALGO" value="NON_ALGO"/>
+      <elementValue elementRef="POST_VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SHOW_HELP_KEY" value="false"/>
+    <elementParameter field="LABEL" name="HELP_KEY" value="Notice that how to fill algorithm parameter:&#xA;(1) N first characters of each word: fill in a digit number, like 2 or 12, etc.&#xA;(2) first N characters of the string: fill in a digit number&#xA;(3) last N characters of the string: fill in a digit number&#xA;(4) first N consonants of the string: fill in a digit number&#xA;(5) first N vowels of the string: fill in a digit number&#xA;(6) substring(a, b): fill a String like &quot;2;4&quot;, for example, &quot;abcdef&quot; returns &quot;cd&quot; on impact&#xA;(7) pick characters: fill a String like &quot;1;2-4;5&quot;, for example, &quot;abcdef&quot; returns &quot;bcdf&quot; on impact&#xA;(8) use default value: any String you want.(it is to replace empty value after key algorithm)&#xA;(9) add left position character: about usual separators like parenthesis and so on, applied after &quot;use default value&quot;&#xA;(10) add right position character: about usual separators like parenthesis and so on, applied after &quot;use default value&quot;&#xA;" show="false"/>
+    <elementParameter field="CHECK" name="IS_SHADOW_JOB" value="false" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata name="wells">
-      <column comment="" key="false" length="-1" name="area_fk" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="field_fk" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="cluster_fk" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="opco_fk" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" label="WellHierarchy" name="tGenKey_1">
+      <column comment="" key="false" length="4" name="OPCO_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="OPCO_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="AREA_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="AREA_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="FIELD_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="FIELD_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="FACILITY_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FACILITY_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="WELL_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="WELL_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="WELL_TYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="WELL_ACTIVE_Last30days" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="WELL_UWI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="OPCO_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="AREA_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="FIELD_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="FACILITY_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="WELL_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-    <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="wells">
-        <mapperTableEntries name="area_fk" expression="MDM.createFK(well_hierarchy.AREA_NAME) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="field_fk" expression="MDM.createFK(well_hierarchy.FIELD_NAME) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="cluster_fk" expression="MDM.createFK(wide_cluster.Cluster) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="opco_fk" expression="MDM.createFK(well_hierarchy.OPCO_NAME) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="WELL_NAME" expression="well_hierarchy.WELL_NAME " type="id_String" nullable="true"/>
-      </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="well_hierarchy" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="OPCO_CODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPCO_NAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AREA_CODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AREA_NAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FIELD_CODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FIELD_NAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FACILITY_CODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FACILITY_NAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="WELL_CODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="WELL_NAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="WELL_TYPE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="WELL_ACTIVE_Last30days" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="WELL_UWI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPCO_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AREA_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FIELD_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FACILITY_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="WELL_id" type="id_String" nullable="true"/>
-      </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="wide_cluster" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="Area" expression="well_hierarchy.AREA_NAME " type="id_String" nullable="true" operator="="/>
-        <mapperTableEntries name="Field" expression="well_hierarchy.FIELD_NAME " type="id_String" nullable="true" operator="="/>
-        <mapperTableEntries name="Medium" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Cluster" type="id_String" nullable="true"/>
-      </inputTables>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="wswell" name="wswell">
+      <column comment="" key="false" length="-1" name="wswell" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="well_key" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="OPCO_CODE" type="id_String" xpath="well_key/OPCO_CODE"/>
+        <nodes name="OPCO_NAME" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.0" xpath="well_key/OPCO_NAME"/>
+        <nodes name="AREA_CODE" type="id_String" xpath="well_key/AREA_CODE"/>
+        <nodes name="AREA_NAME" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.3" xpath="well_key/AREA_NAME"/>
+        <nodes name="FIELD_CODE" type="id_String" xpath="well_key/FIELD_CODE"/>
+        <nodes name="FIELD_NAME" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.4" xpath="well_key/FIELD_NAME"/>
+        <nodes name="FACILITY_CODE" type="id_String" xpath="well_key/FACILITY_CODE"/>
+        <nodes name="FACILITY_NAME" type="id_String" xpath="well_key/FACILITY_NAME"/>
+        <nodes name="WELL_CODE" type="id_String" xpath="well_key/WELL_CODE"/>
+        <nodes name="WELL_NAME" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.2" xpath="well_key/WELL_NAME"/>
+        <nodes name="WELL_TYPE" type="id_String" xpath="well_key/WELL_TYPE"/>
+        <nodes name="WELL_ACTIVE_Last30days" type="id_Integer" xpath="well_key/WELL_ACTIVE_Last30days"/>
+        <nodes name="WELL_UWI" type="id_String" xpath="well_key/WELL_UWI"/>
+        <nodes name="OPCO_id" type="id_String" xpath="well_key/OPCO_id"/>
+        <nodes name="AREA_id" type="id_String" xpath="well_key/AREA_id"/>
+        <nodes name="FIELD_id" type="id_String" xpath="well_key/FIELD_id"/>
+        <nodes name="FACILITY_id" type="id_String" xpath="well_key/FACILITY_id"/>
+        <nodes name="WELL_id" type="id_String" xpath="well_key/WELL_id"/>
+        <nodes name="T_GEN_KEY" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.5" xpath="well_key/T_GEN_KEY"/>
+      </inputTrees>
+      <inputTrees name="wide_cluster" lookup="true" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="Area" type="id_String" xpath="wide_cluster/Area"/>
+        <nodes name="Field" type="id_String" xpath="wide_cluster/Field"/>
+        <nodes name="Medium" type="id_String" xpath="wide_cluster/Medium"/>
+        <nodes name="Cluster" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.1" xpath="wide_cluster/Cluster"/>
+      </inputTrees>
+      <outputTrees name="wswell">
+        <nodes name="wswell" expression="" type="id_Document" xpath="wswell/wswell">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="wswell" expression="" type="id_String" xpath="wswell.wswell:/wswell">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="m" type="id_String" xpath="wswell.wswell:/wswell/xmlns:m" nodeType="NAME_SPACE" defaultValue="http://www.talend.com/mdm/metadata"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="uwid" type="id_String" xpath="wswell.wswell:/wswell/uwid" loop="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="wellname" expression="well_key.WELL_NAME" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.2" xpath="wswell.wswell:/wswell/wellname" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="areacode" expression="MDM.createFK(well_key.AREA_NAME) " type="id_String" incomingConnections="//@node.2/@nodeData/@connections.3" xpath="wswell.wswell:/wswell/areacode" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="fieldcode" expression="MDM.createFK(well_key.FIELD_NAME) " type="id_String" incomingConnections="//@node.2/@nodeData/@connections.4" xpath="wswell.wswell:/wswell/fieldcode" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="clustercode" expression="MDM.createFK(wide_cluster.Cluster)" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.1" xpath="wswell.wswell:/wswell/clustercode" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="opcocode" expression="MDM.createFK(well_key.OPCO_NAME) " type="id_String" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="wswell.wswell:/wswell/opcocode" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="m:staging_source" expression="((String)globalMap.get(&quot;SOURCE&quot;))" type="id_String" xpath="wswell.wswell:/wswell/m:staging_source"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="m:staging_blockkey" expression="well_key.T_GEN_KEY" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.5" xpath="wswell.wswell:/wswell/m:staging_blockkey"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.1/@nodes.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.9" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.5" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.18" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.8"/>
     </nodeData>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="256">
+  <node componentName="tMDMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw" show="false"/>
+    <elementParameter field="TECHNICAL" name="INPUT_SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="INPUT_SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wswellOut" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wsfieldIn" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wsfieldIn" show="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="uwid" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="DOCUMENT" value="wswell"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMDMConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="SERVERVERSION" value="s60" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="suggest to use 6.0 url" show="false"/>
+    <elementParameter field="TEXT" name="MDMURL" value="&quot;http://ec2-35-156-225-164.eu-central-1.compute.amazonaws.com:8180/talendmdm/services/soap&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;administrator&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="fmyLBcXusWxdAhEGcREikA==" show="false"/>
+    <elementParameter field="TEXT" name="DATAMODEL" value="&quot;wintershall&quot;"/>
+    <elementParameter field="TEXT" name="DATACLUSTER" value="&quot;wintershall&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="CONTAINER_TYPE" value="STAGING"/>
+    <elementParameter field="TABLE" name="RETURN_IDS"/>
+    <elementParameter field="CHECK" name="ISUPDATE" value="false"/>
+    <elementParameter field="CHECK" name="WITHREPORT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SOURCE" value="((String)globalMap.get(&quot;SOURCE&quot;))" show="false"/>
+    <elementParameter field="CHECK" name="ISINVOKE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ADD_TASKID" value="false"/>
+    <elementParameter field="RADIO" name="CUSTOM" value="true" show="false"/>
+    <elementParameter field="TEXT" name="TASKID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="RADIO" name="PREV_COLUMN" value="false" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="PREV_COLUMN_TASK_ID" value="wswell" show="false"/>
+    <elementParameter field="CHECK" name="USE_PARTIAL_UPDATE" value="false"/>
+    <elementParameter field="TEXT" name="PIVOT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERWRITE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PARTIAL_DELETE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="KEY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="POSITION" value="" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="false"/>
+    <elementParameter field="TEXT" name="COMMIT_LEVEL" value="200" show="false"/>
+    <elementParameter field="TABLE" name="ROOT" show="false">
+      <elementValue elementRef="PATH" value="/wswell"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="1"/>
+      <elementValue elementRef="PATH" value="/wswell/wellname"/>
+      <elementValue elementRef="COLUMN" value="wellname"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="3"/>
+      <elementValue elementRef="PATH" value="/wswell/areacode"/>
+      <elementValue elementRef="COLUMN" value="areacode"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="4"/>
+      <elementValue elementRef="PATH" value="/wswell/fieldcode"/>
+      <elementValue elementRef="COLUMN" value="fieldcode"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="5"/>
+      <elementValue elementRef="PATH" value="/wswell/clustercode"/>
+      <elementValue elementRef="COLUMN" value="clustercode"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="6"/>
+      <elementValue elementRef="PATH" value="/wswell/opcocode"/>
+      <elementValue elementRef="COLUMN" value="opcocode"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="7"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="GROUP" show="false"/>
+    <elementParameter field="TABLE" name="LOOP" show="false">
+      <elementValue elementRef="PATH" value="/wswell/uwid"/>
+      <elementValue elementRef="COLUMN" value="uwid"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="2"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value="" show="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS" show="false"/>
+    <elementParameter field="CHECK" name="REMOVE_HEADER" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CREATE_EMPTY_ELEMENT" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="STORE_FLOW" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="wswellOut"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="wswellOut" name="tMDMOutput_1">
+      <column comment="" key="false" length="0" name="uwid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="wellname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="areacode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="fieldcode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="clustercode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="opcocode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OUTPUT" label="wswellOut" name="OUTPUT">
+      <column comment="" key="false" length="0" name="uwid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="wellname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="areacode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="fieldcode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="clustercode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="opcocode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="wswellOut" name="REJECT">
+      <column comment="" key="false" length="0" name="uwid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="wellname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="areacode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="fieldcode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="clustercode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="opcocode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.file_WIDE_CLUSTER"/>
@@ -405,155 +578,6 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
-    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="wswell" name="wswell">
-      <column comment="" key="false" length="-1" name="wswell" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <outputTrees name="wswell">
-        <nodes name="wswell" expression="" type="id_Document" xpath="wswell/wswell">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="wswell" type="id_String" xpath="wswell.wswell:/wswell">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="uwid" type="id_String" xpath="wswell.wswell:/wswell/uwid" loop="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="wellname" type="id_String" xpath="wswell.wswell:/wswell/wellname" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="areacode" type="id_String" xpath="wswell.wswell:/wswell/areacode" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="fieldcode" type="id_String" xpath="wswell.wswell:/wswell/fieldcode" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="clustercode" type="id_String" xpath="wswell.wswell:/wswell/clustercode" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="opcocode" type="id_String" xpath="wswell.wswell:/wswell/opcocode" optional="true"/>
-          </children>
-        </nodes>
-      </outputTrees>
-      <varTables name="Var" minimized="true"/>
-    </nodeData>
-  </node>
-  <node componentName="tMDMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMOutput_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw" show="false"/>
-    <elementParameter field="TECHNICAL" name="INPUT_SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="INPUT_SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wswellOut" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wsfieldIn" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wsfieldIn" show="false"/>
-    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="true"/>
-    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="uwid"/>
-    <elementParameter field="PREV_COLUMN_LIST" name="DOCUMENT" value="wswell" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMDMConnection_1"/>
-    <elementParameter field="CLOSED_LIST" name="SERVERVERSION" value="s60" show="false"/>
-    <elementParameter field="LABEL" name="NOTE" value="suggest to use 6.0 url" show="false"/>
-    <elementParameter field="TEXT" name="MDMURL" value="&quot;http://ec2-35-156-225-164.eu-central-1.compute.amazonaws.com:8180/talendmdm/services/soap&quot;" show="false"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;administrator&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="fmyLBcXusWxdAhEGcREikA==" show="false"/>
-    <elementParameter field="TEXT" name="DATAMODEL" value="&quot;wintershall&quot;"/>
-    <elementParameter field="TEXT" name="DATACLUSTER" value="&quot;wintershall&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="CONTAINER_TYPE" value="MASTER"/>
-    <elementParameter field="TABLE" name="RETURN_IDS"/>
-    <elementParameter field="CHECK" name="ISUPDATE" value="false"/>
-    <elementParameter field="CHECK" name="WITHREPORT" value="true"/>
-    <elementParameter field="TEXT" name="SOURCE" value="t"/>
-    <elementParameter field="CHECK" name="ISINVOKE" value="false"/>
-    <elementParameter field="CHECK" name="ADD_TASKID" value="false"/>
-    <elementParameter field="RADIO" name="CUSTOM" value="true" show="false"/>
-    <elementParameter field="TEXT" name="TASKID" value="&quot;&quot;" show="false"/>
-    <elementParameter field="RADIO" name="PREV_COLUMN" value="false" show="false"/>
-    <elementParameter field="PREV_COLUMN_LIST" name="PREV_COLUMN_TASK_ID" value="wswell" show="false"/>
-    <elementParameter field="CHECK" name="USE_PARTIAL_UPDATE" value="false"/>
-    <elementParameter field="TEXT" name="PIVOT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="OVERWRITE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PARTIAL_DELETE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="KEY" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="POSITION" value="" show="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="CHECK" name="EXTENDINSERT" value="false"/>
-    <elementParameter field="TEXT" name="COMMIT_LEVEL" value="200" show="false"/>
-    <elementParameter field="TABLE" name="ROOT" show="false">
-      <elementValue elementRef="PATH" value="/wswell"/>
-      <elementValue elementRef="COLUMN" value=""/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="1"/>
-      <elementValue elementRef="PATH" value="/wswell/wellname"/>
-      <elementValue elementRef="COLUMN" value="wellname"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="3"/>
-      <elementValue elementRef="PATH" value="/wswell/areacode"/>
-      <elementValue elementRef="COLUMN" value="areacode"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="4"/>
-      <elementValue elementRef="PATH" value="/wswell/fieldcode"/>
-      <elementValue elementRef="COLUMN" value="fieldcode"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="5"/>
-      <elementValue elementRef="PATH" value="/wswell/clustercode"/>
-      <elementValue elementRef="COLUMN" value="clustercode"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="6"/>
-      <elementValue elementRef="PATH" value="/wswell/opcocode"/>
-      <elementValue elementRef="COLUMN" value="opcocode"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="7"/>
-    </elementParameter>
-    <elementParameter field="TABLE" name="GROUP" show="false"/>
-    <elementParameter field="TABLE" name="LOOP" show="false">
-      <elementValue elementRef="PATH" value="/wswell/uwid"/>
-      <elementValue elementRef="COLUMN" value="uwid"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="2"/>
-    </elementParameter>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="TABLE" name="GROUPBYS"/>
-    <elementParameter field="CHECK" name="REMOVE_HEADER" value="true" show="false"/>
-    <elementParameter field="CHECK" name="CREATE_EMPTY_ELEMENT" value="true"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="STORE_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="wswellOut"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="wswellOut" name="tMDMOutput_1">
-      <column comment="" key="false" length="0" name="uwid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="wellname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="areacode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="fieldcode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="clustercode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="opcocode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="OUTPUT" label="wswellOut" name="OUTPUT">
-      <column comment="" key="false" length="0" name="uwid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="wellname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="areacode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="fieldcode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="clustercode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="opcocode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" label="wswellOut" name="REJECT">
-      <column comment="" key="false" length="0" name="uwid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="wellname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="areacode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="fieldcode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="clustercode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="opcocode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -579,13 +603,13 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_1"/>
   </node>
-  <connection connectorName="FLOW" label="well_hierarchy" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+  <connection connectorName="FLOW" label="wells" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tGenKey_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="well_hierarchy" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="wells" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="wide_cluster" lineStyle="8" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_1">
+  <connection connectorName="FLOW" label="well_key" lineStyle="0" metaname="tGenKey_1" offsetLabelX="0" offsetLabelY="0" source="tGenKey_1" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="wide_cluster" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="well_key" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="wswell" lineStyle="0" metaname="wswell" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tMDMOutput_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -596,6 +620,10 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="wswell" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="wide_cluster" lineStyle="8" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="wide_cluster" show="false"/>
+  </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tMDMConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
@@ -604,11 +632,6 @@
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
