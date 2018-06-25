@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:MatchRuleDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_suZQEHhdEeixqb5dJ1HrWg" name="ws_match_cluster" recordLinkageAlgorithm="T_SwooshAlgorithm">
+  <taggedValue xmi:id="_suZQEXhdEeixqb5dJ1HrWg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_suZQEnhdEeixqb5dJ1HrWg" tag="Author" value="johannes.held@prodato.de"/>
+  <taggedValue xmi:id="_suZQE3hdEeixqb5dJ1HrWg" tag="Purpose"/>
+  <taggedValue xmi:id="_suZQFHhdEeixqb5dJ1HrWg" tag="Description"/>
+  <taggedValue xmi:id="_suZQFXhdEeixqb5dJ1HrWg" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_suZQFnhdEeixqb5dJ1HrWg" tag="Validation_Status" value="true"/>
+  <blockKeys xmi:id="_suZQF3hdEeixqb5dJ1HrWg" name="Cluster-FST" column="Cluster">
+    <preAlgorithm xmi:id="_suZQGHhdEeixqb5dJ1HrWg" algorithmType="NON_ALGO" algorithmParameters=""/>
+    <algorithm xmi:id="_suZQGXhdEeixqb5dJ1HrWg" algorithmType="first_N_Char" algorithmParameters="1"/>
+    <postAlgorithm xmi:id="_suZQGnhdEeixqb5dJ1HrWg" algorithmType="NON_ALGO" algorithmParameters=""/>
+  </blockKeys>
+  <matchRules href="../../../TDQ_Data Profiling/Analyses/WSArea_IN_0.1.ana#_PjuJIHSNEei7XcXr-OiXow"/>
+  <appliedBlockKeys xmi:id="_suZQHnhdEeixqb5dJ1HrWg" name="BLOCK_KEY" column="BLOCK_KEY"/>
+  <survivorshipKeys xmi:id="_suZQH3hdEeixqb5dJ1HrWg" name="Name" column="Cluster" allowManualResolution="true">
+    <function xmi:id="_suZQIHhdEeixqb5dJ1HrWg" algorithmType="MostRecent" algorithmParameters=""/>
+  </survivorshipKeys>
+</dataquality.rules:MatchRuleDefinition>
