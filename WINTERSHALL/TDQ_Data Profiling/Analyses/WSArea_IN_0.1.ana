@@ -22,12 +22,19 @@
     <resultMetadata xmi:id="_PT0E6XSNEei7XcXr-OiXow"/>
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_PT0E6nSNEei7XcXr-OiXow"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_PT0E63SNEei7XcXr-OiXow">
-      <builtInMatchRuleDefinition xmi:id="_PT0E7HSNEei7XcXr-OiXow">
+      <builtInMatchRuleDefinition xmi:id="_PT0E7HSNEei7XcXr-OiXow" name="ws_match_area" recordLinkageAlgorithm="T_SwooshAlgorithm">
+        <taggedValue xmi:id="_stfYgHhaEeixqb5dJ1HrWg" tag="Purpose" value=""/>
+        <taggedValue xmi:id="_stfYgXhaEeixqb5dJ1HrWg" tag="Description" value=""/>
+        <taggedValue xmi:id="_stf_kHhaEeixqb5dJ1HrWg" tag="Author" value="johannes.held@prodato.de"/>
+        <taggedValue xmi:id="_stf_kXhaEeixqb5dJ1HrWg" tag="Status" value="development"/>
         <matchRules xmi:id="_PjuJIHSNEei7XcXr-OiXow" name="Match Rule 1">
           <matchKeys xmi:id="_TNrSYHSNEei7XcXr-OiXow" name="Areaname" column="Area" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
             <algorithm xmi:id="_TNrSYXSNEei7XcXr-OiXow" algorithmType="EXACT" algorithmParameters=""/>
           </matchKeys>
         </matchRules>
+        <survivorshipKeys xmi:id="_p9LNAHhaEeixqb5dJ1HrWg" name="Areaname" allowManualResolution="true">
+          <function xmi:id="_p9LNAXhaEeixqb5dJ1HrWg" algorithmType="MostRecent" algorithmParameters=""/>
+        </survivorshipKeys>
       </builtInMatchRuleDefinition>
     </indicators>
   </results>
