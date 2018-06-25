@@ -7,9 +7,12 @@
       <matchKeyMap key="Areaname" value="wsaerea/areaname"/>
     </matchRuleMapInfoPages>
   </entityMapInfos>
-  <entityMapInfos entityName="wscluster">
+  <entityMapInfos entityName="wscluster" matchRuleDefName="ws_match_area">
+    <survivorshipKeyMap key="Areaname"/>
     <blockingKeyDefinition/>
-    <matchRuleMapInfoPages/>
+    <matchRuleMapInfoPages name="Match Rule 1">
+      <matchKeyMap key="Areaname"/>
+    </matchRuleMapInfoPages>
   </entityMapInfos>
   <entityMapInfos entityName="wsfield" matchRuleDefName="ws_match_field">
     <survivorshipKeyMap key="Name" value="wsfield/fieldname"/>
