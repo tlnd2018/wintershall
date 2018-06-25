@@ -402,37 +402,6 @@
       <column comment="" key="true" length="-1" name="Cluster" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="384">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
-    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="wsfield" name="wsfield">
-      <column comment="" key="false" length="-1" name="wsfield" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees name="field" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="Field" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.0" xpath="field/Field"/>
-      </inputTrees>
-      <outputTrees name="wsfield">
-        <nodes name="wsfield" expression="" type="id_Document" xpath="wsfield/wsfield" pattern="">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="wsfield" type="id_String" xpath="wsfield.wsfield:/wsfield">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ufid" type="id_String" xpath="wsfield.wsfield:/wsfield/ufid" loop="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="fieldname" expression="field.Field" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.0" xpath="wsfield.wsfield:/wsfield/fieldname" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="mppchoke1" type="id_BigDecimal" xpath="wsfield.wsfield:/wsfield/mppchoke1" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="mppchoke2" type="id_BigDecimal" xpath="wsfield.wsfield:/wsfield/mppchoke2" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="mppchoke3" type="id_BigDecimal" xpath="wsfield.wsfield:/wsfield/mppchoke3" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="mppchoke4" type="id_BigDecimal" xpath="wsfield.wsfield:/wsfield/mppchoke4" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="mppsystem1" type="id_BigDecimal" xpath="wsfield.wsfield:/wsfield/mppsystem1" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="mppsystem2" type="id_BigDecimal" xpath="wsfield.wsfield:/wsfield/mppsystem2" optional="true"/>
-          </children>
-        </nodes>
-      </outputTrees>
-      <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0" target="//@node.9/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
-    </nodeData>
-  </node>
   <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_3" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
@@ -444,159 +413,19 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="cluster" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="Cluster" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.0" xpath="cluster/Cluster"/>
+        <nodes name="Cluster" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.0" xpath="cluster/Cluster"/>
       </inputTrees>
       <outputTrees name="wscluster">
         <nodes name="wscluster" expression="" type="id_Document" xpath="wscluster/wscluster">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="wscluster" type="id_String" xpath="wscluster.wscluster:/wscluster">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="ucid" type="id_String" xpath="wscluster.wscluster:/wscluster/ucid" loop="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="clustername" expression="cluster.Cluster" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.0" xpath="wscluster.wscluster:/wscluster/clustername" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="clustername" expression="cluster.Cluster" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.0" xpath="wscluster.wscluster:/wscluster/clustername" optional="true"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.0" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0" target="//@node.9/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
     </nodeData>
-  </node>
-  <node componentName="tMDMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="384">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMOutput_2" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw" show="false"/>
-    <elementParameter field="TECHNICAL" name="INPUT_SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="INPUT_SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wsfieldOut" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wsgloballosssubcatOut" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wsgloballosssubcatOut" show="false"/>
-    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
-    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="ufid" show="false"/>
-    <elementParameter field="PREV_COLUMN_LIST" name="DOCUMENT" value="wsfield"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMDMConnection_2"/>
-    <elementParameter field="CLOSED_LIST" name="SERVERVERSION" value="s60" show="false"/>
-    <elementParameter field="LABEL" name="NOTE" value="suggest to use 6.0 url" show="false"/>
-    <elementParameter field="TEXT" name="MDMURL" value="&quot;http://ec2-35-156-225-164.eu-central-1.compute.amazonaws.com:8180/talendmdm/services/soap&quot;" show="false"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;administrator&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="fmyLBcXusWxdAhEGcREikA==" show="false"/>
-    <elementParameter field="TEXT" name="DATAMODEL" value="&quot;wintershall&quot;"/>
-    <elementParameter field="TEXT" name="DATACLUSTER" value="&quot;wintershall&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="CONTAINER_TYPE" value="MASTER"/>
-    <elementParameter field="TABLE" name="RETURN_IDS"/>
-    <elementParameter field="CHECK" name="ISUPDATE" value="false"/>
-    <elementParameter field="CHECK" name="WITHREPORT" value="true"/>
-    <elementParameter field="TEXT" name="SOURCE" value="((String)globalMap.get(&quot;SOURCE&quot;))"/>
-    <elementParameter field="CHECK" name="ISINVOKE" value="false"/>
-    <elementParameter field="CHECK" name="ADD_TASKID" value="false"/>
-    <elementParameter field="RADIO" name="CUSTOM" value="true" show="false"/>
-    <elementParameter field="TEXT" name="TASKID" value="&quot;&quot;" show="false"/>
-    <elementParameter field="RADIO" name="PREV_COLUMN" value="false" show="false"/>
-    <elementParameter field="PREV_COLUMN_LIST" name="PREV_COLUMN_TASK_ID" value="wsfield" show="false"/>
-    <elementParameter field="CHECK" name="USE_PARTIAL_UPDATE" value="false"/>
-    <elementParameter field="TEXT" name="PIVOT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="OVERWRITE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PARTIAL_DELETE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="KEY" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="POSITION" value="" show="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="CHECK" name="EXTENDINSERT" value="false"/>
-    <elementParameter field="TEXT" name="COMMIT_LEVEL" value="200" show="false"/>
-    <elementParameter field="TABLE" name="ROOT" show="false">
-      <elementValue elementRef="PATH" value="/wsfield"/>
-      <elementValue elementRef="COLUMN" value=""/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="1"/>
-      <elementValue elementRef="PATH" value="/wsfield/fieldname"/>
-      <elementValue elementRef="COLUMN" value="fieldname"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="3"/>
-      <elementValue elementRef="PATH" value="/wsfield/mppchoke1"/>
-      <elementValue elementRef="COLUMN" value="mppchoke1"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="4"/>
-      <elementValue elementRef="PATH" value="/wsfield/mppchoke2"/>
-      <elementValue elementRef="COLUMN" value="mppchoke2"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="5"/>
-      <elementValue elementRef="PATH" value="/wsfield/mppchoke3"/>
-      <elementValue elementRef="COLUMN" value="mppchoke3"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="6"/>
-      <elementValue elementRef="PATH" value="/wsfield/mppchoke4"/>
-      <elementValue elementRef="COLUMN" value="mppchoke4"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="7"/>
-      <elementValue elementRef="PATH" value="/wsfield/mppsystem1"/>
-      <elementValue elementRef="COLUMN" value="mppsystem1"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="8"/>
-      <elementValue elementRef="PATH" value="/wsfield/mppsystem2"/>
-      <elementValue elementRef="COLUMN" value="mppsystem2"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="9"/>
-    </elementParameter>
-    <elementParameter field="TABLE" name="GROUP" show="false"/>
-    <elementParameter field="TABLE" name="LOOP" show="false">
-      <elementValue elementRef="PATH" value="/wsfield/ufid"/>
-      <elementValue elementRef="COLUMN" value="ufid"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="2"/>
-    </elementParameter>
-    <elementParameter field="EXTERNAL" name="MAP" value="" show="false"/>
-    <elementParameter field="TABLE" name="GROUPBYS" show="false"/>
-    <elementParameter field="CHECK" name="REMOVE_HEADER" value="true" show="false"/>
-    <elementParameter field="CHECK" name="CREATE_EMPTY_ELEMENT" value="true" show="false"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false" show="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
-    <elementParameter field="CHECK" name="STORE_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="wsfieldOut"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="wsfieldOut" name="tMDMOutput_2">
-      <column comment="" key="false" length="0" name="ufid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="fieldname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppchoke1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppchoke2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppchoke3" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppchoke4" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppsystem1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppsystem2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="OUTPUT" label="wsfieldOut" name="OUTPUT">
-      <column comment="" key="false" length="0" name="ufid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="fieldname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppchoke1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppchoke2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppchoke3" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppchoke4" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppsystem1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppsystem2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" label="wsfieldOut" name="REJECT">
-      <column comment="" key="false" length="0" name="ufid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="fieldname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppchoke1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppchoke2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppchoke3" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppchoke4" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppsystem1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="mppsystem2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
   </node>
   <node componentName="tMDMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMOutput_3" show="false"/>
@@ -722,26 +551,23 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="area_key" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="Area" type="id_String" outgoingConnections="//@node.14/@nodeData/@connections.0" xpath="area_key/Area"/>
-        <nodes name="T_GEN_KEY" type="id_String" outgoingConnections="//@node.14/@nodeData/@connections.1" xpath="area_key/T_GEN_KEY"/>
-      </inputTrees>
-      <inputTrees name="area" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="Area" type="id_String" xpath="area/Area"/>
+        <nodes name="Area" type="id_String" outgoingConnections="//@node.12/@nodeData/@connections.0" xpath="area_key/Area"/>
+        <nodes name="T_GEN_KEY" type="id_String" outgoingConnections="//@node.12/@nodeData/@connections.1" xpath="area_key/T_GEN_KEY"/>
       </inputTrees>
       <outputTrees name="wsarea">
         <nodes name="wsarea_doc" expression="" type="id_Document" xpath="wsarea/wsarea_doc" pattern="">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="wsaerea" expression="" type="id_String" xpath="wsarea.wsarea_doc:/wsaerea">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="metadata" type="id_String" xpath="wsarea.wsarea_doc:/wsaerea/xmlns:metadata" nodeType="NAME_SPACE" defaultValue="http://www.talend.com/mdm/metadata"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="uaid" type="id_String" xpath="wsarea.wsarea_doc:/wsaerea/uaid" loop="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="areaname" expression=" area_key.Area" type="id_String" incomingConnections="//@node.14/@nodeData/@connections.0" xpath="wsarea.wsarea_doc:/wsaerea/areaname" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="areaname" expression=" area_key.Area" type="id_String" incomingConnections="//@node.12/@nodeData/@connections.0" xpath="wsarea.wsarea_doc:/wsaerea/areaname" optional="true"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="metadata:staging_source" expression="((String)globalMap.get(&quot;SOURCE&quot;))" type="id_String" xpath="wsarea.wsarea_doc:/wsaerea/metadata:staging_source"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="metadata:staging_blockkey" expression="area_key.T_GEN_KEY" type="id_String" incomingConnections="//@node.14/@nodeData/@connections.1" xpath="wsarea.wsarea_doc:/wsaerea/metadata:staging_blockkey"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="metadata:staging_blockkey" expression="area_key.T_GEN_KEY" type="id_String" incomingConnections="//@node.12/@nodeData/@connections.1" xpath="wsarea.wsarea_doc:/wsaerea/metadata:staging_blockkey"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.14/@nodeData/@inputTrees.0/@nodes.0" target="//@node.14/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.14/@nodeData/@inputTrees.0/@nodes.1" target="//@node.14/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.12/@nodeData/@inputTrees.0/@nodes.0" target="//@node.12/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.12/@nodeData/@inputTrees.0/@nodes.1" target="//@node.12/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4"/>
     </nodeData>
   </node>
   <node componentName="tMDMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="224">
@@ -836,6 +662,195 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tGenKey" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tGenKey_2" show="false"/>
+    <elementParameter field="MATCH_RULE_IMEX_CONTROLLER" name="MATCH_RULE_IMEX" value="false"/>
+    <elementParameter field="TABLE" name="ALGO"/>
+    <elementParameter field="CHECK" name="SHOW_HELP_KEY" value="false"/>
+    <elementParameter field="LABEL" name="HELP_KEY" value="Notice that how to fill algorithm parameter:&#xA;(1) N first characters of each word: fill in a digit number, like 2 or 12, etc.&#xA;(2) first N characters of the string: fill in a digit number&#xA;(3) last N characters of the string: fill in a digit number&#xA;(4) first N consonants of the string: fill in a digit number&#xA;(5) first N vowels of the string: fill in a digit number&#xA;(6) substring(a, b): fill a String like &quot;2;4&quot;, for example, &quot;abcdef&quot; returns &quot;cd&quot; on impact&#xA;(7) pick characters: fill a String like &quot;1;2-4;5&quot;, for example, &quot;abcdef&quot; returns &quot;bcdf&quot; on impact&#xA;(8) use default value: any String you want.(it is to replace empty value after key algorithm)&#xA;(9) add left position character: about usual separators like parenthesis and so on, applied after &quot;use default value&quot;&#xA;(10) add right position character: about usual separators like parenthesis and so on, applied after &quot;use default value&quot;&#xA;" show="false"/>
+    <elementParameter field="CHECK" name="IS_SHADOW_JOB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGenKey_2">
+      <column comment="" key="true" length="-1" name="Field" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="wsfield" name="wsfield">
+      <column comment="" key="false" length="-1" name="wsfield" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="field_key" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="Field" type="id_String" outgoingConnections="//@node.15/@nodeData/@connections.0" xpath="field_key/Field"/>
+        <nodes name="T_GEN_KEY" type="id_String" outgoingConnections="//@node.15/@nodeData/@connections.1" xpath="field_key/T_GEN_KEY"/>
+      </inputTrees>
+      <outputTrees name="wsfield">
+        <nodes name="wsfield" expression="" type="id_Document" xpath="wsfield/wsfield" pattern="">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="wsfield" expression="" type="id_String" xpath="wsfield.wsfield:/wsfield" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="metadata" type="id_String" xpath="wsfield.wsfield:/wsfield/xmlns:metadata" nodeType="NAME_SPACE" defaultValue="http://www.talend.com/mdm/metadata"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ufid" type="id_String" xpath="wsfield.wsfield:/wsfield/ufid" loop="true" main="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="fieldname" expression=" field_key.Field" type="id_String" incomingConnections="//@node.15/@nodeData/@connections.0" xpath="wsfield.wsfield:/wsfield/fieldname" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="mppchoke1" type="id_BigDecimal" xpath="wsfield.wsfield:/wsfield/mppchoke1" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="mppchoke2" type="id_BigDecimal" xpath="wsfield.wsfield:/wsfield/mppchoke2" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="mppchoke3" type="id_BigDecimal" xpath="wsfield.wsfield:/wsfield/mppchoke3" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="mppchoke4" type="id_BigDecimal" xpath="wsfield.wsfield:/wsfield/mppchoke4" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="mppsystem1" type="id_BigDecimal" xpath="wsfield.wsfield:/wsfield/mppsystem1" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="mppsystem2" type="id_BigDecimal" xpath="wsfield.wsfield:/wsfield/mppsystem2" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="metadata:staging_source" expression="((String)globalMap.get(&quot;SOURCE&quot;))" type="id_String" xpath="wsfield.wsfield:/wsfield/metadata:staging_source"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="metadata:staging_blockkey" expression="field_key.T_GEN_KEY" type="id_String" incomingConnections="//@node.15/@nodeData/@connections.1" xpath="wsfield.wsfield:/wsfield/metadata:staging_blockkey"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.15/@nodeData/@inputTrees.0/@nodes.0" target="//@node.15/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.15/@nodeData/@inputTrees.0/@nodes.1" target="//@node.15/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.10"/>
+    </nodeData>
+  </node>
+  <node componentName="tMDMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMOutput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw" show="false"/>
+    <elementParameter field="TECHNICAL" name="INPUT_SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="INPUT_SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wsfieldOut" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wsgloballosssubcatOut" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wsgloballosssubcatOut" show="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="ufid" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="DOCUMENT" value="wsfield"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMDMConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="SERVERVERSION" value="s60" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="suggest to use 6.0 url" show="false"/>
+    <elementParameter field="TEXT" name="MDMURL" value="&quot;http://ec2-35-156-225-164.eu-central-1.compute.amazonaws.com:8180/talendmdm/services/soap&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;administrator&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="fmyLBcXusWxdAhEGcREikA==" show="false"/>
+    <elementParameter field="TEXT" name="DATAMODEL" value="&quot;wintershall&quot;"/>
+    <elementParameter field="TEXT" name="DATACLUSTER" value="&quot;wintershall&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="CONTAINER_TYPE" value="STAGING"/>
+    <elementParameter field="TABLE" name="RETURN_IDS"/>
+    <elementParameter field="CHECK" name="ISUPDATE" value="false"/>
+    <elementParameter field="CHECK" name="WITHREPORT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SOURCE" value="((String)globalMap.get(&quot;SOURCE&quot;))" show="false"/>
+    <elementParameter field="CHECK" name="ISINVOKE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ADD_TASKID" value="false"/>
+    <elementParameter field="RADIO" name="CUSTOM" value="true" show="false"/>
+    <elementParameter field="TEXT" name="TASKID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="RADIO" name="PREV_COLUMN" value="false" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="PREV_COLUMN_TASK_ID" value="wsfield" show="false"/>
+    <elementParameter field="CHECK" name="USE_PARTIAL_UPDATE" value="false"/>
+    <elementParameter field="TEXT" name="PIVOT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERWRITE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PARTIAL_DELETE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="KEY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="POSITION" value="" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="false"/>
+    <elementParameter field="TEXT" name="COMMIT_LEVEL" value="200" show="false"/>
+    <elementParameter field="TABLE" name="ROOT" show="false">
+      <elementValue elementRef="PATH" value="/wsfield"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="1"/>
+      <elementValue elementRef="PATH" value="/wsfield/fieldname"/>
+      <elementValue elementRef="COLUMN" value="fieldname"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="3"/>
+      <elementValue elementRef="PATH" value="/wsfield/mppchoke1"/>
+      <elementValue elementRef="COLUMN" value="mppchoke1"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="4"/>
+      <elementValue elementRef="PATH" value="/wsfield/mppchoke2"/>
+      <elementValue elementRef="COLUMN" value="mppchoke2"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="5"/>
+      <elementValue elementRef="PATH" value="/wsfield/mppchoke3"/>
+      <elementValue elementRef="COLUMN" value="mppchoke3"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="6"/>
+      <elementValue elementRef="PATH" value="/wsfield/mppchoke4"/>
+      <elementValue elementRef="COLUMN" value="mppchoke4"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="7"/>
+      <elementValue elementRef="PATH" value="/wsfield/mppsystem1"/>
+      <elementValue elementRef="COLUMN" value="mppsystem1"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="8"/>
+      <elementValue elementRef="PATH" value="/wsfield/mppsystem2"/>
+      <elementValue elementRef="COLUMN" value="mppsystem2"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="9"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="GROUP" show="false"/>
+    <elementParameter field="TABLE" name="LOOP" show="false">
+      <elementValue elementRef="PATH" value="/wsfield/ufid"/>
+      <elementValue elementRef="COLUMN" value="ufid"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="2"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value="" show="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS" show="false"/>
+    <elementParameter field="CHECK" name="REMOVE_HEADER" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CREATE_EMPTY_ELEMENT" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="STORE_FLOW" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="wsfieldOut"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="wsfieldOut" name="tMDMOutput_2">
+      <column comment="" key="false" length="0" name="ufid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="fieldname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke3" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke4" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OUTPUT" label="wsfieldOut" name="OUTPUT">
+      <column comment="" key="false" length="0" name="ufid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="fieldname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke3" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke4" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="wsfieldOut" name="REJECT">
+      <column comment="" key="false" length="0" name="ufid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="fieldname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke3" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppchoke4" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem1" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="mppsystem2" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
@@ -875,17 +890,13 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="area" show="false"/>
   </connection>
-  <connection connectorName="UNIQUE" label="field" lineStyle="0" metaname="UNIQUE" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_2" target="tXMLMap_2">
+  <connection connectorName="UNIQUE" label="field" lineStyle="0" metaname="UNIQUE" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_2" target="tGenKey_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="field" show="false"/>
   </connection>
   <connection connectorName="UNIQUE" label="cluster" lineStyle="0" metaname="UNIQUE" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_3" target="tXMLMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="cluster" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="wsfield" lineStyle="0" metaname="wsfield" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tMDMOutput_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="wsfield" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="wscluster" lineStyle="0" metaname="wscluster" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_3" target="tMDMOutput_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -903,6 +914,14 @@
   <connection connectorName="FLOW" label="wsarea" lineStyle="0" metaname="wsarea" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tMDMOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="wsarea" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="field_key" lineStyle="0" metaname="tGenKey_2" offsetLabelX="0" offsetLabelY="0" source="tGenKey_2" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="field_key" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="wsfield" lineStyle="0" metaname="wsfield" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tMDMOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="wsfield" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMConnection_2" show="false"/>
