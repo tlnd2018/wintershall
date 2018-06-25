@@ -2,7 +2,7 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="OnRemoteMachine" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="file_WIDE_CLUSTER" prompt="file_WIDE_CLUSTER?" promptNeeded="true" type="id_String" value="&quot;C:/Users/Held/Desktop/wintershall_test/WIDE_CLUSTER.csv&quot;"/>
-    <contextParameter comment="" name="file_WellHierarchy" prompt="file_WellHierarchy?" promptNeeded="false" type="id_String" value="&quot;C:/Users/Held/Desktop/wintershall_test/WellsHierachy&quot;"/>
+    <contextParameter comment="" name="file_WellHierarchy" prompt="file_WellHierarchy?" promptNeeded="true" type="id_String" value="&quot;C:/Users/Held/Desktop/wintershall_test/WellsHierachy&quot;"/>
   </context>
   <context confirmationNeeded="false" name="OnRemoteMachine">
     <contextParameter comment="" name="file_WIDE_CLUSTER" prompt="file_WIDE_CLUSTER?" promptNeeded="false" type="id_String" value="&quot;D:/testdaten/neueTestdaten/WIDE_CLUSTER&quot;"/>
@@ -321,8 +321,243 @@
       <column key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_1" show="false"/>
+    <elementParameter field="TABLE" name="UNIQUE_KEY">
+      <elementValue elementRef="SCHEMA_COLUMN" value="OPCO_CODE"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OPCO_NAME"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AREA_CODE"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AREA_NAME"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_CODE"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_NAME"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FACILITY_CODE"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FACILITY_NAME"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WELL_CODE"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WELL_NAME"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WELL_TYPE"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WELL_ACTIVE_Last30days"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WELL_UWI"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OPCO_id"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AREA_id"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_id"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FACILITY_id"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WELL_id"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="T_GEN_KEY"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ONLY_ONCE_EACH_DUPLICATED_KEY" value="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="BUFFER_SIZE" value="M" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIRECTORY" value="" show="false"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="WellHierarchy" name="tUniqRow_1">
+      <column comment="" key="false" length="4" name="OPCO_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="OPCO_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="AREA_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="AREA_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="FIELD_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="FIELD_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="FACILITY_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FACILITY_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="WELL_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="WELL_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="WELL_TYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="WELL_ACTIVE_Last30days" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="WELL_UWI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="OPCO_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="AREA_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="FIELD_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="FACILITY_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="WELL_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="UNIQUE" label="WellHierarchy" name="UNIQUE">
+      <column comment="" key="false" length="4" name="OPCO_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="OPCO_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="AREA_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="AREA_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="FIELD_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="FIELD_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="FACILITY_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FACILITY_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="WELL_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="WELL_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="WELL_TYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="WELL_ACTIVE_Last30days" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="WELL_UWI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="OPCO_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="AREA_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="FIELD_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="FACILITY_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="WELL_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="DUPLICATE" label="WellHierarchy" name="DUPLICATE">
+      <column comment="" key="false" length="4" name="OPCO_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="OPCO_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="AREA_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="AREA_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="FIELD_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="FIELD_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="FACILITY_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FACILITY_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="WELL_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="WELL_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="WELL_TYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="WELL_ACTIVE_Last30days" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="WELL_UWI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="OPCO_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="AREA_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="FIELD_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="FACILITY_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="WELL_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="OPCO_CODE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OPCO_NAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AREA_CODE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AREA_NAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_CODE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_NAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FACILITY_CODE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FACILITY_NAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WELL_CODE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WELL_NAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WELL_TYPE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WELL_ACTIVE_Last30days"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WELL_UWI"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OPCO_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AREA_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FACILITY_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WELL_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="T_GEN_KEY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="WellHierarchy" name="tLogRow_2">
+      <column comment="" key="false" length="4" name="OPCO_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="OPCO_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="AREA_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="AREA_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="FIELD_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="FIELD_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="FACILITY_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FACILITY_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="WELL_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="WELL_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="WELL_TYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="WELL_ACTIVE_Last30days" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="WELL_UWI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="OPCO_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="AREA_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="FIELD_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="FACILITY_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="WELL_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMDMConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SERVERVERSION" value="s60"/>
+    <elementParameter field="LABEL" name="NOTE" value="suggest to use 6.0 url" show="false"/>
+    <elementParameter field="TEXT" name="MDMURL" value="&quot;http://ec2-35-156-225-164.eu-central-1.compute.amazonaws.com:8180/talendmdm/services/soap&quot;"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;administrator&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="fmyLBcXusWxdAhEGcREikA=="/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="CHECK" name="GEN_TRANSACTION_ID" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>MDM&lt;/b>&lt;br>connection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;SOURCE&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;Local-Testdata&quot;"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_1"/>
+  </node>
   <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
@@ -336,69 +571,65 @@
       <column comment="" key="false" length="12" name="WELL_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees name="well_key" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="OPCO_CODE" type="id_String" xpath="well_key/OPCO_CODE"/>
-        <nodes name="OPCO_NAME" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.0" xpath="well_key/OPCO_NAME"/>
-        <nodes name="AREA_CODE" type="id_String" xpath="well_key/AREA_CODE"/>
-        <nodes name="AREA_NAME" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.3 //@node.2/@nodeData/@connections.8" xpath="well_key/AREA_NAME" lookupOutgoingConnections="//@node.2/@nodeData/@connections.6"/>
-        <nodes name="FIELD_CODE" type="id_String" xpath="well_key/FIELD_CODE"/>
-        <nodes name="FIELD_NAME" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.4 //@node.2/@nodeData/@connections.9" xpath="well_key/FIELD_NAME" lookupOutgoingConnections="//@node.2/@nodeData/@connections.7"/>
-        <nodes name="FACILITY_CODE" type="id_String" xpath="well_key/FACILITY_CODE"/>
-        <nodes name="FACILITY_NAME" type="id_String" xpath="well_key/FACILITY_NAME"/>
-        <nodes name="WELL_CODE" type="id_String" xpath="well_key/WELL_CODE"/>
-        <nodes name="WELL_NAME" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.2 //@node.2/@nodeData/@connections.10" xpath="well_key/WELL_NAME"/>
-        <nodes name="WELL_TYPE" type="id_String" xpath="well_key/WELL_TYPE"/>
-        <nodes name="WELL_ACTIVE_Last30days" type="id_Integer" xpath="well_key/WELL_ACTIVE_Last30days"/>
-        <nodes name="WELL_UWI" type="id_String" xpath="well_key/WELL_UWI"/>
-        <nodes name="OPCO_id" type="id_String" xpath="well_key/OPCO_id"/>
-        <nodes name="AREA_id" type="id_String" xpath="well_key/AREA_id"/>
-        <nodes name="FIELD_id" type="id_String" xpath="well_key/FIELD_id"/>
-        <nodes name="FACILITY_id" type="id_String" xpath="well_key/FACILITY_id"/>
-        <nodes name="WELL_id" type="id_String" xpath="well_key/WELL_id"/>
-        <nodes name="T_GEN_KEY" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.5" xpath="well_key/T_GEN_KEY"/>
+      <inputTrees name="well_key_uniq" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="OPCO_CODE" type="id_String" xpath="well_key_uniq/OPCO_CODE"/>
+        <nodes name="OPCO_NAME" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.4" xpath="well_key_uniq/OPCO_NAME"/>
+        <nodes name="AREA_CODE" type="id_String" xpath="well_key_uniq/AREA_CODE"/>
+        <nodes name="AREA_NAME" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.2" xpath="well_key_uniq/AREA_NAME"/>
+        <nodes name="FIELD_CODE" type="id_String" xpath="well_key_uniq/FIELD_CODE"/>
+        <nodes name="FIELD_NAME" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.3" xpath="well_key_uniq/FIELD_NAME"/>
+        <nodes name="FACILITY_CODE" type="id_String" xpath="well_key_uniq/FACILITY_CODE"/>
+        <nodes name="FACILITY_NAME" type="id_String" xpath="well_key_uniq/FACILITY_NAME"/>
+        <nodes name="WELL_CODE" type="id_String" xpath="well_key_uniq/WELL_CODE"/>
+        <nodes name="WELL_NAME" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.1" xpath="well_key_uniq/WELL_NAME"/>
+        <nodes name="WELL_TYPE" type="id_String" xpath="well_key_uniq/WELL_TYPE"/>
+        <nodes name="WELL_ACTIVE_Last30days" type="id_Integer" xpath="well_key_uniq/WELL_ACTIVE_Last30days"/>
+        <nodes name="WELL_UWI" type="id_String" xpath="well_key_uniq/WELL_UWI"/>
+        <nodes name="OPCO_id" type="id_String" xpath="well_key_uniq/OPCO_id"/>
+        <nodes name="AREA_id" type="id_String" xpath="well_key_uniq/AREA_id"/>
+        <nodes name="FIELD_id" type="id_String" xpath="well_key_uniq/FIELD_id"/>
+        <nodes name="FACILITY_id" type="id_String" xpath="well_key_uniq/FACILITY_id"/>
+        <nodes name="WELL_id" type="id_String" xpath="well_key_uniq/WELL_id"/>
+        <nodes name="T_GEN_KEY" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.5" xpath="well_key_uniq/T_GEN_KEY"/>
       </inputTrees>
       <inputTrees activateCondensedTool="true" name="wide_cluster" lookup="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
-        <nodes name="Area" expression="well_key.AREA_NAME" type="id_String" xpath="wide_cluster/Area" lookupIncomingConnections="//@node.2/@nodeData/@connections.6"/>
-        <nodes name="Field" expression="well_key.FIELD_NAME" type="id_String" xpath="wide_cluster/Field" lookupIncomingConnections="//@node.2/@nodeData/@connections.7"/>
+        <nodes name="Area" expression="well_key.AREA_NAME" type="id_String" xpath="wide_cluster/Area"/>
+        <nodes name="Field" expression="well_key.FIELD_NAME" type="id_String" xpath="wide_cluster/Field"/>
         <nodes name="Medium" type="id_String" xpath="wide_cluster/Medium"/>
-        <nodes name="Cluster" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.1" xpath="wide_cluster/Cluster"/>
+        <nodes name="Cluster" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.0" xpath="wide_cluster/Cluster"/>
       </inputTrees>
       <outputTrees name="wswell">
         <nodes name="wswell" expression="" type="id_Document" xpath="wswell/wswell">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="wswell" expression="" type="id_String" xpath="wswell.wswell:/wswell">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="m" type="id_String" xpath="wswell.wswell:/wswell/xmlns:m" nodeType="NAME_SPACE" defaultValue="http://www.talend.com/mdm/metadata"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="uwid" type="id_String" xpath="wswell.wswell:/wswell/uwid" loop="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="wellname" expression="well_key.WELL_NAME" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.2" xpath="wswell.wswell:/wswell/wellname" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="areacode" expression="MDM.createFK(well_key.AREA_NAME) " type="id_String" incomingConnections="//@node.2/@nodeData/@connections.3" xpath="wswell.wswell:/wswell/areacode" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="fieldcode" expression="MDM.createFK(well_key.FIELD_NAME) " type="id_String" incomingConnections="//@node.2/@nodeData/@connections.4" xpath="wswell.wswell:/wswell/fieldcode" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="clustercode" expression="MDM.createFK(wide_cluster.Cluster)" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.1" xpath="wswell.wswell:/wswell/clustercode" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="opcocode" expression="MDM.createFK(well_key.OPCO_NAME) " type="id_String" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="wswell.wswell:/wswell/opcocode" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="wellname" expression="well_key_uniq.WELL_NAME" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.1" xpath="wswell.wswell:/wswell/wellname" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="areacode" expression="MDM.createFK(well_key_uniq.AREA_NAME) " type="id_String" incomingConnections="//@node.7/@nodeData/@connections.2" xpath="wswell.wswell:/wswell/areacode" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="fieldcode" expression="MDM.createFK(well_key_uniq.FIELD_NAME) " type="id_String" incomingConnections="//@node.7/@nodeData/@connections.3" xpath="wswell.wswell:/wswell/fieldcode" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="clustercode" expression="MDM.createFK(wide_cluster.Cluster)" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.0" xpath="wswell.wswell:/wswell/clustercode" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="opcocode" expression="MDM.createFK(well_key_uniq.OPCO_NAME) " type="id_String" incomingConnections="//@node.7/@nodeData/@connections.4" xpath="wswell.wswell:/wswell/opcocode" optional="true"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="m:staging_source" expression="((String)globalMap.get(&quot;SOURCE&quot;))" type="id_String" xpath="wswell.wswell:/wswell/m:staging_source"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="m:staging_blockkey" expression="well_key.T_GEN_KEY" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.5" xpath="wswell.wswell:/wswell/m:staging_blockkey"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="m:staging_blockkey" expression="well_key_uniq.T_GEN_KEY" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.5" xpath="wswell.wswell:/wswell/m:staging_blockkey"/>
           </children>
         </nodes>
       </outputTrees>
       <outputTrees activateCondensedTool="true" name="no_match" rejectInnerJoin="true">
-        <nodes name="AREA_NAME" expression="well_key.AREA_NAME" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.8" xpath="no_match/AREA_NAME"/>
-        <nodes name="FIELD_NAME" expression="well_key.FIELD_NAME" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.9" xpath="no_match/FIELD_NAME"/>
-        <nodes name="WELL_NAME" expression="well_key.WELL_NAME" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.10" xpath="no_match/WELL_NAME"/>
+        <nodes name="AREA_NAME" expression="well_key.AREA_NAME" type="id_String" xpath="no_match/AREA_NAME"/>
+        <nodes name="FIELD_NAME" expression="well_key.FIELD_NAME" type="id_String" xpath="no_match/FIELD_NAME"/>
+        <nodes name="WELL_NAME" expression="well_key.WELL_NAME" type="id_String" xpath="no_match/WELL_NAME"/>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.1/@nodes.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.9" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.5" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.18" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.8"/>
-      <connections xsi:type="TalendXMLMap:LookupConnection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.3" target="//@node.2/@nodeData/@inputTrees.1/@nodes.0"/>
-      <connections xsi:type="TalendXMLMap:LookupConnection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.5" target="//@node.2/@nodeData/@inputTrees.1/@nodes.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.3" target="//@node.2/@nodeData/@outputTrees.1/@nodes.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.5" target="//@node.2/@nodeData/@outputTrees.1/@nodes.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.9" target="//@node.2/@nodeData/@outputTrees.1/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.1/@nodes.3" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.9" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.3" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.5" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.1" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.18" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.8"/>
     </nodeData>
   </node>
   <node componentName="tMDMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw" show="false"/>
     <elementParameter field="TECHNICAL" name="INPUT_SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
@@ -523,6 +754,7 @@
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.file_WIDE_CLUSTER"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
@@ -595,6 +827,7 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -623,38 +856,23 @@
       <column comment="" key="false" length="12" name="WELL_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tMDMConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMConnection_1" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="SERVERVERSION" value="s60"/>
-    <elementParameter field="LABEL" name="NOTE" value="suggest to use 6.0 url" show="false"/>
-    <elementParameter field="TEXT" name="MDMURL" value="&quot;http://ec2-35-156-225-164.eu-central-1.compute.amazonaws.com:8180/talendmdm/services/soap&quot;"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;administrator&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="fmyLBcXusWxdAhEGcREikA=="/>
-    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
-    <elementParameter field="CHECK" name="GEN_TRANSACTION_ID" value="false" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="&lt;b>MDM&lt;/b>&lt;br>connection"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
-    <elementParameter field="TABLE" name="VARIABLES">
-      <elementValue elementRef="KEY" value="&quot;SOURCE&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;Local-Testdata&quot;"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSetGlobalVar_1"/>
-  </node>
   <connection connectorName="FLOW" label="wells" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tGenKey_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="wells" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="well_key" lineStyle="0" metaname="tGenKey_1" offsetLabelX="0" offsetLabelY="0" source="tGenKey_1" target="tXMLMap_1">
+  <connection connectorName="FLOW" label="well_key" lineStyle="0" metaname="tGenKey_1" offsetLabelX="0" offsetLabelY="0" source="tGenKey_1" target="tUniqRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="well_key" show="false"/>
+  </connection>
+  <connection connectorName="UNIQUE" label="well_key_uniq" lineStyle="0" metaname="UNIQUE" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="well_key_uniq" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tMDMConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMDMConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMDMConnection_1" target="tSetGlobalVar_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="wswell" lineStyle="0" metaname="wswell" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tXMLMap_1" target="tMDMOutput_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -663,21 +881,18 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="wswell" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="no_match" lineStyle="0" metaname="no_match" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tXMLMap_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="no_match" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="wide_cluster" lineStyle="8" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="wide_cluster" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tMDMConnection_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMDMConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMDMConnection_1" target="tSetGlobalVar_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
@@ -697,6 +912,11 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
