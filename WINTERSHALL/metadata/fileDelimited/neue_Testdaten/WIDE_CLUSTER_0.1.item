@@ -11,5 +11,6 @@
   </orgomg.cwm.resource.record:RecordFile>
   <orgomg.cwm.objectmodel.core:Dependency xmi:id="_Pvi-oHSNEei7XcXr-OiXow" kind="Usage" supplier="_eQp5oXR3Eei7XcXr-OiXow">
     <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/WSArea_IN_0.1.ana#_PT0E4HSNEei7XcXr-OiXow"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/WSCluster_IN_0.1.ana#__kE8oHhdEeixqb5dJ1HrWg"/>
   </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>

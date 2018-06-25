@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="__kE8oHhdEeixqb5dJ1HrWg" name="WSCluster_IN" creationDate="2018-06-20T15:24:19.095+0200" defaultContext="Default">
+  <clientDependency href="../../metadata/fileDelimited/neue_Testdaten/WIDE_CLUSTER_0.1.item#_Pvi-oHSNEei7XcXr-OiXow"/>
+  <taggedValue xmi:id="__kE8oXhdEeixqb5dJ1HrWg" tag="PREVIEW_ROW_NUMBER" value="10000"/>
+  <taggedValue xmi:id="__kE8onhdEeixqb5dJ1HrWg" tag="Status" value="development"/>
+  <taggedValue xmi:id="__kE8o3hdEeixqb5dJ1HrWg" tag="Author" value="johannes.held@prodato.de"/>
+  <taggedValue xmi:id="__kE8pHhdEeixqb5dJ1HrWg" tag="Purpose" value="Find duplicates of AREA"/>
+  <taggedValue xmi:id="__kE8pXhdEeixqb5dJ1HrWg" tag="Description" value=""/>
+  <taggedValue xmi:id="__kE8pnhdEeixqb5dJ1HrWg" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="__kE8p3hdEeixqb5dJ1HrWg" tag="TEMP_DATA_DIR" value=""/>
+  <taggedValue xmi:id="__kE8qHhdEeixqb5dJ1HrWg" tag="MAX_BUFFER_SIZE" value="200000"/>
+  <taggedValue xmi:id="__kE8qXhdEeixqb5dJ1HrWg" tag="STORE_ON_DISK" value="false"/>
+  <taggedValue xmi:id="__kE8qnhdEeixqb5dJ1HrWg" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+  <context xmi:id="__kE8q3hdEeixqb5dJ1HrWg">
+    <connection href="../../metadata/fileDelimited/neue_Testdaten/WIDE_CLUSTER_0.1.item#_eQp5oXR3Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WIDE_CLUSTER_0.1.item#_eQp5pHR3Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WIDE_CLUSTER_0.1.item#_eQp5pXR3Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WIDE_CLUSTER_0.1.item#_eQp5pnR3Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WIDE_CLUSTER_0.1.item#_eQp5p3R3Eei7XcXr-OiXow"/>
+  </context>
+  <results xmi:id="__kE8rHhdEeixqb5dJ1HrWg">
+    <resultMetadata xmi:id="__kE8rXhdEeixqb5dJ1HrWg"/>
+    <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="__kE8rnhdEeixqb5dJ1HrWg"/>
+    <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="__kE8r3hdEeixqb5dJ1HrWg">
+      <builtInMatchRuleDefinition xmi:id="__kE8sHhdEeixqb5dJ1HrWg" name="ws_match_area" recordLinkageAlgorithm="T_SwooshAlgorithm">
+        <taggedValue xmi:id="__kE8sXhdEeixqb5dJ1HrWg" tag="Purpose" value=""/>
+        <taggedValue xmi:id="__kE8snhdEeixqb5dJ1HrWg" tag="Description" value=""/>
+        <taggedValue xmi:id="__kE8s3hdEeixqb5dJ1HrWg" tag="Author" value="johannes.held@prodato.de"/>
+        <taggedValue xmi:id="__kE8tHhdEeixqb5dJ1HrWg" tag="Status" value="development"/>
+        <matchRules xmi:id="__kE8tXhdEeixqb5dJ1HrWg" name="Match Rule 1">
+          <matchKeys xmi:id="__kE8tnhdEeixqb5dJ1HrWg" name="Areaname" column="Area" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+            <algorithm xmi:id="__kE8t3hdEeixqb5dJ1HrWg" algorithmType="EXACT" algorithmParameters=""/>
+          </matchKeys>
+        </matchRules>
+        <survivorshipKeys xmi:id="__kE8uHhdEeixqb5dJ1HrWg" name="Areaname" allowManualResolution="true">
+          <function xmi:id="__kE8uXhdEeixqb5dJ1HrWg" algorithmType="MostRecent" algorithmParameters=""/>
+        </survivorshipKeys>
+      </builtInMatchRuleDefinition>
+    </indicators>
+  </results>
+  <parameters xmi:id="__kE8unhdEeixqb5dJ1HrWg" analysisType="Match Analysis"/>
+  <contextType xmi:id="__kE8u3hdEeixqb5dJ1HrWg" confirmationNeeded="false" name="Default"/>
+</dataquality.analysis:Analysis>
