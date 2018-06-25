@@ -36,8 +36,25 @@
     <resultMetadata xmi:id="_JgNjuXhgEeixqb5dJ1HrWg"/>
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_JgNjunhgEeixqb5dJ1HrWg"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_JgNju3hgEeixqb5dJ1HrWg">
-      <builtInMatchRuleDefinition xmi:id="_JgNjvHhgEeixqb5dJ1HrWg">
-        <matchRules xmi:id="_JqPCYHhgEeixqb5dJ1HrWg" name="Match Rule 1"/>
+      <builtInMatchRuleDefinition xmi:id="_JgNjvHhgEeixqb5dJ1HrWg" recordLinkageAlgorithm="T_SwooshAlgorithm">
+        <blockKeys xmi:id="_L8R9gHhgEeixqb5dJ1HrWg" name="area" column="AREA_NAME">
+          <preAlgorithm xmi:id="_L8R9gXhgEeixqb5dJ1HrWg" algorithmType="NON_ALGO" algorithmParameters=""/>
+          <algorithm xmi:id="_L8R9gnhgEeixqb5dJ1HrWg" algorithmType="first_Char_EW" algorithmParameters=""/>
+          <postAlgorithm xmi:id="_L8R9g3hgEeixqb5dJ1HrWg" algorithmType="NON_ALGO" algorithmParameters=""/>
+        </blockKeys>
+        <blockKeys xmi:id="_Ro3F0HhgEeixqb5dJ1HrWg" name="field" column="FIELD_NAME">
+          <preAlgorithm xmi:id="_Ro3F0XhgEeixqb5dJ1HrWg" algorithmType="NON_ALGO" algorithmParameters=""/>
+          <algorithm xmi:id="_Ro3F0nhgEeixqb5dJ1HrWg" algorithmType="first_N_Char" algorithmParameters="2"/>
+          <postAlgorithm xmi:id="_Ro3F03hgEeixqb5dJ1HrWg" algorithmType="NON_ALGO" algorithmParameters=""/>
+        </blockKeys>
+        <matchRules xmi:id="_JqPCYHhgEeixqb5dJ1HrWg" name="Match Rule 1">
+          <matchKeys xmi:id="_cg_tAHhgEeixqb5dJ1HrWg" name="WellName" column="WELL_NAME" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+            <algorithm xmi:id="_cg_tAXhgEeixqb5dJ1HrWg" algorithmType="EXACT" algorithmParameters=""/>
+          </matchKeys>
+        </matchRules>
+        <survivorshipKeys xmi:id="_chAUEHhgEeixqb5dJ1HrWg" name="WellName" column="WELL_NAME" allowManualResolution="true">
+          <function xmi:id="_chAUEXhgEeixqb5dJ1HrWg" algorithmType="MostRecent" algorithmParameters=""/>
+        </survivorshipKeys>
       </builtInMatchRuleDefinition>
     </indicators>
   </results>
