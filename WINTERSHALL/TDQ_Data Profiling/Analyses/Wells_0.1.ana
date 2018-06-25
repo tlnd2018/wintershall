@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_JgNjsHhgEeixqb5dJ1HrWg" name="Wells" creationDate="2018-06-25T12:11:37.513+0200">
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_JgNjsHhgEeixqb5dJ1HrWg" name="Wells" creationDate="2018-06-25T12:11:37.513+0200" defaultContext="Default">
+  <clientDependency href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_J1jhkHhgEeixqb5dJ1HrWg"/>
   <taggedValue xmi:id="_JgNjsXhgEeixqb5dJ1HrWg" tag="PREVIEW_ROW_NUMBER" value="10000"/>
   <taggedValue xmi:id="_JgNjsnhgEeixqb5dJ1HrWg" tag="Status" value="development"/>
   <taggedValue xmi:id="_JgNjs3hgEeixqb5dJ1HrWg" tag="Author" value="johannes.held@prodato.de"/>
-  <taggedValue xmi:id="_JgNjtHhgEeixqb5dJ1HrWg" tag="Purpose"/>
-  <taggedValue xmi:id="_JgNjtXhgEeixqb5dJ1HrWg" tag="Description"/>
+  <taggedValue xmi:id="_JgNjtHhgEeixqb5dJ1HrWg" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_JgNjtXhgEeixqb5dJ1HrWg" tag="Description" value=""/>
   <taggedValue xmi:id="_JgNjtnhgEeixqb5dJ1HrWg" tag="Version" value="0.1"/>
-  <context xmi:id="_JgNjt3hgEeixqb5dJ1HrWg"/>
+  <taggedValue xmi:id="_JvIwgHhgEeixqb5dJ1HrWg" tag="TEMP_DATA_DIR" value=""/>
+  <taggedValue xmi:id="_JvIwgXhgEeixqb5dJ1HrWg" tag="MAX_BUFFER_SIZE" value="200000"/>
+  <taggedValue xmi:id="_JvIwgnhgEeixqb5dJ1HrWg" tag="STORE_ON_DISK" value="false"/>
+  <taggedValue xmi:id="_J1geQXhgEeixqb5dJ1HrWg" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+  <context xmi:id="_JgNjt3hgEeixqb5dJ1HrWg">
+    <connection href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCYHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCY3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCZHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCZXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCZnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCZ3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCaHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCaXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCanR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCa3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCbHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCbXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCbnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCb3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCcHR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCcXR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCcnR2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCc3R2Eei7XcXr-OiXow"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/neue_Testdaten/WellsHierarchy_0.1.item#_3oPCdHR2Eei7XcXr-OiXow"/>
+  </context>
   <results xmi:id="_JgNjuHhgEeixqb5dJ1HrWg">
     <resultMetadata xmi:id="_JgNjuXhgEeixqb5dJ1HrWg"/>
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_JgNjunhgEeixqb5dJ1HrWg"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_JgNju3hgEeixqb5dJ1HrWg">
-      <builtInMatchRuleDefinition xmi:id="_JgNjvHhgEeixqb5dJ1HrWg"/>
+      <builtInMatchRuleDefinition xmi:id="_JgNjvHhgEeixqb5dJ1HrWg">
+        <matchRules xmi:id="_JqPCYHhgEeixqb5dJ1HrWg" name="Match Rule 1"/>
+      </builtInMatchRuleDefinition>
     </indicators>
   </results>
   <parameters xmi:id="_JgNjvXhgEeixqb5dJ1HrWg" analysisType="Match Analysis"/>
+  <contextType xmi:id="_J1geQHhgEeixqb5dJ1HrWg" confirmationNeeded="false" name="Default"/>
 </dataquality.analysis:Analysis>

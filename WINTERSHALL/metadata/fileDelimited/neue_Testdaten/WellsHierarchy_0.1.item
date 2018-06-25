@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
-  <TalendMetadata:DelimitedFileConnection xmi:id="_3oPCYHR2Eei7XcXr-OiXow" name="WellsHierarchy" dataPackage="_3oPCYXR2Eei7XcXr-OiXow" Server="Localhost 127.0.0.1" FilePath="C:/Users/Held/Desktop/wintershall_test/WellsHierachy" Encoding="UTF-8" FieldSeparatorValue="&quot;|&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" RemoveEmptyRow="true" EscapeType="CSV" TextEnclosure="&quot;'&quot;" CsvOption="true" FieldSeparatorType="Custom ANSI"/>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_3oPCYHR2Eei7XcXr-OiXow" name="WellsHierarchy" supplierDependency="_J1jhkHhgEeixqb5dJ1HrWg" dataPackage="_3oPCYXR2Eei7XcXr-OiXow" Server="Localhost 127.0.0.1" FilePath="C:/Users/Held/Desktop/wintershall_test/WellsHierachy" Encoding="UTF-8" FieldSeparatorValue="&quot;|&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" RemoveEmptyRow="true" EscapeType="CSV" TextEnclosure="&quot;'&quot;" CsvOption="true" FieldSeparatorType="Custom ANSI"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_3oPCYXR2Eei7XcXr-OiXow" name="default" dataManager="_3oPCYHR2Eei7XcXr-OiXow">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_3oPCYnR2Eei7XcXr-OiXow" id="_qfKTUHR2Eei7XcXr-OiXow" label="WellHierarchy">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCY3R2Eei7XcXr-OiXow" label="OPCO_CODE" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCZHR2Eei7XcXr-OiXow" label="OPCO_NAME" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCZXR2Eei7XcXr-OiXow" label="AREA_CODE" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCZnR2Eei7XcXr-OiXow" label="AREA_NAME" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCZ3R2Eei7XcXr-OiXow" label="FIELD_CODE" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCaHR2Eei7XcXr-OiXow" label="FIELD_NAME" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCaXR2Eei7XcXr-OiXow" label="FACILITY_CODE" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCanR2Eei7XcXr-OiXow" label="FACILITY_NAME" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCa3R2Eei7XcXr-OiXow" label="WELL_CODE" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCbHR2Eei7XcXr-OiXow" label="WELL_NAME" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCbXR2Eei7XcXr-OiXow" label="WELL_TYPE" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCbnR2Eei7XcXr-OiXow" label="WELL_ACTIVE_Last30days" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCb3R2Eei7XcXr-OiXow" label="WELL_UWI" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCcHR2Eei7XcXr-OiXow" label="OPCO_id" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCcXR2Eei7XcXr-OiXow" label="AREA_id" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCcnR2Eei7XcXr-OiXow" label="FIELD_id" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCc3R2Eei7XcXr-OiXow" label="FACILITY_id" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCdHR2Eei7XcXr-OiXow" label="WELL_id" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCY3R2Eei7XcXr-OiXow" id="OPCO_CODE" label="OPCO_CODE" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCZHR2Eei7XcXr-OiXow" id="OPCO_NAME" label="OPCO_NAME" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCZXR2Eei7XcXr-OiXow" id="AREA_CODE" label="AREA_CODE" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCZnR2Eei7XcXr-OiXow" id="AREA_NAME" label="AREA_NAME" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCZ3R2Eei7XcXr-OiXow" id="FIELD_CODE" label="FIELD_CODE" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCaHR2Eei7XcXr-OiXow" id="FIELD_NAME" label="FIELD_NAME" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCaXR2Eei7XcXr-OiXow" id="FACILITY_CODE" label="FACILITY_CODE" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCanR2Eei7XcXr-OiXow" id="FACILITY_NAME" label="FACILITY_NAME" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCa3R2Eei7XcXr-OiXow" id="WELL_CODE" label="WELL_CODE" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCbHR2Eei7XcXr-OiXow" id="WELL_NAME" label="WELL_NAME" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCbXR2Eei7XcXr-OiXow" id="WELL_TYPE" label="WELL_TYPE" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCbnR2Eei7XcXr-OiXow" id="WELL_ACTIVE_Last30days" label="WELL_ACTIVE_Last30days" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCb3R2Eei7XcXr-OiXow" id="WELL_UWI" label="WELL_UWI" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCcHR2Eei7XcXr-OiXow" id="OPCO_id" label="OPCO_id" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCcXR2Eei7XcXr-OiXow" id="AREA_id" label="AREA_id" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCcnR2Eei7XcXr-OiXow" id="FIELD_id" label="FIELD_id" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCc3R2Eei7XcXr-OiXow" id="FACILITY_id" label="FACILITY_id" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3oPCdHR2Eei7XcXr-OiXow" id="WELL_id" label="WELL_id" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_J1jhkHhgEeixqb5dJ1HrWg" kind="Usage" supplier="_3oPCYHR2Eei7XcXr-OiXow">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/Wells_0.1.ana#_JgNjsHhgEeixqb5dJ1HrWg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
