@@ -471,9 +471,9 @@
         <nodes name="OPCO_CODE" type="id_String" xpath="well_key_uniq/OPCO_CODE"/>
         <nodes name="OPCO_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="well_key_uniq/OPCO_NAME"/>
         <nodes name="AREA_CODE" type="id_String" xpath="well_key_uniq/AREA_CODE"/>
-        <nodes name="AREA_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="well_key_uniq/AREA_NAME"/>
+        <nodes name="AREA_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="well_key_uniq/AREA_NAME" lookupOutgoingConnections="//@node.3/@nodeData/@connections.5"/>
         <nodes name="FIELD_CODE" type="id_String" xpath="well_key_uniq/FIELD_CODE"/>
-        <nodes name="FIELD_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="well_key_uniq/FIELD_NAME"/>
+        <nodes name="FIELD_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="well_key_uniq/FIELD_NAME" lookupOutgoingConnections="//@node.3/@nodeData/@connections.6"/>
         <nodes name="FACILITY_CODE" type="id_String" xpath="well_key_uniq/FACILITY_CODE"/>
         <nodes name="FACILITY_NAME" type="id_String" xpath="well_key_uniq/FACILITY_NAME"/>
         <nodes name="WELL_CODE" type="id_String" xpath="well_key_uniq/WELL_CODE"/>
@@ -488,6 +488,12 @@
         <nodes name="WELL_id" type="id_String" xpath="well_key_uniq/WELL_id"/>
         <nodes name="T_GEN_KEY" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="well_key_uniq/T_GEN_KEY"/>
       </inputTrees>
+      <inputTrees name="wide_cluster" lookup="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <nodes name="Area" expression="well_key_uniq.AREA_NAME" type="id_String" xpath="wide_cluster/Area" lookupIncomingConnections="//@node.3/@nodeData/@connections.5"/>
+        <nodes name="Field" expression="well_key_uniq.FIELD_NAME" type="id_String" xpath="wide_cluster/Field" lookupIncomingConnections="//@node.3/@nodeData/@connections.6"/>
+        <nodes name="Medium" type="id_String" xpath="wide_cluster/Medium"/>
+        <nodes name="Cluster" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.7" xpath="wide_cluster/Cluster"/>
+      </inputTrees>
       <outputTrees name="wswell">
         <nodes name="wswell" expression="" type="id_Document" xpath="wswell/wswell">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="wswell" expression="" type="id_String" xpath="wswell.wswell:/wswell">
@@ -496,7 +502,7 @@
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="wellname" expression="well_key_uniq.WELL_NAME" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="wswell.wswell:/wswell/wellname" optional="true"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="areacode" expression="MDM.createFK(well_key_uniq.AREA_NAME) " type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="wswell.wswell:/wswell/areacode" optional="true"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="fieldcode" expression="MDM.createFK(well_key_uniq.FIELD_NAME) " type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="wswell.wswell:/wswell/fieldcode" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="clustercode" expression="MDM.createFK(wide_cluster.Cluster)" type="id_String" xpath="wswell.wswell:/wswell/clustercode" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="clustercode" expression="MDM.createFK(wide_cluster.Cluster)" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.7" xpath="wswell.wswell:/wswell/clustercode" optional="true"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="opcocode" expression="MDM.createFK(well_key_uniq.OPCO_NAME) " type="id_String" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="wswell.wswell:/wswell/opcocode" optional="true"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="m:staging_source" expression="((String)globalMap.get(&quot;SOURCE&quot;))" type="id_String" xpath="wswell.wswell:/wswell/m:staging_source"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="m:staging_blockkey" expression="well_key_uniq.T_GEN_KEY" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.4" xpath="wswell.wswell:/wswell/m:staging_blockkey"/>
@@ -514,6 +520,9 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.5" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.18" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.8"/>
+      <connections xsi:type="TalendXMLMap:LookupConnection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@inputTrees.1/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:LookupConnection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.5" target="//@node.3/@nodeData/@inputTrees.1/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.1/@nodes.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5"/>
     </nodeData>
   </node>
   <node componentName="tMDMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="448">
