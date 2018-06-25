@@ -27,12 +27,17 @@
         <taggedValue xmi:id="__kE8snhdEeixqb5dJ1HrWg" tag="Description" value=""/>
         <taggedValue xmi:id="__kE8s3hdEeixqb5dJ1HrWg" tag="Author" value="johannes.held@prodato.de"/>
         <taggedValue xmi:id="__kE8tHhdEeixqb5dJ1HrWg" tag="Status" value="development"/>
+        <blockKeys xmi:id="_Gu_EIHheEeixqb5dJ1HrWg" name="fstCharName" column="Cluster">
+          <preAlgorithm xmi:id="_Gu_EIXheEeixqb5dJ1HrWg" algorithmType="NON_ALGO" algorithmParameters=""/>
+          <algorithm xmi:id="_Gu_EInheEeixqb5dJ1HrWg" algorithmType="first_Char_EW" algorithmParameters=""/>
+          <postAlgorithm xmi:id="_Gu_EI3heEeixqb5dJ1HrWg" algorithmType="NON_ALGO" algorithmParameters=""/>
+        </blockKeys>
         <matchRules xmi:id="__kE8tXhdEeixqb5dJ1HrWg" name="Match Rule 1">
-          <matchKeys xmi:id="__kE8tnhdEeixqb5dJ1HrWg" name="Areaname" column="Area" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+          <matchKeys xmi:id="__kE8tnhdEeixqb5dJ1HrWg" name="Name" column="Cluster" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
             <algorithm xmi:id="__kE8t3hdEeixqb5dJ1HrWg" algorithmType="EXACT" algorithmParameters=""/>
           </matchKeys>
         </matchRules>
-        <survivorshipKeys xmi:id="__kE8uHhdEeixqb5dJ1HrWg" name="Areaname" allowManualResolution="true">
+        <survivorshipKeys xmi:id="__kE8uHhdEeixqb5dJ1HrWg" name="Name" column="Cluster" allowManualResolution="true">
           <function xmi:id="__kE8uXhdEeixqb5dJ1HrWg" algorithmType="MostRecent" algorithmParameters=""/>
         </survivorshipKeys>
       </builtInMatchRuleDefinition>
