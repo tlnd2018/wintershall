@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:MatchRuleDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_aqoTMHheEeixqb5dJ1HrWg" name="ws_match_field" recordLinkageAlgorithm="T_SwooshAlgorithm">
+  <taggedValue xmi:id="_aqoTMXheEeixqb5dJ1HrWg" tag="Purpose"/>
+  <taggedValue xmi:id="_aqoTMnheEeixqb5dJ1HrWg" tag="Description"/>
+  <taggedValue xmi:id="_aqoTM3heEeixqb5dJ1HrWg" tag="Author" value="johannes.held@prodato.de"/>
+  <taggedValue xmi:id="_aqoTNHheEeixqb5dJ1HrWg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_aqoTNXheEeixqb5dJ1HrWg" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_aqoTNnheEeixqb5dJ1HrWg" tag="Validation_Status" value="true"/>
+  <blockKeys xmi:id="_aqoTN3heEeixqb5dJ1HrWg" name="Name" column="Field">
+    <preAlgorithm xmi:id="_aqoTOHheEeixqb5dJ1HrWg" algorithmType="NON_ALGO" algorithmParameters=""/>
+    <algorithm xmi:id="_aqoTOXheEeixqb5dJ1HrWg" algorithmType="first_Char_EW" algorithmParameters=""/>
+    <postAlgorithm xmi:id="_aqoTOnheEeixqb5dJ1HrWg" algorithmType="NON_ALGO" algorithmParameters=""/>
+  </blockKeys>
+  <matchRules xmi:id="_aqoTO3heEeixqb5dJ1HrWg" name="Match Rule 1">
+    <matchKeys xmi:id="_aqoTPHheEeixqb5dJ1HrWg" name="Name" column="Field" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+      <algorithm xmi:id="_aqoTPXheEeixqb5dJ1HrWg" algorithmType="EXACT" algorithmParameters=""/>
+    </matchKeys>
+  </matchRules>
+  <survivorshipKeys xmi:id="_aqoTPnheEeixqb5dJ1HrWg" name="Name" column="Field" allowManualResolution="true">
+    <function xmi:id="_aqoTP3heEeixqb5dJ1HrWg" algorithmType="MostRecent" algorithmParameters=""/>
+  </survivorshipKeys>
+</dataquality.rules:MatchRuleDefinition>
