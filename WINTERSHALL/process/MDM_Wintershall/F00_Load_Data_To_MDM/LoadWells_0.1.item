@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="OnRemoteMachine" jobType="Standard">
-  <context confirmationNeeded="false" name="Default">
+  <context confirmationNeeded="false" name="Development">
     <contextParameter comment="" name="file_WIDE_CLUSTER" prompt="file_WIDE_CLUSTER?" promptNeeded="true" type="id_String" value="&quot;C:/Users/Held/Desktop/wintershall_test/WIDE_CLUSTER.csv&quot;"/>
     <contextParameter comment="" name="file_WellHierarchy" prompt="file_WellHierarchy?" promptNeeded="true" type="id_String" value="&quot;C:/Users/Held/Desktop/wintershall_test/WellsHierachy&quot;"/>
   </context>
