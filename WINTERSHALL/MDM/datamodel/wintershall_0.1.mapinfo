@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="ASCII"?>
 <matchrule:MatchRuleMapInfo xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:matchrule="http://www.talend.org/mdm/server/matchrule" modelName="wintershall">
-  <entityMapInfos entityName="wsaerea">
+  <entityMapInfos entityName="wsaerea" matchRuleDefName="ws_match_area">
+    <survivorshipKeyMap key="Areaname" value="wsaerea/areaname"/>
+    <blockingKeyDefinition useBuiltInColumn="true"/>
+    <matchRuleMapInfoPages name="Match Rule 1">
+      <matchKeyMap key="Areaname" value="wsaerea/areaname"/>
+    </matchRuleMapInfoPages>
+  </entityMapInfos>
+  <entityMapInfos entityName="wscluster">
     <blockingKeyDefinition/>
-    <matchRuleMapInfoPages name="Match Rule 1"/>
+    <matchRuleMapInfoPages/>
+  </entityMapInfos>
+  <entityMapInfos entityName="wsfield" matchRuleDefName="ws_match_field">
+    <survivorshipKeyMap key="Name" value="wsfield/fieldname"/>
+    <blockingKeyDefinition useBuiltInColumn="true"/>
+    <matchRuleMapInfoPages name="Match Rule 1">
+      <matchKeyMap key="Name" value="wsfield/fieldname"/>
+    </matchRuleMapInfoPages>
   </entityMapInfos>
 </matchrule:MatchRuleMapInfo>
