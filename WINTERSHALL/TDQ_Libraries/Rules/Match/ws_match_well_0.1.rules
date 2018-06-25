@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:MatchRuleDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_mMwAoHhgEeixqb5dJ1HrWg" name="ws_match_well" recordLinkageAlgorithm="T_SwooshAlgorithm">
+  <taggedValue xmi:id="_mMwAoXhgEeixqb5dJ1HrWg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_mMwAonhgEeixqb5dJ1HrWg" tag="Author" value="johannes.held@prodato.de"/>
+  <taggedValue xmi:id="_mMwAo3hgEeixqb5dJ1HrWg" tag="Purpose"/>
+  <taggedValue xmi:id="_mMwApHhgEeixqb5dJ1HrWg" tag="Description"/>
+  <taggedValue xmi:id="_mMwApXhgEeixqb5dJ1HrWg" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_mMwApnhgEeixqb5dJ1HrWg" tag="Validation_Status" value="true"/>
+  <blockKeys xmi:id="_mMwAp3hgEeixqb5dJ1HrWg" name="area" column="AREA_NAME">
+    <preAlgorithm xmi:id="_mMwAqHhgEeixqb5dJ1HrWg" algorithmType="NON_ALGO" algorithmParameters=""/>
+    <algorithm xmi:id="_mMwAqXhgEeixqb5dJ1HrWg" algorithmType="first_Char_EW" algorithmParameters=""/>
+    <postAlgorithm xmi:id="_mMwAqnhgEeixqb5dJ1HrWg" algorithmType="NON_ALGO" algorithmParameters=""/>
+  </blockKeys>
+  <blockKeys xmi:id="_mMwAq3hgEeixqb5dJ1HrWg" name="field" column="FIELD_NAME">
+    <preAlgorithm xmi:id="_mMwArHhgEeixqb5dJ1HrWg" algorithmType="NON_ALGO" algorithmParameters=""/>
+    <algorithm xmi:id="_mMwArXhgEeixqb5dJ1HrWg" algorithmType="first_N_Char" algorithmParameters="2"/>
+    <postAlgorithm xmi:id="_mMwArnhgEeixqb5dJ1HrWg" algorithmType="NON_ALGO" algorithmParameters=""/>
+  </blockKeys>
+  <matchRules xmi:id="_mMwAr3hgEeixqb5dJ1HrWg" name="Match Rule 1">
+    <matchKeys xmi:id="_mMwAsHhgEeixqb5dJ1HrWg" name="WellName" column="WELL_NAME" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+      <algorithm xmi:id="_mMwAsXhgEeixqb5dJ1HrWg" algorithmType="EXACT" algorithmParameters=""/>
+    </matchKeys>
+  </matchRules>
+  <survivorshipKeys xmi:id="_mMwAsnhgEeixqb5dJ1HrWg" name="WellName" column="WELL_NAME" allowManualResolution="true">
+    <function xmi:id="_mMwAs3hgEeixqb5dJ1HrWg" algorithmType="MostRecent" algorithmParameters=""/>
+  </survivorshipKeys>
+</dataquality.rules:MatchRuleDefinition>
