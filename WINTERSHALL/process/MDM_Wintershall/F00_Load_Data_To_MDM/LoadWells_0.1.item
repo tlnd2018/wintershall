@@ -123,7 +123,7 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.file_WellHierarchy"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/testdaten/neueTestdaten/WellsHierachy&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
@@ -519,10 +519,10 @@
       </outputTrees>
       <outputTrees name="wswell2">
         <nodes name="out" expression="" type="id_Document" xpath="wswell2/out" pattern="">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="wswell2.out:/root" loop="true" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="uwid" type="id_String" xpath="wswell2.out:/root/uwid"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="wellname" expression="well_key_uniq.WELL_NAME" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.8" xpath="wswell2.out:/root/wellname"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="areacode" expression="MDM.createFK(well_key_uniq.AREA_NAME) " type="id_String" incomingConnections="//@node.3/@nodeData/@connections.9" xpath="wswell2.out:/root/areacode"/>
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="wswell" expression="" type="id_String" xpath="wswell2.out:/wswell" loop="true" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="uwid" type="id_String" xpath="wswell2.out:/wswell/uwid"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="wellname" expression="well_key_uniq.WELL_NAME" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.8" xpath="wswell2.out:/wswell/wellname"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="areacode" expression="MDM.createFK(well_key_uniq.AREA_NAME) " type="id_String" incomingConnections="//@node.3/@nodeData/@connections.9" xpath="wswell2.out:/wswell/areacode"/>
           </children>
         </nodes>
       </outputTrees>
@@ -572,7 +572,7 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.file_WIDE_CLUSTER"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/testdaten/neueTestdaten/WIDE_CLUSTER.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
