@@ -317,7 +317,6 @@
       <relatedItems xmi:id="_BNSrUnhgEeixqb5dJ1HrWg" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_BNSrU3hgEeixqb5dJ1HrWg" id="_3oObUHR2Eei7XcXr-OiXow - WellHierarchy" version="Latest" type="schema"/>
       <relatedItems xmi:id="_BNSrVHhgEeixqb5dJ1HrWg" id="_eQp5oHR3Eei7XcXr-OiXow - WIDE_CLUSTER" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_BNSrVXhgEeixqb5dJ1HrWg" id="_n9CQYGQFEeikp-EoIBCmkw - wswellOut" version="Latest" type="schema"/>
       <relatedItems xmi:id="_BNSrVnhgEeixqb5dJ1HrWg" id="_n9CQYGQFEeikp-EoIBCmkw - wsfieldIn" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_qvExsGMqEeiBzI1jcbkg2A" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>

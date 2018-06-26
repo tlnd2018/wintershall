@@ -529,14 +529,12 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMOutput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw" show="false"/>
-    <elementParameter field="TECHNICAL" name="INPUT_SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="INPUT_SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wswellOut" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wsfieldIn" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wsfieldIn" show="false"/>
     <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
-    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="uwid" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="wswell" show="false"/>
     <elementParameter field="PREV_COLUMN_LIST" name="DOCUMENT" value="wswell"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMDMConnection_1"/>
@@ -620,30 +618,15 @@
     <elementParameter field="CHECK" name="STORE_FLOW" value="true" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="wswellOut"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="wswellOut" name="tMDMOutput_1">
-      <column comment="" key="false" length="0" name="uwid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="wellname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="areacode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="fieldcode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="clustercode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="opcocode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" label="wswell" name="tMDMOutput_1">
+      <column comment="" key="false" length="-1" name="wswell" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
-    <metadata connector="OUTPUT" label="wswellOut" name="OUTPUT">
-      <column comment="" key="false" length="0" name="uwid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="wellname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="areacode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="fieldcode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="clustercode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="opcocode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    <metadata connector="OUTPUT" label="wswell" name="OUTPUT">
+      <column comment="" key="false" length="-1" name="wswell" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-    <metadata connector="REJECT" label="wswellOut" name="REJECT">
-      <column comment="" key="false" length="0" name="uwid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="wellname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="areacode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="fieldcode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="clustercode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="opcocode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    <metadata connector="REJECT" label="wswell" name="REJECT">
+      <column comment="" key="false" length="-1" name="wswell" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
