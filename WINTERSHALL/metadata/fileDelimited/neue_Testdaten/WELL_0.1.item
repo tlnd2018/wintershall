@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
   <TalendMetadata:DelimitedFileConnection xmi:id="__Nex8HR1Eei7XcXr-OiXow" name="WELL" supplierDependency="_-a_VUHSGEei7XcXr-OiXow" dataPackage="__Nex8XR1Eei7XcXr-OiXow" Server="Localhost 127.0.0.1" FilePath="C:/Users/Held/Desktop/wintershall_test/WELL" Encoding="windows-1252" FieldSeparatorValue="&quot;|&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" RemoveEmptyRow="true" EscapeType="CSV" TextEnclosure="&quot;'&quot;" CsvOption="true" FieldSeparatorType="Custom ANSI"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="__Nex8XR1Eei7XcXr-OiXow" name="default" dataManager="__Nex8HR1Eei7XcXr-OiXow">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="__Nex8nR1Eei7XcXr-OiXow" id="_z8HLYHR1Eei7XcXr-OiXow" label="WELL">
@@ -65,7 +65,5 @@
       </feature>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_-a_VUHSGEei7XcXr-OiXow" kind="Usage" supplier="__Nex8HR1Eei7XcXr-OiXow">
-    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/Test_0.1.ana#_2urw8HSGEei7XcXr-OiXow"/>
-  </orgomg.cwm.objectmodel.core:Dependency>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_-a_VUHSGEei7XcXr-OiXow" kind="Usage" supplier="__Nex8HR1Eei7XcXr-OiXow"/>
 </xmi:XMI>
