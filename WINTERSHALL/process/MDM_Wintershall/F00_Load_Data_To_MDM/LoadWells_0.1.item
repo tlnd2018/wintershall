@@ -738,7 +738,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tMDMConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
+  <node componentName="tMDMConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMConnection_1" show="false"/>
     <elementParameter field="CLOSED_LIST" name="SERVERVERSION" value="s60"/>
     <elementParameter field="LABEL" name="NOTE" value="suggest to use 6.0 url" show="false"/>
@@ -788,11 +788,11 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="wide_cluster" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tMDMConnection_1">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tSetGlobalVar_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMDMConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMDMConnection_1" target="tSetGlobalVar_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMDMConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMDMConnection_1" target="tFileInputDelimited_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
