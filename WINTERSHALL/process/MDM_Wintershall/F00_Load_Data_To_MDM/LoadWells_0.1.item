@@ -465,20 +465,22 @@
       <column comment="" key="false" length="12" name="AREA_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="FIELD_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="WELL_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="OPCO_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="wswell2" name="wswell2">
+      <column comment="" key="false" length="-1" name="out" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="well_key_uniq" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="OPCO_CODE" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.8" xpath="well_key_uniq/OPCO_CODE"/>
+        <nodes name="OPCO_CODE" type="id_String" xpath="well_key_uniq/OPCO_CODE"/>
         <nodes name="OPCO_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="well_key_uniq/OPCO_NAME"/>
         <nodes name="AREA_CODE" type="id_String" xpath="well_key_uniq/AREA_CODE"/>
-        <nodes name="AREA_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="well_key_uniq/AREA_NAME" lookupOutgoingConnections="//@node.3/@nodeData/@connections.5"/>
+        <nodes name="AREA_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.1 //@node.3/@nodeData/@connections.9" xpath="well_key_uniq/AREA_NAME" lookupOutgoingConnections="//@node.3/@nodeData/@connections.5"/>
         <nodes name="FIELD_CODE" type="id_String" xpath="well_key_uniq/FIELD_CODE"/>
         <nodes name="FIELD_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="well_key_uniq/FIELD_NAME" lookupOutgoingConnections="//@node.3/@nodeData/@connections.6"/>
         <nodes name="FACILITY_CODE" type="id_String" xpath="well_key_uniq/FACILITY_CODE"/>
         <nodes name="FACILITY_NAME" type="id_String" xpath="well_key_uniq/FACILITY_NAME"/>
         <nodes name="WELL_CODE" type="id_String" xpath="well_key_uniq/WELL_CODE"/>
-        <nodes name="WELL_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="well_key_uniq/WELL_NAME"/>
+        <nodes name="WELL_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.0 //@node.3/@nodeData/@connections.8" xpath="well_key_uniq/WELL_NAME"/>
         <nodes name="WELL_TYPE" type="id_String" xpath="well_key_uniq/WELL_TYPE"/>
         <nodes name="WELL_ACTIVE_Last30days" type="id_Integer" xpath="well_key_uniq/WELL_ACTIVE_Last30days"/>
         <nodes name="WELL_UWI" type="id_String" xpath="well_key_uniq/WELL_UWI"/>
@@ -514,7 +516,15 @@
         <nodes name="AREA_NAME" expression="well_key.AREA_NAME" type="id_String" xpath="no_match/AREA_NAME"/>
         <nodes name="FIELD_NAME" expression="well_key.FIELD_NAME" type="id_String" xpath="no_match/FIELD_NAME"/>
         <nodes name="WELL_NAME" expression="well_key.WELL_NAME" type="id_String" xpath="no_match/WELL_NAME"/>
-        <nodes name="OPCO_CODE" expression="well_key_uniq.OPCO_CODE" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.8" xpath="no_match/OPCO_CODE"/>
+      </outputTrees>
+      <outputTrees name="wswell2">
+        <nodes name="out" expression="" type="id_Document" xpath="wswell2/out" pattern="">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="wswell2.out:/root" loop="true" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="uwid" type="id_String" xpath="wswell2.out:/root/uwid"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="wellname" expression="well_key_uniq.WELL_NAME" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.8" xpath="wswell2.out:/root/wellname"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="areacode" expression="MDM.createFK(well_key_uniq.AREA_NAME) " type="id_String" incomingConnections="//@node.3/@nodeData/@connections.9" xpath="wswell2.out:/root/areacode"/>
+          </children>
+        </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.9" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
@@ -525,7 +535,8 @@
       <connections xsi:type="TalendXMLMap:LookupConnection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@inputTrees.1/@nodes.0"/>
       <connections xsi:type="TalendXMLMap:LookupConnection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.5" target="//@node.3/@nodeData/@inputTrees.1/@nodes.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.1/@nodes.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0" target="//@node.3/@nodeData/@outputTrees.1/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.9" target="//@node.3/@nodeData/@outputTrees.2/@nodes.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@outputTrees.2/@nodes.0/@children.0/@children.2"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="544">
@@ -548,8 +559,6 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="WELL_NAME"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OPCO_CODE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -558,7 +567,6 @@
       <column comment="" key="false" length="12" name="AREA_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="FIELD_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="WELL_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="OPCO_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="224">
@@ -642,8 +650,8 @@
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_n9CQYGQFEeikp-EoIBCmkw - wsclusterReceive" show="false"/>
     <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
-    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="wswell" show="false"/>
-    <elementParameter field="PREV_COLUMN_LIST" name="DOCUMENT" value="wswell"/>
+    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="out" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="DOCUMENT" value="out"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="SERVERVERSION" value="s60"/>
@@ -663,7 +671,7 @@
     <elementParameter field="RADIO" name="CUSTOM" value="true" show="false"/>
     <elementParameter field="TEXT" name="TASKID" value="&quot;&quot;" show="false"/>
     <elementParameter field="RADIO" name="PREV_COLUMN" value="false" show="false"/>
-    <elementParameter field="PREV_COLUMN_LIST" name="PREV_COLUMN_TASK_ID" value="wswell" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="PREV_COLUMN_TASK_ID" value="out" show="false"/>
     <elementParameter field="CHECK" name="USE_PARTIAL_UPDATE" value="false"/>
     <elementParameter field="TEXT" name="PIVOT" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="OVERWRITE" value="false" show="false"/>
@@ -726,15 +734,15 @@
     <elementParameter field="CHECK" name="STORE_FLOW" value="true" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="wswellOut"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="wswell" name="tMDMOutput_1">
-      <column comment="" key="false" length="-1" name="wswell" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" label="wswell2" name="tMDMOutput_1">
+      <column comment="" key="false" length="-1" name="out" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
-    <metadata connector="OUTPUT" label="wswell" name="OUTPUT">
-      <column comment="" key="false" length="-1" name="wswell" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="OUTPUT" label="wswell2" name="OUTPUT">
+      <column comment="" key="false" length="-1" name="out" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-    <metadata connector="REJECT" label="wswell" name="REJECT">
-      <column comment="" key="false" length="-1" name="wswell" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="REJECT" label="wswell2" name="REJECT">
+      <column comment="" key="false" length="-1" name="out" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -778,13 +786,13 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="well_key_uniq" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="wswell" lineStyle="0" metaname="wswell" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tXMLMap_1" target="tMDMOutput_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="wswell" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="no_match" lineStyle="0" metaname="no_match" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tXMLMap_1" target="tLogRow_1">
+  <connection connectorName="FLOW" label="no_match" lineStyle="0" metaname="no_match" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tXMLMap_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="no_match" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="wswell2" lineStyle="0" metaname="wswell2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tXMLMap_1" target="tMDMOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="wswell2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="wide_cluster" lineStyle="8" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
